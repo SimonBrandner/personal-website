@@ -50,7 +50,10 @@
 				"maxEOF": 0
 			}
 		],
-		"max-len": "error",
+		"max-len": [
+			"error",
+			120
+		],
 		"no-multi-spaces": "error",
 		"space-before-function-paren": [
 			"error",
