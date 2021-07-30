@@ -49,6 +49,7 @@
 				"maxBOF": 0,
 				"maxEOF": 0
 			}
-		]
+		],
+		"max-len": "error"
 	}
 }
