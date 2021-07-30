@@ -60,6 +60,7 @@
 		"object-curly-spacing": [
 			"error",
 			"always"
-		]
+		],
+		"@typescript-eslint/type-annotation-spacing": "error"
 	}
 }
