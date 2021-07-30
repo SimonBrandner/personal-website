@@ -61,6 +61,7 @@
 			"error",
 			"always"
 		],
-		"@typescript-eslint/type-annotation-spacing": "error"
+		"@typescript-eslint/type-annotation-spacing": "error",
+		"@typescript-eslint/explicit-member-accessibility": "error"
 	}
 }
