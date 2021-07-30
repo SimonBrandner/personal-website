@@ -50,6 +50,16 @@
 				"maxEOF": 0
 			}
 		],
-		"max-len": "error"
+		"max-len": "error",
+		"no-multi-spaces": "error",
+		"space-before-function-paren": [
+			"error",
+			"never"
+		],
+		"space-before-blocks": "error",
+		"object-curly-spacing": [
+			"error",
+			"always"
+		]
 	}
 }
