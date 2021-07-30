@@ -1,45 +1,21 @@
-import React, { useState, } from "react";
-import logo from "../icons/logo.svg";
+import React from "react";
 import "../scss/App.scss";
+import ThemeStore, { Theme } from "./stores/ThemeStore";
 
-function App(): JSX.Element {
-	const [count, setCount] = useState(0);
+export default class App extends React.Component {
+	private onThemeClick = (): void => {
+		ThemeStore.instance.setActiveTheme(
+			ThemeStore.instance.getActiveTheme() === Theme.DarkTheme
+				? Theme.LightTheme 
+				: Theme.DarkTheme,
+		);
+	};
 
-	return (
-		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>Hello Vite + React!</p>
-				<p>
-					<button type="button" onClick={() => setCount((count) => count + 1)}>
-						count is: {count}
-					</button>
-				</p>
-				<p>
-					Edit <code>App.tsx</code> and save to test HMR updates.
-				</p>
-				<p>
-					<a
-						className="App-link"
-						href="https://reactjs.org"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						Learn React
-					</a>
-					{" | "}
-					<a
-						className="App-link"
-						href="https://vitejs.dev/guide/features.html"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						Vite Docs
-					</a>
-				</p>
-			</header>
-		</div>
-	);
+	public render(): JSX.Element {
+		return (
+			<div className="App">
+				<button onClick={this.onThemeClick}>Change theme</button>
+			</div>
+		);
+	}
 }
-
-export default App;
