@@ -19,6 +19,7 @@ export default class Header extends React.Component {
 					<div className="Header_menu">
 						<div className="Header_menu_items">
 							<HeaderItem path="/home" label="Home" />
+							<HeaderItem path="/cv" label="CV and Projects" />
 							<HeaderItem path="/contact" label="Contact" />
 						</div>
 						<div className="Header_menu_buttons">

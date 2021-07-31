@@ -11,7 +11,9 @@ export default class App extends React.Component {
 				&nbsp;
 				&middot;
 				&nbsp;
-				<span> Uses &nbsp;
+				<span>
+					Uses
+					&nbsp;
 					<a 
 						href="https://github.com/google/material-design-icons"
 						rel="noreferrer noopener"
