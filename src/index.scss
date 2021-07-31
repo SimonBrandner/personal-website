@@ -20,4 +20,8 @@ code {
 
 a {
 	color: var(--accent-color);
+
+	&:hover {
+		filter: brightness(2);
+	}
 }

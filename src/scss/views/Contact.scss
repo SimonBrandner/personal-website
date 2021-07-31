@@ -1,8 +1,51 @@
 .Contact {
 	display: flex;
-	justify-content: center;
-	height: 100%;
-	text-align: center;
+	align-items: center;
+	flex-direction: column;
 	padding-top: 3rem;
 	font-size: 1.5rem;
+
+	.Contact_link {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		width: min-content;
+
+		text-decoration: unset;
+
+		&::before {
+			content: "";
+			display: block;
+
+			height: 1.5rem;
+			width: 1.5rem;
+			background-color: var(--accent-color);
+
+			margin-right: 8px;
+
+			mask-repeat: no-repeat;
+			mask-size: contain;
+		}
+
+		&.Contact_link_twitter::before {
+			mask-image: url("/src/icons/social/twitter.svg");
+		}
+
+		&.Contact_link_github::before {
+			mask-image: url("/src/icons/social/github.svg");
+		}
+
+		&.Contact_link_matrix::before {
+			mask-image: url("/src/icons/social/matrix.svg");
+		}
+
+		&.Contact_link_location::before {
+			mask-image: url("/src/icons/place.svg");
+		}
+
+		&.Contact_link_email::before {
+			mask-image: url("/src/icons/social/email.svg");
+		}
+	}
 }
