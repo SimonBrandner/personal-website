@@ -3,7 +3,11 @@ export enum Theme {
 	DarkTheme = "dark_theme",
 }
 
-export default class ThemeStore {
+export enum ThemeStoreEvent {
+	ThemeChanged = "theme_changed",
+}
+
+export default class ThemeStore extends EventTarget {
 	private static internalInstance: ThemeStore;
 	private activeTheme: Theme = Theme.DarkTheme;
 
@@ -26,5 +30,6 @@ export default class ThemeStore {
 		const html = document.querySelector("html");
 		if (html) html.dataset.theme = newTheme;
 		this.activeTheme = newTheme;
+		this.dispatchEvent(new Event(ThemeStoreEvent.ThemeChanged));
 	}
 }
