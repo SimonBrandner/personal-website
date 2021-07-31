@@ -2,10 +2,14 @@
 	color: var(--primary-foreground-color);
 	cursor: pointer;
 
-	padding: 1rem;
+	padding: 0.5rem;
 
 	text-decoration: unset;
 	font-size: 1.1rem;
+
+	&:hover {
+		text-decoration: underline;
+	}
 
 	&.HeaderItem_active {
 		text-decoration: underline;
