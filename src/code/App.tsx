@@ -7,6 +7,8 @@ import {
 	Redirect,
 } from "react-router-dom";
 import Header from "./components/Header";
+import Contact from "./views/Contact";
+import Home from "./views/Home";
 
 export default class App extends React.Component {
 	public render(): JSX.Element {
@@ -15,16 +17,14 @@ export default class App extends React.Component {
 				<BrowserRouter>
 					<Header />
 					<Switch>
-						<Route exact 			
-							path="/"
-						>
+						<Route exact path="/">
 							<Redirect to="/home" />
 						</Route>
 						<Route path="/home">
-							Home
+							<Home />
 						</Route>
 						<Route path="/contact">
-							Contact
+							<Contact />
 						</Route>
 					</Switch>
 				</BrowserRouter>
