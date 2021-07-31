@@ -1,6 +1,6 @@
 import "../../scss/components/HeaderItem.scss";
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 interface IProps {
 	label: string;
@@ -12,9 +12,9 @@ export default class HeaderItem extends React.Component<IProps> {
 		const { label, path } = this.props;
 
 		return (
-			<Link className="HeaderItem" to={path}>
+			<NavLink className="HeaderItem" activeClassName="HeaderItem_active" to={path}>
 				{ label }
-			</Link>
+			</NavLink>
 		);
 	}
 }

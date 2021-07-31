@@ -1,3 +1,4 @@
+import "../../scss/views/View.scss";
 import React from "react";
 
 interface IProps {

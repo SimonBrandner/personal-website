@@ -1,9 +1,37 @@
-.Header {
-	width: 100%;
-	height: min-content;
-	padding-bottom: 2px;
-
+.Header_wrapper {
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	flex-direction: row;
+	justify-content: center;
+
+	.Header {
+		padding: 1rem 0;
+		width: 75%;
+		height: min-content;
+		min-width: min-content;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 10rem;
+
+		.Header_title {
+			.Header_name {
+				width: max-content;
+
+				font-size: 1.5rem;
+				font-weight: bold;
+			}
+			.Header_sub {
+				width: max-content;
+
+				color: var(--secondary-foreground-color);
+			}
+		}
+
+		.Header_menu {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+		}
+	}
 }

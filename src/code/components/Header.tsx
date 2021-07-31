@@ -4,19 +4,27 @@ import "../../scss/components/Header.scss";
 import ThemeSwitcher from "./ThemeSwitcher";
 
 export default class Header extends React.Component {
-	private onHomeClick = (): void => {
-		// TBD
-	}
-
 	public render(): JSX.Element {
 		return (
-			<div className="Header">
-				<div className="Header_items">
-					<HeaderItem path="/home" label="Home" />
-					<HeaderItem path="/contact" label="Contact" />
-				</div>
-				<div className="Header_buttons">
-					<ThemeSwitcher   />
+			<div className="Header_wrapper">
+				<div className="Header">
+					<div className="Header_title">
+						<div className="Header_name">
+							Šimon Brander
+						</div>
+						<div className="Header_sub">
+							Student and Programmer
+						</div>
+					</div>
+					<div className="Header_menu">
+						<div className="Header_menu_items">
+							<HeaderItem path="/home" label="Home" />
+							<HeaderItem path="/contact" label="Contact" />
+						</div>
+						<div className="Header_menu_buttons">
+							<ThemeSwitcher />
+						</div>
+					</div>
 				</div>
 			</div>
 		);
