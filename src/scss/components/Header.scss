@@ -11,6 +11,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		max-width: min(600px, 100%);
 
 		.Header_title {
 			.Header_name {
