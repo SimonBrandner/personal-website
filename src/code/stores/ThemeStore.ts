@@ -7,6 +7,8 @@ export enum ThemeStoreEvent {
 	ThemeChanged = "theme_changed",
 }
 
+const LS_THEME_KEY = "theme";
+
 export default class ThemeStore extends EventTarget {
 	private static internalInstance: ThemeStore;
 	private activeTheme: Theme = Theme.DarkTheme;
@@ -19,6 +21,19 @@ export default class ThemeStore extends EventTarget {
 	}
 
 	public initialize(): void {
+		const lsTheme = localStorage.getItem(LS_THEME_KEY) as Theme;
+		let systemTheme;
+		if (window.matchMedia) {
+			systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
+				? Theme.DarkTheme
+				: Theme.LightTheme;
+		}
+		this.activeTheme = (
+			lsTheme ||
+			systemTheme ||
+			this.activeTheme
+		);
+
 		this.setActiveTheme(this.activeTheme);
 	}
 
@@ -31,5 +46,6 @@ export default class ThemeStore extends EventTarget {
 		if (html) html.dataset.theme = newTheme;
 		this.activeTheme = newTheme;
 		this.dispatchEvent(new Event(ThemeStoreEvent.ThemeChanged));
+		localStorage.setItem(LS_THEME_KEY, this.activeTheme);
 	}
 }
