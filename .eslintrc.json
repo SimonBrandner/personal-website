@@ -139,6 +139,28 @@
 		],
 		"react/no-unknown-property": [
 			"error"
+		],
+		"react/jsx-indent-props": [
+			"error",
+			"tab"
+		],
+		"react/jsx-indent": [
+			"error",
+			"tab"
+		],
+		"react/jsx-closing-bracket-location": [
+			"error",
+			"tag-aligned"
+		],
+		"react/jsx-closing-tag-location": [
+			"error",
+			"tag-aligned"
+		],
+		"react/jsx-newline": [
+			"error",
+			{
+				"prevent": true
+			}
 		]
 	}
 }
