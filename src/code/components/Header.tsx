@@ -12,10 +12,11 @@ export default class Header extends React.Component {
 		return (
 			<div className="Header">
 				<div className="Header_items">
-					<HeaderItem onClick={this.onHomeClick} label="Home" />
+					<HeaderItem path="/home" label="Home" />
+					<HeaderItem path="/contact" label="Contact" />
 				</div>
 				<div className="Header_buttons">
-					<ThemeSwitcher />
+					<ThemeSwitcher   />
 				</div>
 			</div>
 		);

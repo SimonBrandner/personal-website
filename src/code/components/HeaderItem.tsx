@@ -1,19 +1,20 @@
-import React from "react";
 import "../../scss/components/HeaderItem.scss";
+import React from "react";
+import { Link } from "react-router-dom";
 
 interface IProps {
 	label: string;
-	onClick: () => void;
+	path: string;
 }
 
 export default class HeaderItem extends React.Component<IProps> {
 	public render(): JSX.Element {
-		const { label, onClick } = this.props;
+		const { label, path } = this.props;
 
 		return (
-			<div className="HeaderItem" onClick={onClick}>
+			<Link className="HeaderItem" to={path}>
 				{ label }
-			</div>
+			</Link>
 		);
 	}
 }
