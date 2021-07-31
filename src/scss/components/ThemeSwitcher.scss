@@ -2,10 +2,10 @@
 	padding: 0 1rem;
 
 	&.ThemeSwitcher_light::before {
-		mask-image: url("/src/icons/moon.svg");
+		mask-image: url("/src/icons/themes/moon.svg");
 	}
 
 	&.ThemeSwitcher_dark::before {
-		mask-image: url("/src/icons/sun.svg");
+		mask-image: url("/src/icons/themes/sun.svg");
 	}
 }
