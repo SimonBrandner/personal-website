@@ -7,30 +7,31 @@ import {
 	Redirect,
 } from "react-router-dom";
 import Header from "./components/Header";
-import Contact from "./views/Contact";
-import Home from "./views/Home";
 import Footer from "./components/Footer";
-import CV from "./views/CV";
+import { Routes } from "./Routes";
 
 export default class App extends React.Component {
 	public render(): JSX.Element {
+		const routes = Routes.map((route) => {
+			return (
+				<Route key={route.path} path={route.path}>
+					<route.component />
+				</Route>
+			);
+		});
+		const defaultRoute = Routes.find((route) => route.default);
+		routes.push((
+			<Route exact path="/">
+				<Redirect to={defaultRoute?.path || "/"} />
+			</Route>
+		));
+
 		return (
 			<div className="App">
 				<BrowserRouter>
 					<Header />
 					<Switch>
-						<Route exact path="/">
-							<Redirect to="/home" />
-						</Route>
-						<Route path="/home">
-							<Home />
-						</Route>
-						<Route path="/cv">
-							<CV />
-						</Route>
-						<Route path="/contact">
-							<Contact />
-						</Route>
+						{ routes }
 					</Switch>
 					<Footer />
 				</BrowserRouter>
