@@ -15,11 +15,19 @@ const GENERAL_DOTFILES = `
 dotfiles is a repo containing my configuration files as well as info about my setup.
 `;
 
-const PROJECTS_ELEMENT_MATRIX = `
+const PROJECTS_MATRIX = `
++ Wrote MSCs to improve VoIP
+`;
+
+const PROJECTS_ELEMENT = `
 + Rewrote parts of the VoIP stack, so that they are more flexible
-+ Specced and added new VoIP features
++ Implemented new VoIP features
 + Added numerous features
 + Fixed numerous bugs
+`;
+
+const PROJECTS_SYNAPSE = `
++ Implemented MSC2285: Hidden read receipts
 `;
 
 const PROJECTS_I3_PAGER = `
@@ -63,10 +71,20 @@ export default class CV extends React.Component {
 						/>
 					</CVSection>
 					<CVSection name="Projects">
-						<CVPart 
-							name="Element Web/Desktop and Matrix"
+						<CVPart
+							name="Matrix"
 							from="November 2020"
-							content={PROJECTS_ELEMENT_MATRIX}
+							content={PROJECTS_MATRIX}
+						/>
+						<CVPart 
+							name="Element Web/Desktop"
+							from="November 2020"
+							content={PROJECTS_ELEMENT}
+						/>
+						<CVPart
+							name="Synapse"
+							from="July 2021"
+							content={PROJECTS_SYNAPSE}
 						/>
 						<CVPart 
 							name="i3-pager"
