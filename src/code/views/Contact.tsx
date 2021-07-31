@@ -10,6 +10,7 @@ export default class Contact extends React.Component {
 					Matrix: @simon.brandner:envs.net
 					Twitter: @BrandnerSimon
 					GitHub: @SimonBrandner
+					Location: Milky Way, Earth, Czech Republic
 				</div>
 			</View>
 		);

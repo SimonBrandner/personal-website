@@ -9,6 +9,7 @@ import {
 import Header from "./components/Header";
 import Contact from "./views/Contact";
 import Home from "./views/Home";
+import Footer from "./components/Footer";
 
 export default class App extends React.Component {
 	public render(): JSX.Element {
@@ -27,6 +28,7 @@ export default class App extends React.Component {
 							<Contact />
 						</Route>
 					</Switch>
+					<Footer />
 				</BrowserRouter>
 			</div>
 		);
