@@ -2,7 +2,7 @@
   "name": "personal-website",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && cp ./publish/* dist/",
     "serve": "vite preview"
   },
   "dependencies": {
