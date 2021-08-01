@@ -13,6 +13,14 @@ body {
 	color: var(--primary-foreground-color);
 }
 
+root {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	background-color: var(--primary-background-color);
+}
+
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 		monospace;

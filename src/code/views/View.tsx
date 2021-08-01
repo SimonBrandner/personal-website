@@ -13,10 +13,8 @@ export default class View extends React.Component<IProps> {
 		const classes = classNames("View", className);
 
 		return (
-			<div className="View_wrapper">
-				<div className={classes}>
-					{ this.props.children }
-				</div>
+			<div className={classes}>
+				{ this.props.children }
 			</div>
 		);
 	}

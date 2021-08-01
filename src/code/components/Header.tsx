@@ -30,23 +30,21 @@ class Header extends React.Component<IProps> {
 		});
 
 		return (
-			<div className="Header_wrapper">
-				<div className="Header">
-					<div className="Header_title">
-						<div className="Header_name">
-							Šimon Brander
-						</div>
-						<div className="Header_sub">
-							A student and a programmer
-						</div>
+			<div className="Header">
+				<div className="Header_title">
+					<div className="Header_name">
+						Šimon Brander
 					</div>
-					<div className="Header_menu">
-						<div className="Header_menu_items">
-							{ headerItems }
-						</div>
-						<div className="Header_menu_buttons">
-							<ThemeSwitcher />
-						</div>
+					<div className="Header_sub">
+						A student and a programmer
+					</div>
+				</div>
+				<div className="Header_menu">
+					<div className="Header_menu_items">
+						{ headerItems }
+					</div>
+					<div className="Header_menu_buttons">
+						<ThemeSwitcher />
 					</div>
 				</div>
 			</div>
