@@ -5,13 +5,13 @@ export default class App extends React.Component {
 	public render(): JSX.Element {
 		return (
 			<footer className="Footer">
-				<div>
+				<div className="Footer_item">
 					<a href="https://github.com/SimonBrandner/personal-website">Source code on GitHub</a>
 				</div>
-				<div>
+				<div className="Footer_item">
 					Uses <a href="https://github.com/google/material-design-icons">Material design icons</a>
 				</div>
-				<div>
+				<div className="Footer_item">
 					Design partially inspired by <a href="https://convolv.es/">J. Ryan Stinnett</a>
 				</div>
 			</footer>
