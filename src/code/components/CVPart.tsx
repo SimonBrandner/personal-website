@@ -12,9 +12,7 @@ interface IProps {
 export default class CVPart extends React.Component<IProps> {
 	public render(): JSX.Element {
 		const { name, content, from, to } = this.props;
-		console.log(content);
 		const html = marked(content);
-		console.log(html);
 
 		return (
 			<div className="CVPart">
