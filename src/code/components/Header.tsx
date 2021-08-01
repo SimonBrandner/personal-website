@@ -1,10 +1,27 @@
+import "../../scss/components/Header.scss";
 import React from "react";
 import HeaderItem from "./HeaderItem";
-import "../../scss/components/Header.scss";
 import ThemeSwitcher from "./ThemeSwitcher";
 import { Routes } from "../Routes";
+import { RouteComponentProps, withRouter } from "react-router-dom";
 
-export default class Header extends React.Component {
+type IProps = RouteComponentProps;
+
+class Header extends React.Component<IProps> {
+	public componentDidMount(): void {
+		this.onRouteChanged();
+	}
+
+	public componentDidUpdate(prevProps: IProps): void {
+		if (prevProps.location !== this.props.location) {
+			this.onRouteChanged();
+		}
+	}
+
+	private onRouteChanged = (): void => {
+		document.title = `${Routes.find((r) => r.path === this.props.location.pathname)?.label} | Šimon Brandner`;
+	}
+
 	public render(): JSX.Element {
 		const headerItems = Routes.map((route) => {
 			return (
@@ -36,3 +53,5 @@ export default class Header extends React.Component {
 		);
 	}
 }
+
+export default withRouter(Header);
