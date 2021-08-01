@@ -36,8 +36,8 @@ const PROJECTS_I3_PAGER = `
 `;
 
 const PROJECTS_TASKIZER = `
-Taskizer was a project that aimed to make a free and open task-management app. 
-From the perspective of today the code is probably awful. Some if its features were:
+Taskizer aimed to be a free and open source task-management app with many features. 
+From the perspective of today, the code is probably awful. Some if its features were:
 + Nested tasks
 + Scheduling
 + Project importing
