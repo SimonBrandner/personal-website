@@ -7,8 +7,8 @@ export default class Home extends React.Component {
 		return (
 			<View className="Home">
 				<React.Fragment>
-					Hello, my name is Šimon Brander, <br />
-					I am a student and a hobbyist programmer
+					Hello! My name is Šimon Brander, <br />
+					I am a student and a hobbyist programmer.
 				</React.Fragment>
 			</View>
 		);
