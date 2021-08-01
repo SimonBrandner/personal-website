@@ -2,11 +2,18 @@
 	.CVPart_title {
 		display: flex;
 		flex-direction: row;
-		align-items: flex-end;
 
 		.CVPart_title_name {
 			flex: 1;
 			font-size: 1.5rem;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.CVPart {
+		.CVPart_title {
+			flex-direction: column;
 		}
 	}
 }
