@@ -21,7 +21,7 @@ export default class App extends React.Component {
 		});
 		const defaultRoute = Routes.find((route) => route.default);
 		routes.push((
-			<Route exact path="/">
+			<Route key="/" exact path="/">
 				<Redirect to={defaultRoute?.path || "/"} />
 			</Route>
 		));
