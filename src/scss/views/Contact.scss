@@ -14,6 +14,7 @@
 		width: min-content;
 
 		text-decoration: unset;
+		white-space: nowrap;
 
 		&::before {
 			content: "";
@@ -27,6 +28,7 @@
 
 			mask-repeat: no-repeat;
 			mask-size: contain;
+			mask-position: center;
 		}
 
 		&.Contact_link_twitter::before {
@@ -47,6 +49,30 @@
 
 		&.Contact_link_email::before {
 			mask-image: url("/src/icons/social/email.svg");
+		}
+
+		&.Contact_link_youtube::before {
+			mask-image: url("/src/icons/social/youtube.svg");
+		}
+
+		&.Contact_link_linkedin::before {
+			mask-image: url("/src/icons/social/linkedin.svg");
+		}
+
+		&.Contact_link_reddit::before {
+			mask-image: url("/src/icons/social/reddit.svg");
+		}
+
+		&.Contact_link_stackoverflow::before {
+			mask-image: url("/src/icons/social/stackoverflow.svg");
+		}
+
+		&.Contact_link_gitlab::before {
+			mask-image: url("/src/icons/social/gitlab.svg");
+		}
+
+		&.Contact_link_goodreads::before {
+			mask-image: url("/src/icons/social/goodreads.svg");
 		}
 	}
 }

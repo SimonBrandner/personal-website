@@ -31,6 +31,42 @@ export default class Contact extends React.Component {
 					> 
 						Twitter
 					</a>
+					<a
+						className="Contact_link Contact_link_youtube"
+						href="https://www.youtube.com/channel/UCe_DknI701POwF5oviZib8g/"
+					>
+						YouTube
+					</a>
+					<a
+						className="Contact_link Contact_link_linkedin"
+						href="https://www.linkedin.com/in/%C5%A1imon-brandner-69a139209/"
+					>
+						LinkedIn
+					</a>
+					<a
+						className="Contact_link Contact_link_reddit"
+						href="https://www.reddit.com/user/SimonBrandner/"
+					>
+						Reddit
+					</a>
+					<a
+						className="Contact_link Contact_link_stackoverflow"
+						href="https://stackoverflow.com/users/10822785/%c5%a0imon-brandner"
+					>
+						Stack Overflow
+					</a>
+					<a
+						className="Contact_link Contact_link_goodreads"
+						href="https://www.goodreads.com/user/show/112089576-imon-brandner"
+					>
+						Goodreads
+					</a>
+					<a
+						className="Contact_link Contact_link_gitlab"
+						href="https://gitlab.com/simon.brandner"
+					>
+						GitLab
+					</a>
 					<a 
 						className="Contact_link Contact_link_location"
 						href="https://www.google.com/maps/place/Czechia/"
