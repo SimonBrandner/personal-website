@@ -11,6 +11,9 @@ export default class App extends React.Component {
 				<div>
 					Uses <a href="https://github.com/google/material-design-icons">Material design icons</a>
 				</div>
+				<div>
+					Design partially inspired by <a href="https://convolv.es/">J. Ryan Stinnett</a>
+				</div>
 			</footer>
 		);
 	}
