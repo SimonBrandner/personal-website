@@ -6,7 +6,7 @@ export default class App extends React.Component {
 		return (
 			<footer className="Footer">
 				<div className="Footer_item">
-					<a href="https://github.com/SimonBrandner/personal-website">Source code on GitHub</a>
+					<a href="https://github.com/SimonBrandner/personal-website">Source code</a> on GitHub
 				</div>
 				<div className="Footer_item">
 					Uses <a href="https://github.com/google/material-design-icons">Material design icons</a>
