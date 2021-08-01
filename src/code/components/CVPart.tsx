@@ -18,7 +18,7 @@ export default class CVPart extends React.Component<IProps> {
 			<div className="CVPart">
 				<div className="CVPart_title">
 					<div className="CVPart_title_name"> { name } </div>
-					<div>
+					<div className="CVPart_title_time">
 						{ from }&nbsp;&ndash;&nbsp;{ to || "Present" }
 					</div>
 				</div>
