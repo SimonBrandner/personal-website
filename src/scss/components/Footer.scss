@@ -6,6 +6,12 @@
 	align-items: center;
 	font-size: 0.75rem;
 
+	color: var(--secondary-foreground-color);
+
+	a {
+		color: var(--secondary-foreground-color);
+	}
+
 	.Footer_item:not(:first-child)::before {
 		content: "\00B7";
 		font-weight: 1000;
