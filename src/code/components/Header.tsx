@@ -22,6 +22,12 @@ class Header extends React.Component<IProps> {
 		document.title = `${Routes.find((r) => r.path === this.props.location.pathname)?.label} | Šimon Brandner`;
 	}
 
+	private onNameClick = (): void => {
+		const defaultRoute = Routes.find(route => route.default)?.path;
+		if (!defaultRoute) return;
+		this.props.history.push(defaultRoute);
+	}
+
 	public render(): JSX.Element {
 		const headerItems = Routes.map((route) => {
 			return (
@@ -32,7 +38,7 @@ class Header extends React.Component<IProps> {
 		return (
 			<div className="Header">
 				<div className="Header_title">
-					<div className="Header_name">
+					<div className="Header_name" onClick={this.onNameClick}>
 						Šimon Brander
 					</div>
 					<div className="Header_sub">
