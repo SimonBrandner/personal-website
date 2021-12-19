@@ -9,12 +9,14 @@
 
 	white-space: nowrap;
 
+	border-radius: 16px;
+
 	&:hover {
-		text-decoration: underline;
+		background-color: var(--hover-color);
+		filter: none;
 	}
 
 	&.HeaderItem_active {
-		text-decoration: underline;
 		color: var(--accent-color);
 	}
 }
