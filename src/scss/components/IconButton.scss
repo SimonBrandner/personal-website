@@ -1,16 +1,29 @@
 .IconButton {
 	cursor: pointer;
-	width: 1.5rem;
-	height: 1.5rem;
+
+	border-radius: 100%;
+
+	width: 2rem;
+	height: 2rem;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 	&::before {
 		content: "";
-		width: inherit;
-		height: inherit;
+
+		width: 1.5rem;
+		height: 1.5rem;
+
 		display: block;
 
 		mask-repeat: no-repeat;
 		mask-size: contain;
 		background-color: var(--primary-foreground-color);
+	}
+
+	&:hover {
+		background-color: var(--hover-color);
 	}
 }
