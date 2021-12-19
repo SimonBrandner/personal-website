@@ -29,10 +29,10 @@
     "typescript": "^4.3.5",
     "vite": "^2.4.4"
   },
-    "postcss": {
-        "map": false,
-        "plugins": {
-            "autoprefixer": {}
-        }
+  "postcss": {
+    "map": false,
+    "plugins": {
+      "autoprefixer": {}
     }
+  }
 }
