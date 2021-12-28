@@ -56,6 +56,12 @@ export default class Contact extends React.Component {
 						Stack Overflow
 					</a>
 					<a
+						className="Contact_link Contact_link_pinterest"
+						href="https://cz.pinterest.com/SimonBrandnerDev"
+					>
+						Pinterest
+					</a>
+					<a
 						className="Contact_link Contact_link_goodreads"
 						href="https://www.goodreads.com/user/show/112089576-imon-brandner"
 					>

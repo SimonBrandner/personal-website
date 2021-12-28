@@ -63,6 +63,10 @@
 			mask-image: url("/src/icons/social/reddit.svg");
 		}
 
+		&.Contact_link_pinterest::before {
+			mask-image: url("/src/icons/social/pinterest.svg");
+		}
+
 		&.Contact_link_stackoverflow::before {
 			mask-image: url("/src/icons/social/stackoverflow.svg");
 		}
