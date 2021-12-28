@@ -11,9 +11,6 @@ export default class App extends React.Component {
 				<div className="Footer_item">
 					Uses <a href="https://github.com/google/material-design-icons">Material design icons</a>
 				</div>
-				<div className="Footer_item">
-					Design partially inspired by <a href="https://convolv.es/">J. Ryan Stinnett</a>
-				</div>
 			</footer>
 		);
 	}
