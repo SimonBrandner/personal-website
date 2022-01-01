@@ -1,0 +1,73 @@
+.ContactLink {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	width: min-content;
+
+	text-decoration: unset;
+	white-space: nowrap;
+
+	&::before {
+		content: "";
+		display: block;
+
+		height: 1.5rem;
+		width: 1.5rem;
+		background-color: var(--accent-color);
+
+		margin-right: 8px;
+
+		mask-repeat: no-repeat;
+		mask-size: contain;
+		mask-position: center;
+	}
+
+	&.ContactLink_twitter::before {
+		mask-image: url("/src/icons/social/twitter.svg");
+	}
+
+	&.ContactLink_github::before {
+		mask-image: url("/src/icons/social/github.svg");
+	}
+
+	&.ContactLink_matrix::before {
+		mask-image: url("/src/icons/social/matrix.svg");
+	}
+
+	&.ContactLink_location::before {
+		mask-image: url("/src/icons/place.svg");
+	}
+
+	&.ContactLink_email::before {
+		mask-image: url("/src/icons/social/email.svg");
+	}
+
+	&.ContactLink_youtube::before {
+		mask-image: url("/src/icons/social/youtube.svg");
+	}
+
+	&.ContactLink_linkedin::before {
+		mask-image: url("/src/icons/social/linkedin.svg");
+	}
+
+	&.ContactLink_reddit::before {
+		mask-image: url("/src/icons/social/reddit.svg");
+	}
+
+	&.ContactLink_pinterest::before {
+		mask-image: url("/src/icons/social/pinterest.svg");
+	}
+
+	&.ContactLink_stackoverflow::before {
+		mask-image: url("/src/icons/social/stackoverflow.svg");
+	}
+
+	&.ContactLink_gitlab::before {
+		mask-image: url("/src/icons/social/gitlab.svg");
+	}
+
+	&.ContactLink_goodreads::before {
+		mask-image: url("/src/icons/social/goodreads.svg");
+	}
+}
