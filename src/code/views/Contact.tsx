@@ -58,6 +58,11 @@ export default class Contact extends React.Component {
 						link="https://www.goodreads.com/user/show/112089576-imon-brandner"
 						label="Goodreads"
 					/>
+					<ContactLink 
+						className="spotify"
+						link="https://open.spotify.com/user/simon.bra.ag?si=0bb66d83f4024910"
+						label="Spotify"
+					/>
 					<ContactLink
 						className="gitlab"
 						link="https://gitlab.com/simon.brandner"

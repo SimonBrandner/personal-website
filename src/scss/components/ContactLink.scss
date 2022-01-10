@@ -70,4 +70,8 @@
 	&.ContactLink_goodreads::before {
 		mask-image: url("/src/icons/social/goodreads.svg");
 	}
+
+	&.ContactLink_spotify::before {
+		mask-image: url("/src/icons/social/spotify.svg");
+	}
 }
