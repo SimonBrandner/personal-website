@@ -1,6 +1,6 @@
 import "../../scss/components/CVPart.scss";
 import React from "react";
-import marked from "marked";
+import { parse } from "marked";
 
 interface IProps {
 	name: string;
@@ -12,7 +12,7 @@ interface IProps {
 export default class CVPart extends React.Component<IProps> {
 	public render(): JSX.Element {
 		const { name, content, from, to } = this.props;
-		const html = marked(content);
+		const html = parse(content);
 
 		return (
 			<div className="CVPart">
