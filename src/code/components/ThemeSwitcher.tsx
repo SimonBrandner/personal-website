@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ThemeStore, { Theme, ThemeStoreEvent } from "../stores/ThemeStore";
+import { ThemeStore, Theme, ThemeStoreEvent } from "../stores/ThemeStore";
 import "../../scss/components/ThemeSwitcher.scss";
 import { IconButton } from "./IconButton";
 import classNames from "classnames";

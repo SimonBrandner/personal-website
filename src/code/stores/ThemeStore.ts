@@ -9,7 +9,7 @@ export enum ThemeStoreEvent {
 
 const LS_THEME_KEY = "theme";
 
-export default class ThemeStore extends EventTarget {
+export class ThemeStore extends EventTarget {
 	private static internalInstance: ThemeStore;
 	private activeTheme: Theme = Theme.DarkTheme;
 
