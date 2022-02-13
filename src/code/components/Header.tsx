@@ -1,61 +1,42 @@
 import "../../scss/components/Header.scss";
-import React from "react";
-import HeaderItem from "./HeaderItem";
-import ThemeSwitcher from "./ThemeSwitcher";
+import React, { useEffect } from "react";
+import { HeaderItem } from "./HeaderItem";
+import { ThemeSwitcher } from "./ThemeSwitcher";
 import { Routes } from "../Routes";
-import { RouteComponentProps, withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 
-type IProps = RouteComponentProps;
+export const Header = withRouter(({ location, history }) => {
+	useEffect(() => {
+		document.title = `${Routes.find((r) => r.path === location.pathname)?.label} | Šimon Brandner`;
+	}, [location]);
 
-class Header extends React.Component<IProps> {
-	public componentDidMount(): void {
-		this.onRouteChanged();
-	}
-
-	public componentDidUpdate(prevProps: IProps): void {
-		if (prevProps.location !== this.props.location) {
-			this.onRouteChanged();
-		}
-	}
-
-	private onRouteChanged = (): void => {
-		document.title = `${Routes.find((r) => r.path === this.props.location.pathname)?.label} | Šimon Brandner`;
-	}
-
-	private onNameClick = (): void => {
+	const onNameClick = (): void => {
 		const defaultRoute = Routes.find(route => route.default)?.path;
-		if (!defaultRoute) return;
-		this.props.history.push(defaultRoute);
-	}
+		if (defaultRoute) history.push(defaultRoute);
+	};
 
-	public render(): JSX.Element {
-		const headerItems = Routes.map((route) => {
-			return (
-				<HeaderItem key={route.path} path={route.path} label={route.label} />
-			);
-		});
-
-		return (
-			<div className="Header">
-				<div className="Header_title">
-					<div className="Header_name" onClick={this.onNameClick}>
-						Šimon Brander
-					</div>
-					<div className="Header_sub">
-						A student and a programmer
-					</div>
+	return (
+		<div className="Header">
+			<div className="Header_title">
+				<div className="Header_name" onClick={onNameClick}>
+					Šimon Brander
 				</div>
-				<div className="Header_menu">
-					<div className="Header_menu_items">
-						{ headerItems }
-					</div>
-					<div className="Header_menu_buttons">
-						<ThemeSwitcher />
-					</div>
+				<div className="Header_sub">
+					A student and a programmer
 				</div>
 			</div>
-		);
-	}
-}
-
-export default withRouter(Header);
+			<div className="Header_menu">
+				<div className="Header_menu_items">
+					{ Routes.map((route) => {
+						return (
+							<HeaderItem key={route.path} path={route.path} label={route.label} />
+						);
+					}) }
+				</div>
+				<div className="Header_menu_buttons">
+					<ThemeSwitcher />
+				</div>
+			</div>
+		</div>
+	);
+});

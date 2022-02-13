@@ -1,8 +1,8 @@
 import "../../scss/views/CV.scss";
 import React from "react";
-import CVPart from "../components/CVPart";
-import View from "./View";
-import CVSection from "../components/CVSection";
+import { CVPart } from "../components/CVPart";
+import { View } from "./View";
+import { CVSection } from "../components/CVSection";
 
 const GENERAL_GITHUB = `
 I've been contributing to open source projects
@@ -53,60 +53,58 @@ const PROJECTS_YEELIGHT_CPPAPI = `
 The Yeelight C++ API is a library for controlling Yeelight bulbs using C++.
 `;
 
-export default class CV extends React.Component {
-	public render(): JSX.Element {
-		return (
-			<View className="CV">
-				<React.Fragment>
-					<CVSection name="General">
-						<CVPart 
-							name="GitHub"
-							from="June 2019"
-							content={GENERAL_GITHUB}
-						/>
-						<CVPart
-							name="dotfiles"
-							from="January 2019"
-							content={GENERAL_DOTFILES}
-						/>
-					</CVSection>
-					<CVSection name="Projects">
-						<CVPart
-							name="Matrix"
-							from="November 2020"
-							content={PROJECTS_MATRIX}
-						/>
-						<CVPart 
-							name="Element Web/Desktop"
-							from="November 2020"
-							content={PROJECTS_ELEMENT}
-						/>
-						<CVPart
-							name="Synapse"
-							from="July 2021"
-							content={PROJECTS_SYNAPSE}
-						/>
-						<CVPart 
-							name="i3-pager"
-							from="October 2020"
-							to="November 2020"
-							content={PROJECTS_I3_PAGER}
-						/>
-						<CVPart
-							name="TaskizerDesktop"
-							from="March 2020"
-							to="August 2020"
-							content={PROJECTS_TASKIZER}
-						/>
-						<CVPart
-							name="YeelightCPPAPI"
-							from="June 2019"
-							to="June 2020"
-							content={PROJECTS_YEELIGHT_CPPAPI}
-						/>
-					</CVSection>
-				</React.Fragment>
-			</View>
-		);
-	}
-}
+export const CV: React.FC = () => {
+	return (
+		<View className="CV">
+			<React.Fragment>
+				<CVSection name="General">
+					<CVPart
+						name="GitHub"
+						from="June 2019"
+						content={GENERAL_GITHUB}
+					/>
+					<CVPart
+						name="dotfiles"
+						from="January 2019"
+						content={GENERAL_DOTFILES}
+					/>
+				</CVSection>
+				<CVSection name="Projects">
+					<CVPart
+						name="Matrix"
+						from="November 2020"
+						content={PROJECTS_MATRIX}
+					/>
+					<CVPart
+						name="Element Web/Desktop"
+						from="November 2020"
+						content={PROJECTS_ELEMENT}
+					/>
+					<CVPart
+						name="Synapse"
+						from="July 2021"
+						content={PROJECTS_SYNAPSE}
+					/>
+					<CVPart
+						name="i3-pager"
+						from="October 2020"
+						to="November 2020"
+						content={PROJECTS_I3_PAGER}
+					/>
+					<CVPart
+						name="TaskizerDesktop"
+						from="March 2020"
+						to="August 2020"
+						content={PROJECTS_TASKIZER}
+					/>
+					<CVPart
+						name="YeelightCPPAPI"
+						from="June 2019"
+						to="June 2020"
+						content={PROJECTS_YEELIGHT_CPPAPI}
+					/>
+				</CVSection>
+			</React.Fragment>
+		</View>
+	);
+};

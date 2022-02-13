@@ -7,15 +7,12 @@ interface IProps {
 	className?: string;
 }
 
-export default class View extends React.Component<IProps> {
-	public render(): JSX.Element {
-		const { className } = this.props;
-		const classes = classNames("View", className);
+export const View: React.FC<IProps> = ({ children, className }) => {
+	const classes = classNames("View", className);
 
-		return (
-			<div className={classes}>
-				{ this.props.children }
-			</div>
-		);
-	}
-}
+	return (
+		<div className={classes}>
+			{ children }
+		</div>
+	);
+};

@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.scss";
-import App from "./code/App";
+import { App } from "./code/App";
 import ThemeStore from "./code/stores/ThemeStore";
 
 ThemeStore.instance.initialize();

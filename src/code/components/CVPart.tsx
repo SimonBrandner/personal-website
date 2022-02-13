@@ -9,21 +9,18 @@ interface IProps {
 	to?: string;
 }
 
-export default class CVPart extends React.Component<IProps> {
-	public render(): JSX.Element {
-		const { name, content, from, to } = this.props;
-		const html = parse(content);
+export const CVPart: React.FC<IProps> = ({ name, content, from, to }) => {
+	const html = parse(content);
 
-		return (
-			<div className="CVPart">
-				<div className="CVPart_title">
-					<div className="CVPart_title_name"> { name } </div>
-					<div className="CVPart_title_time">
-						{ from }&nbsp;&ndash;&nbsp;{ to || "Present" }
-					</div>
+	return (
+		<div className="CVPart">
+			<div className="CVPart_title">
+				<div className="CVPart_title_name"> { name } </div>
+				<div className="CVPart_title_time">
+					{ from }&nbsp;&ndash;&nbsp;{ to || "Present" }
 				</div>
-				<div dangerouslySetInnerHTML={{ __html: html }} />
 			</div>
-		);
-	}
-}
+			<div dangerouslySetInnerHTML={{ __html: html }} />
+		</div>
+	);
+};

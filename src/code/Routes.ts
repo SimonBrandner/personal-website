@@ -1,12 +1,12 @@
-import { ComponentClass } from "react";
-import Contact from "./views/Contact";
-import CV from "./views/CV";
-import Home from "./views/Home";
+import React from "react";
+import { Contact } from "./views/Contact";
+import { CV } from "./views/CV";
+import { Home } from "./views/Home";
 
 export interface IRoute {
 	label: string;
 	path: string;
-	component: ComponentClass;
+	component: React.FC;
 	default?: boolean;
 }
 

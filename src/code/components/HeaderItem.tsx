@@ -7,14 +7,10 @@ interface IProps {
 	path: string;
 }
 
-export default class HeaderItem extends React.Component<IProps> {
-	public render(): JSX.Element {
-		const { label, path } = this.props;
-
-		return (
-			<NavLink className="HeaderItem" activeClassName="HeaderItem_active" to={path}>
-				{ label }
-			</NavLink>
-		);
-	}
-}
+export const HeaderItem: React.FC<IProps> = ({ label, path }) =>{
+	return (
+		<NavLink className="HeaderItem" activeClassName="HeaderItem_active" to={path}>
+			{ label }
+		</NavLink>
+	);
+};

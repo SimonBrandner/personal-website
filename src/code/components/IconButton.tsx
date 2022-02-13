@@ -8,19 +8,14 @@ interface IProps {
 	className: string;
 }
 
-export default class Header extends React.Component<IProps> {
-	private onKeyDown = (event: React.KeyboardEvent): void => {
-		if (event.key === Key.Enter) {
-			this.props.onClick();
-		}
-	}
+export const IconButton: React.FC<IProps> = ({ onClick, className }) => {
+	const classes = classNames("IconButton", className);
 
-	public render(): JSX.Element {
-		const { onClick, className } = this.props;
-		const classes = classNames("IconButton", className);
+	const onKeyDown = (event: React.KeyboardEvent): void => {
+		if (event.key === Key.Enter) onClick();
+	};
 		
-		return (
-			<div className={classes} onClick={onClick} onKeyDown={this.onKeyDown} tabIndex={0} />
-		);
-	}
-}
+	return (
+		<div className={classes} onClick={onClick} onKeyDown={onKeyDown} tabIndex={0} />
+	);
+};
