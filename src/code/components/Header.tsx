@@ -29,7 +29,7 @@ export const Header = withRouter(({ location, history }) => {
 				<div className="Header_menu_items">
 					{ Routes.map((route) => {
 						return (
-							<HeaderItem key={route.paths[0]} path={route.paths[0]} label={route.label} />
+							<HeaderItem key={route.paths[0]} paths={route.paths} label={route.label} />
 						);
 					}) }
 				</div>

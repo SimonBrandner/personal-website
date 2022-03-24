@@ -4,12 +4,17 @@ import { NavLink } from "react-router-dom";
 
 interface IProps {
 	label: string;
-	path: string;
+	paths: Array<string>;
 }
 
-export const HeaderItem: React.FC<IProps> = ({ label, path }) =>{
+export const HeaderItem: React.FC<IProps> = ({ label, paths }) =>{
 	return (
-		<NavLink className="HeaderItem" activeClassName="HeaderItem_active" to={path}>
+		<NavLink 
+			className="HeaderItem" 
+			activeClassName="HeaderItem_active" 
+			isActive={(match, location) => Boolean(paths.find((p) => p === location?.pathname))} 
+			to={paths[0]}
+		>
 			{ label }
 		</NavLink>
 	);
