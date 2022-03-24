@@ -18,7 +18,7 @@ export const Routes: IRoute[] = [
 		default: true,
 	}, {
 		label: "CV/Projects",
-		paths: ["/projects", "/cv"],
+		paths: ["/cv", "/projects"],
 		component: CV,
 	}, {
 		label: "Contact",
