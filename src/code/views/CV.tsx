@@ -4,6 +4,42 @@ import { CVPart } from "../components/CVPart";
 import { View } from "./View";
 import { CVSection } from "../components/CVSection";
 
+const GENERAL_LANGUAGES = `
++ English — C1
++ Spanish — A2
++ Czech — native speaker
+`;
+
+const IT_GENERAL = `
++ Word processors: Google Docs, Microsoft Word, LibreOffice Writer
++ Spreadsheet editors: Google Sheets, Microsoft Excel, LibreOffice Calc
++ Presentation programs: Google Slides, Microsoft PowerPoint, LibreOffice Impress
++ Raster graphics editors: GIMP, Krita, Affinity Photo
++ Vector graphics editors: Inkscape, Figma
++ Video editors: DaVinci Resolve
++ Operating systems: Linux, Microsoft Windows
+`;
+
+const IT_PROGRAMMING_LANGUAGES = `
++ JavaScript/TypeScript — intermediate
++ Python — intermediate
++ C++ — elementary
++ Go — elementary
+`;
+
+const IT_MARKUP_LANGUAGES = `
++ LaTeX — intermediate
++ Markdown — intermediate
++ HTML — intermediate
++ CSS/SCSS — intermediate
++ QML — elementary
+`;
+
+const IT_TECHNOLOGIES = `
++ Web app frameworks/libraries: React, Angular
++ Communication: Matrix, WebRTC
+`;
+
 const GENERAL_GITHUB = `
 I've been contributing to open source projects
 on GitHub and putting my work there. See a list of all my
@@ -11,12 +47,9 @@ on GitHub and putting my work there. See a list of all my
 and my [profile](https://github.com/SimonBrandner/).
 `;
 
-const GENERAL_DOTFILES = `
-dotfiles is a repo containing my configuration files as well as info about my setup.
-`;
-
 const PROJECTS_MATRIX = `
 + Wrote MSCs to improve VoIP
++ Rewrote MSC2285: hidden read receipts
 `;
 
 const PROJECTS_ELEMENT = `
@@ -53,23 +86,44 @@ const PROJECTS_YEELIGHT_CPPAPI = `
 The Yeelight C++ API is a library for controlling Yeelight bulbs using C++.
 `;
 
+const GENERAL_DOTFILES = `
+dotfiles is a repo containing my configuration files as well as info about my setup.
+`;
+
 export const CV: React.FC = () => {
 	return (
 		<View className="CV">
 			<React.Fragment>
-				<CVSection name="General">
+				<CVSection name="General skills">
 					<CVPart
-						name="GitHub"
-						from="June 2019"
-						content={GENERAL_GITHUB}
+						name="Languages"
+						content={GENERAL_LANGUAGES}
+					/>
+				</CVSection>
+				<CVSection name="Programming and IT skills">
+					<CVPart
+						name="General"
+						content={IT_GENERAL}
 					/>
 					<CVPart
-						name="dotfiles"
-						from="January 2019"
-						content={GENERAL_DOTFILES}
+						name="Programming languages"
+						content={IT_PROGRAMMING_LANGUAGES}
+					/>
+					<CVPart
+						name="Markup and style sheet languages"
+						content={IT_MARKUP_LANGUAGES}
+					/>
+					<CVPart
+						name="Technologies"
+						content={IT_TECHNOLOGIES}
 					/>
 				</CVSection>
 				<CVSection name="Projects">
+					<CVPart
+						name="GitHub"
+						from="January 2019"
+						content={GENERAL_GITHUB}
+					/>
 					<CVPart
 						name="Matrix"
 						from="November 2020"
@@ -102,6 +156,12 @@ export const CV: React.FC = () => {
 						from="June 2019"
 						to="June 2020"
 						content={PROJECTS_YEELIGHT_CPPAPI}
+					/>
+				</CVSection>
+				<CVSection name="Other">
+					<CVPart
+						name="dotfiles"
+						content={GENERAL_DOTFILES}
 					/>
 				</CVSection>
 			</React.Fragment>
