@@ -7,12 +7,12 @@ import { withRouter } from "react-router-dom";
 
 export const Header = withRouter(({ location, history }) => {
 	useEffect(() => {
-		document.title = `${Routes.find((r) => r.path === location.pathname)?.label} | Šimon Brandner`;
+		document.title = `${Routes.find((r) => r.paths.find((p) => p === location.pathname))?.label} | Šimon Brandner`;
 	}, [location]);
 
 	const onNameClick = (): void => {
-		const defaultRoute = Routes.find(route => route.default)?.path;
-		if (defaultRoute) history.push(defaultRoute);
+		const defaultRoute = Routes.find(route => route.default)?.paths;
+		if (defaultRoute) history.push(defaultRoute[0]);
 	};
 
 	return (
@@ -29,7 +29,7 @@ export const Header = withRouter(({ location, history }) => {
 				<div className="Header_menu_items">
 					{ Routes.map((route) => {
 						return (
-							<HeaderItem key={route.path} path={route.path} label={route.label} />
+							<HeaderItem key={route.paths[0]} path={route.paths[0]} label={route.label} />
 						);
 					}) }
 				</div>

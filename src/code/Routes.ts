@@ -5,7 +5,7 @@ import { Home } from "./views/Home";
 
 export interface IRoute {
 	label: string;
-	path: string;
+	paths: Array<string>;
 	component: React.FC;
 	default?: boolean;
 }
@@ -13,16 +13,16 @@ export interface IRoute {
 export const Routes: IRoute[] = [
 	{
 		label: "Home",
-		path: "/home",
+		paths: ["/home"],
 		component: Home,
 		default: true,
 	}, {
 		label: "CV/Projects",
-		path: "/projects",
+		paths: ["/projects", "/cv"],
 		component: CV,
 	}, {
 		label: "Contact",
-		path: "/contact",
+		paths: ["/contact"],
 		component: Contact,
 	},
 ];

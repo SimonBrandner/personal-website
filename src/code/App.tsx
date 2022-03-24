@@ -13,7 +13,7 @@ import { Routes } from "./Routes";
 export const App: React.FC = () => {
 	const routes = Routes.map((route) => {
 		return (
-			<Route key={route.path} path={route.path}>
+			<Route key={route.paths[0]} path={route.paths}>
 				<route.component />
 			</Route>
 		);
@@ -21,7 +21,7 @@ export const App: React.FC = () => {
 	const defaultRoute = Routes.find((route) => route.default);
 	routes.push((
 		<Route key="/" exact path="/">
-			<Redirect to={defaultRoute?.path || "/"} />
+			<Redirect to={defaultRoute?.paths[0] || "/"} />
 		</Route>
 	));
 
