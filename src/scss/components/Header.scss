@@ -37,6 +37,12 @@
 	.Header {
 		flex-direction: column;
 
+		.Header_title {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
 		.Header_menu {
 			flex-direction: column;
 
