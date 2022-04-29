@@ -10,9 +10,12 @@
     "ansi-regex": "5.0.1",
     "autoprefixer": "^10.4.0",
     "classnames": "^2.3.1",
+    "i18next": "^21.6.16",
+    "i18next-browser-languagedetector": "^6.1.4",
     "marked": "^4.0.10",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
+    "react-i18next": "^11.16.6",
     "react-router-dom": "^5.2.0",
     "sass": "^1.36.0"
   },

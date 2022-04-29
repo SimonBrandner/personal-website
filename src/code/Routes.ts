@@ -1,3 +1,4 @@
+import { t } from "i18next";
 import React from "react";
 import { Contact } from "./views/Contact";
 import { CV } from "./views/CV";
@@ -12,16 +13,16 @@ export interface IRoute {
 
 export const Routes: IRoute[] = [
 	{
-		label: "Home",
+		label: t("Home"),
 		paths: ["/home"],
 		component: Home,
 		default: true,
 	}, {
-		label: "CV/Projects",
+		label: t("CV/Projects"),
 		paths: ["/cv", "/projects"],
 		component: CV,
 	}, {
-		label: "Contact",
+		label: t("Contact"),
 		paths: ["/contact"],
 		component: Contact,
 	},

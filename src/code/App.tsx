@@ -9,8 +9,15 @@ import {
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { Routes } from "./Routes";
+import { useTranslation } from "react-i18next";
 
 export const App: React.FC = () => {
+	const { i18n } = useTranslation();
+
+	const changeLanguage = (language: string): void => {
+		i18n.changeLanguage(language);
+	};	
+
 	const routes = Routes.map((route) => {
 		return (
 			<Route key={route.paths[0]} path={route.paths}>
@@ -28,7 +35,7 @@ export const App: React.FC = () => {
 	return (
 		<div className="App">
 			<BrowserRouter>
-				<Header />
+				<Header onLanguageChange={changeLanguage} />
 				<Switch>
 					{ routes }
 				</Switch>
