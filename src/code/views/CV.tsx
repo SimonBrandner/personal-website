@@ -98,23 +98,23 @@ export const CV: React.FC = () => {
 	return (
 		<View className="CV">
 			<React.Fragment>
-				<CVSection name="General skills">
+				<CVSection name="General Skills">
 					<CVPart
 						name="Languages"
 						content={GENERAL_LANGUAGES}
 					/>
 				</CVSection>
-				<CVSection name="Programming and IT skills">
+				<CVSection name="Programming and IT Skills">
 					<CVPart
 						name="General"
 						content={IT_GENERAL}
 					/>
 					<CVPart
-						name="Programming languages"
+						name="Programming Languages"
 						content={IT_PROGRAMMING_LANGUAGES}
 					/>
 					<CVPart
-						name="Markup and style sheet languages"
+						name="Markup and Style Sheet Languages"
 						content={IT_MARKUP_LANGUAGES}
 					/>
 					<CVPart
@@ -122,9 +122,9 @@ export const CV: React.FC = () => {
 						content={IT_TECHNOLOGIES}
 					/>
 				</CVSection>
-				<CVSection name="Work experiences">
+				<CVSection name="Work Experiences">
 					<CVPart 
-						name="Element internship"
+						name="Element Internship"
 						from="May 2022"
 						content={EXPERIENCES_ELEMENT_INTERNSHIP}
 					/>
