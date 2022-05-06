@@ -47,6 +47,10 @@ on GitHub and putting my work there. See a list of all my
 and my [profile](https://github.com/SimonBrandner/).
 `;
 
+const EXPERIENCES_ELEMENT_INTERNSHIP = `
+Working on Element Web, Matrix and occasionally different related projects.
+`;
+
 const PROJECTS_MATRIX = `
 + Wrote MSCs to improve VoIP
 + Rewrote MSC2285: hidden read receipts
@@ -116,6 +120,13 @@ export const CV: React.FC = () => {
 					<CVPart
 						name="Technologies"
 						content={IT_TECHNOLOGIES}
+					/>
+				</CVSection>
+				<CVSection name="Work experiences">
+					<CVPart 
+						name="Element internship"
+						from="May 2022"
+						content={EXPERIENCES_ELEMENT_INTERNSHIP}
 					/>
 				</CVSection>
 				<CVSection name="Projects">
