@@ -52,9 +52,12 @@ Working on Element Web, Matrix and occasionally different related projects.
 `;
 
 const PROJECTS_MATRIX = `
-+ Wrote MSCs to improve VoIP
-+ Rewrote MSC2285: hidden read receipts
-`;
++ Wrote [MSCs to improve VoIP](https://github.com/search`+
+"?q=is%3Apr+author%3ASimonBrandner+label%3A%22voip%22+repo%3Amatrix-org%2Fmatrix-spec-proposals)" + `
++ Rewrote [MSC2285: Private read receipts](https://github.com/matrix-org/matrix-spec-proposals/pull/2285)
++ Wrote [MSC3827: Filtering of \`/publicRooms\` by room type](` +
+"https://github.com/matrix-org/matrix-spec-proposals/pull/3827)"
+;
 
 const PROJECTS_ELEMENT = `
 + Rewrote parts of the VoIP stack, so that they are more flexible
@@ -64,7 +67,8 @@ const PROJECTS_ELEMENT = `
 `;
 
 const PROJECTS_SYNAPSE = `
-+ Implemented MSC2285: Hidden read receipts
++ Implemented MSC2285: Private read receipts
++ Implemented MSC3827: Filtering of \`/publicRooms\` by room type
 `;
 
 const PROJECTS_I3_PAGER = `
