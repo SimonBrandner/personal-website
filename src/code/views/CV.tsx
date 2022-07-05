@@ -72,7 +72,7 @@ const PROJECTS_SYNAPSE = `
 `;
 
 const PROJECTS_I3_PAGER = `
-+ Rewrote part of the widget for better extensibility
++ Rewrote a part of the widget for better extensibility
 + Added several new features
 `;
 
