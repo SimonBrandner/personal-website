@@ -9,7 +9,7 @@ export const Contact: React.FC = () => {
 			<React.Fragment>
 				<ContactLink 
 					className="matrix"
-					link="https://matrix.to/#/@simon.brandner:envs.net"
+					link="https://matrix.to/#/@simonb:element.io"
 					label="Matrix"
 				/>
 				<ContactLink 
