@@ -48,7 +48,8 @@ and my [profile](https://github.com/SimonBrandner/).
 `;
 
 const EXPERIENCES_ELEMENT_INTERNSHIP = `
-Working on Element Web, Matrix and occasionally different related projects.
++ Working on Element Web, Matrix and occasionally different related projects.
++ Mentoring colleagues.
 `;
 
 const PROJECTS_MATRIX = `
@@ -64,6 +65,11 @@ const PROJECTS_ELEMENT = `
 + Implemented new VoIP features
 + Added numerous features
 + Fixed numerous bugs
+`;
+
+const PROJECTS_SFU = `
++ Worked on getting the SFU to connect to Matrix clients
++ Implemented numerous features
 `;
 
 const PROJECTS_SYNAPSE = `
@@ -148,6 +154,11 @@ export const CV: React.FC = () => {
 						name="Element Web/Desktop"
 						from="November 2020"
 						content={PROJECTS_ELEMENT}
+					/>
+					<CVPart
+						name="SFU-to-SFU"
+						from="August 2022"
+						content={PROJECTS_SFU}
 					/>
 					<CVPart
 						name="Synapse"
