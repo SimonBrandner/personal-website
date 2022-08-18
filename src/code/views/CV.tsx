@@ -4,106 +4,6 @@ import { CVPart } from "../components/CVPart";
 import { View } from "./View";
 import { CVSection } from "../components/CVSection";
 
-const GENERAL_LANGUAGES = `
-+ English — C1
-+ Spanish — A2
-+ Czech — native speaker
-`;
-
-const IT_GENERAL = `
-+ Word processors: Google Docs, Microsoft Word, LibreOffice Writer
-+ Spreadsheet editors: Google Sheets, Microsoft Excel, LibreOffice Calc
-+ Presentation programs: Google Slides, Microsoft PowerPoint, LibreOffice Impress
-+ Raster graphics editors: GIMP, Krita, Affinity Photo
-+ Vector graphics editors: Inkscape, Figma
-+ Video editors: DaVinci Resolve
-+ Operating systems: Linux, Microsoft Windows
-`;
-
-const IT_PROGRAMMING_LANGUAGES = `
-+ JavaScript/TypeScript — intermediate
-+ Python — intermediate
-+ C++ — elementary
-+ Go — elementary
-`;
-
-const IT_MARKUP_LANGUAGES = `
-+ LaTeX — intermediate
-+ Markdown — intermediate
-+ HTML — intermediate
-+ CSS/SCSS — intermediate
-+ QML — elementary
-`;
-
-const IT_TECHNOLOGIES = `
-+ Web app frameworks/libraries: React, Angular
-+ Communication: Matrix, WebRTC
-`;
-
-const GENERAL_GITHUB = `
-I've been contributing to open source projects
-on GitHub and putting my work there. See a list of all my
-[pull requests](https://github.com/search?q=is%3Apr+author%3ASimonBrandner)
-and my [profile](https://github.com/SimonBrandner/).
-`;
-
-const EXPERIENCES_ELEMENT_INTERNSHIP = `
-+ Working on Element Web, Matrix and occasionally different related projects.
-+ Mentoring colleagues.
-`;
-
-const PROJECTS_MATRIX = `
-+ Wrote [MSCs to improve VoIP](https://github.com/search`+
-"?q=is%3Apr+author%3ASimonBrandner+label%3A%22voip%22+repo%3Amatrix-org%2Fmatrix-spec-proposals)" + `
-+ Rewrote [MSC2285: Private read receipts](https://github.com/matrix-org/matrix-spec-proposals/pull/2285)
-+ Wrote [MSC3827: Filtering of \`/publicRooms\` by room type](` +
-"https://github.com/matrix-org/matrix-spec-proposals/pull/3827)"
-;
-
-const PROJECTS_ELEMENT = `
-+ Rewrote parts of the VoIP stack, so that they are more flexible
-+ Implemented new VoIP features
-+ Added numerous features
-+ Fixed numerous bugs
-`;
-
-const PROJECTS_SFU = `
-+ Worked on getting the SFU to connect to Matrix clients
-+ Implemented numerous features
-`;
-
-const PROJECTS_SYNAPSE = `
-+ Implemented MSC2285: Private read receipts
-+ Implemented MSC3827: Filtering of \`/publicRooms\` by room type
-`;
-
-const PROJECTS_I3_PAGER = `
-+ Rewrote a part of the widget for better extensibility
-+ Added several new features
-`;
-
-const PROJECTS_TASKIZER = `
-Taskizer aimed to be a free and open source task-management app with many features. 
-From the perspective of today, the code is probably awful. Some if its features were:
-+ Nested tasks
-+ Scheduling
-+ Project importing
-+ System tray icon
-+ Keyboard shortcuts
-+ Repeated tasks
-+ Repeat presets
-+ Multiple themes
-+ Reminders
-`;
-
-const PROJECTS_YEELIGHT_CPPAPI = `
-The Yeelight C++ API is a library for controlling Yeelight bulbs using C++.
-`;
-
-const GENERAL_DOTFILES = `
-dotfiles is a repo containing my configuration files as well as info about my setup.
-`;
-
 export const CV: React.FC = () => {
 	return (
 		<View className="CV">
@@ -111,84 +11,218 @@ export const CV: React.FC = () => {
 				<CVSection name="General Skills">
 					<CVPart
 						name="Languages"
-						content={GENERAL_LANGUAGES}
-					/>
+					>
+						<ul>
+							<li>English — C1</li>
+							<li>Spanish — A2</li>
+							<li>Czech — native speaker</li>
+
+						</ul>
+					</CVPart>
 				</CVSection>
 				<CVSection name="Programming and IT Skills">
 					<CVPart
 						name="General"
-						content={IT_GENERAL}
-					/>
+					>
+						<ul>
+							<li> Word processors: Google Docs, Microsoft Word, LibreOffice Writer </li>
+							<li> Spreadsheet editors: Google Sheets, Microsoft Excel, LibreOffice Calc </li>
+							<li> Presentation programs: Google Slides, Microsoft PowerPoint, LibreOffice Impress </li>
+							<li> Raster graphics editors: GIMP, Krita, Affinity Photo </li>
+							<li> Vector graphics editors: Inkscape, Figma </li>
+							<li> Video editors: DaVinci Resolve </li>
+							<li> Operating systems: Linux, Microsoft Windows </li>
+						</ul>
+					</CVPart>
 					<CVPart
 						name="Programming Languages"
-						content={IT_PROGRAMMING_LANGUAGES}
-					/>
+					>
+						<ul>
+							<li> JavaScript/TypeScript — intermediate </li>
+							<li> Python — intermediate </li>
+							<li> Go — intermediate </li>
+							<li> C++ — elementary </li>
+						</ul>
+					</CVPart>
 					<CVPart
 						name="Markup and Style Sheet Languages"
-						content={IT_MARKUP_LANGUAGES}
-					/>
+					>
+						<ul>
+							<li> LaTeX — intermediate </li>
+							<li> Markdown — intermediate </li>
+							<li> HTML — intermediate </li>
+							<li> CSS/SCSS — intermediate </li>
+							<li> QML — elementary </li>
+						</ul>
+					</CVPart>
 					<CVPart
 						name="Technologies"
-						content={IT_TECHNOLOGIES}
-					/>
+					>
+						<ul>
+							<li> Web app frameworks/libraries: React, Angular </li>
+							<li> Communication: Matrix, WebRTC </li>
+						</ul>
+					</CVPart>
 				</CVSection>
 				<CVSection name="Work Experiences">
 					<CVPart 
 						name="Element Internship"
 						from="May 2022"
-						content={EXPERIENCES_ELEMENT_INTERNSHIP}
-					/>
+					>
+						<ul>
+							<li> Working on Element Web/Desktop </li>
+							<li> Working on Element Call </li>
+							<li> Working on SFU-to-SFU </li>
+							<li> Working on the Matrix specification </li>
+							<li> Occasionally working on other related projects </li>
+							<li> Working on the VoIP team </li>
+							<li> Mentoring colleagues </li>
+						</ul>
+					</CVPart>
 				</CVSection>
 				<CVSection name="Projects">
 					<CVPart
 						name="GitHub"
 						from="January 2019"
-						content={GENERAL_GITHUB}
-					/>
+					>
+						<p>
+							I have been contributing to open source projects
+							on GitHub and putting my work there. See a list of all my&nbsp;
+							<a 
+								rel="noreferrer noopener" 
+								href="https://github.com/search?q=is%3Apr+author%3ASimonBrandner"
+							>
+								pull requests
+							</a> and my&nbsp;
+							<a 
+								rel="noreferrer noopener"
+								href="https://github.com/SimonBrandner/"
+							>
+								profile
+							</a>.
+						</p>
+					</CVPart>
 					<CVPart
 						name="Matrix"
 						from="November 2020"
-						content={PROJECTS_MATRIX}
-					/>
+					>
+						<ul>
+							<li>
+								Wrote&nbsp;
+								<a
+									href={
+										"https://github.com/search?q=is%3Apr+author%3ASimonBrandner" + 
+										"+label%3A%22voip%22+repo%3Amatrix-org%2Fmatrix-spec-proposals"
+									}
+									rel="noreferrer noopener"
+								>
+									MSCs to improve VoIP
+								</a>
+
+							</li>
+							<li>
+								Rewrote&nbsp;
+								<a 
+									href="https://github.com/matrix-org/matrix-spec-proposals/pull/2285" 
+									rel="noreferrer noopener"
+								>
+									MSC2285: Private read receipts
+								</a>
+							</li>
+							<li>
+								Wrote&nbsp;
+								<a 
+									href="https://github.com/matrix-org/matrix-spec-proposals/pull/3827"
+									rel="noreferrer noopener"
+								>
+									MSC3827: Filtering of <code>/publicRooms</code> by room type
+								</a>
+							</li>
+							<li>
+								Wrote&nbsp;
+								<a
+									href="https://github.com/matrix-org/matrix-spec-proposals/pull/3786"
+									rel="noreferrer noopener"
+								>
+									MSC3786: Add a default push rule to ignore <code>m.room.server_acl</code> events
+								</a>
+							</li>
+						</ul>
+					</CVPart>
 					<CVPart
 						name="Element Web/Desktop"
 						from="November 2020"
-						content={PROJECTS_ELEMENT}
-					/>
+					>
+						<ul>
+							<li> Rewrote parts of the VoIP stack, so that they are more flexible </li>
+							<li> Implemented new VoIP features </li>
+							<li> Added numerous features </li>
+							<li> Fixed numerous bugs </li>
+						</ul>
+					</CVPart>
 					<CVPart
 						name="SFU-to-SFU"
 						from="August 2022"
-						content={PROJECTS_SFU}
-					/>
+					>
+						<ul>
+							<li> Worked on getting the SFU to connect to Matrix clients </li>
+							<li> Implemented numerous features </li>
+						</ul>
+					</CVPart>
 					<CVPart
 						name="Synapse"
 						from="July 2021"
-						content={PROJECTS_SYNAPSE}
-					/>
+					>
+						<ul>
+							<li> Implemented MSC2285: Private read receipts </li>
+							<li> Implemented MSC3827: Filtering of <code>/publicRooms</code> by room type </li>
+						</ul>
+					</CVPart>
 					<CVPart
 						name="i3-pager"
 						from="October 2020"
 						to="November 2020"
-						content={PROJECTS_I3_PAGER}
-					/>
+					>
+						<ul>
+							<li> Rewrote a part of the widget for better extensibility </li>
+							<li> Added several new features </li>
+						</ul>
+					</CVPart>
 					<CVPart
 						name="TaskizerDesktop"
 						from="March 2020"
 						to="August 2020"
-						content={PROJECTS_TASKIZER}
-					/>
+					>
+						<p>
+							Taskizer aimed to be a free and open source task-management app with many features.
+							From the perspective of today, the code is probably awful. Some if its features were:
+						</p>
+						<ul>
+							<li> Nested tasks </li>
+							<li> Scheduling </li>
+							<li> Project importing </li>
+							<li> System tray icon </li>
+							<li> Keyboard shortcuts </li>
+							<li> Repeated tasks </li>
+							<li> Repeat presets </li>
+							<li> Multiple themes </li>
+							<li> Reminders </li>
+						</ul>
+					</CVPart>
 					<CVPart
 						name="YeelightCPPAPI"
 						from="June 2019"
 						to="June 2020"
-						content={PROJECTS_YEELIGHT_CPPAPI}
-					/>
+					>
+						<p> The Yeelight C++ API is a library for controlling Yeelight bulbs using C++. </p>
+					</CVPart>
 				</CVSection>
 				<CVSection name="Other">
 					<CVPart
 						name="dotfiles"
-						content={GENERAL_DOTFILES}
-					/>
+					>
+						<p> dotfiles is a repo containing my configuration files as well as info about my setup.</p>
+					</CVPart>
 				</CVSection>
 			</React.Fragment>
 		</View>
