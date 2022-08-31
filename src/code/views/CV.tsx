@@ -72,7 +72,7 @@ export const CV: React.FC = () => {
 						<ul>
 							<li> Working on Element Web/Desktop </li>
 							<li> Working on Element Call </li>
-							<li> Working on SFU-to-SFU </li>
+							<li> Working on Waterfall </li>
 							<li> Working on the Matrix specification </li>
 							<li> Occasionally working on other related projects </li>
 							<li> Working on the VoIP team </li>
@@ -161,11 +161,11 @@ export const CV: React.FC = () => {
 						</ul>
 					</CVPart>
 					<CVPart
-						name="SFU-to-SFU"
+						name="Waterfall"
 						from="August 2022"
 					>
 						<ul>
-							<li> Worked on getting the SFU to connect to Matrix clients </li>
+							<li> Worked on getting Waterfall to connect to Matrix clients </li>
 							<li> Implemented numerous features </li>
 						</ul>
 					</CVPart>
