@@ -65,7 +65,7 @@ export const CV: React.FC = () => {
 					</CVPart>
 				</CVSection>
 				<CVSection name="Work Experiences">
-					<CVPart 
+					<CVPart
 						name="Element Internship"
 						from="May 2022"
 					>
@@ -88,13 +88,13 @@ export const CV: React.FC = () => {
 						<p>
 							I have been contributing to open source projects
 							on GitHub and putting my work there. See a list of all my&nbsp;
-							<a 
-								rel="noreferrer noopener" 
+							<a
+								rel="noreferrer noopener"
 								href="https://github.com/search?q=is%3Apr+author%3ASimonBrandner"
 							>
 								pull requests
 							</a> and my&nbsp;
-							<a 
+							<a
 								rel="noreferrer noopener"
 								href="https://github.com/SimonBrandner/"
 							>
@@ -111,7 +111,7 @@ export const CV: React.FC = () => {
 								Wrote&nbsp;
 								<a
 									href={
-										"https://github.com/search?q=is%3Apr+author%3ASimonBrandner" + 
+										"https://github.com/search?q=is%3Apr+author%3ASimonBrandner" +
 										"+label%3A%22voip%22+repo%3Amatrix-org%2Fmatrix-spec-proposals"
 									}
 									rel="noreferrer noopener"
@@ -122,8 +122,8 @@ export const CV: React.FC = () => {
 							</li>
 							<li>
 								Rewrote&nbsp;
-								<a 
-									href="https://github.com/matrix-org/matrix-spec-proposals/pull/2285" 
+								<a
+									href="https://github.com/matrix-org/matrix-spec-proposals/pull/2285"
 									rel="noreferrer noopener"
 								>
 									MSC2285: Private read receipts
@@ -131,7 +131,7 @@ export const CV: React.FC = () => {
 							</li>
 							<li>
 								Wrote&nbsp;
-								<a 
+								<a
 									href="https://github.com/matrix-org/matrix-spec-proposals/pull/3827"
 									rel="noreferrer noopener"
 								>
@@ -158,6 +158,16 @@ export const CV: React.FC = () => {
 							<li> Implemented new VoIP features </li>
 							<li> Added numerous features </li>
 							<li> Fixed numerous bugs </li>
+						</ul>
+					</CVPart>
+					<CVPart
+						name="Element Call"
+						from="August 2021"
+					>
+						<ul>
+							<li> Implemented some of the underlying matrix-js-sdk 1:1 call logic </li>
+							<li> Added several features </li>
+							<li> Fixed several bugs </li>
 						</ul>
 					</CVPart>
 					<CVPart
