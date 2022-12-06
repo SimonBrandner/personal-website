@@ -61,6 +61,7 @@ export const CV: React.FC = () => {
 						<ul>
 							<li> Web app frameworks/libraries: React, Angular </li>
 							<li> Communication: Matrix, WebRTC </li>
+							<li> Game engines: Unreal Engine (Blueprints)</li>
 						</ul>
 					</CVPart>
 				</CVSection>
@@ -108,6 +109,24 @@ export const CV: React.FC = () => {
 					>
 						<ul>
 							<li>
+								Wrote parts of&nbsp;
+								<a
+									href="https://github.com/matrix-org/matrix-spec-proposals/pull/3401"
+									rel="noreferrer noopener"
+								>
+									MSC3401: Native Group VoIP Signalling
+								</a>
+							</li>
+							<li>
+								Wrote parts of&nbsp;
+								<a
+									href="https://github.com/matrix-org/matrix-spec-proposals/pull/3898"
+									rel="noreferrer noopener"
+								>
+									MSC3898: Native Matrix VoIP signalling for cascaded foci (SFUs, MCUs...)
+								</a>
+							</li>
+							<li>
 								Wrote&nbsp;
 								<a
 									href={
@@ -116,9 +135,8 @@ export const CV: React.FC = () => {
 									}
 									rel="noreferrer noopener"
 								>
-									MSCs to improve VoIP
+									others MSCs to improve VoIP
 								</a>
-
 							</li>
 							<li>
 								Rewrote&nbsp;
