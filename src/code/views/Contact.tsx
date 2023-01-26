@@ -22,6 +22,12 @@ export const Contact: React.FC = () => {
 					link="https://github.com/SimonBrandner"
 					label="GitHub"
 				/>
+				<ContactLink
+					className="mastodon"
+					link="https://mastodon.online/@SimonBrandner"
+					rel="me"
+					label="Mastodon"
+				/>
 				<ContactLink 
 					className="twitter"
 					link="https://twitter.com/BrandnerSimon"
