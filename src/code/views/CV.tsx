@@ -81,6 +81,26 @@ export const CV: React.FC = () => {
 						</ul>
 					</CVPart>
 				</CVSection>
+				<CVSection name="Theses">
+					<CVPart name="The Usage of the Matrix Protocol for Video Calls" from="March 2023">
+						<p>
+							I am writing my high-school graduation thesis about The Usage of the Matrix Protocol for
+							Video Calls (Využití protokolu Matrix pro videohovory). The source is hosted at&nbsp;
+							<a 
+								rel="noreferrer noopener" 
+								// eslint-disable-next-line max-len
+								href="https://github.com/SimonBrandner/RocnikovaPrace-MatrixRTC"
+							>source code
+							</a> is hosted on GitHub and so is the&nbsp;
+							<a
+								rel="noreferrer noopener"
+								// eslint-disable-next-line max-len
+								href="https://nightly.link/SimonBrandner/RocnikovaPrace-MatrixRTC/workflows/build.yaml/main/matrixRTC.pdf.zip"
+							>PDF
+							</a>.
+						</p>
+					</CVPart>
+				</CVSection>
 				<CVSection name="Projects">
 					<CVPart
 						name="GitHub"
