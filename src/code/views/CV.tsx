@@ -85,7 +85,7 @@ export const CV: React.FC = () => {
 					<CVPart name="The Usage of the Matrix Protocol for Video Calls" from="March 2023">
 						<p>
 							I am writing my high-school graduation thesis about The Usage of the Matrix Protocol for
-							Video Calls (Využití protokolu Matrix pro videohovory). The source is hosted at&nbsp;
+							Video Calls (Využití protokolu Matrix pro videohovory). The&nbsp;
 							<a 
 								rel="noreferrer noopener" 
 								// eslint-disable-next-line max-len
