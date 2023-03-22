@@ -95,7 +95,7 @@ export const CV: React.FC = () => {
 							<a
 								rel="noreferrer noopener"
 								// eslint-disable-next-line max-len
-								href="https://nightly.link/SimonBrandner/RocnikovaPrace-MatrixRTC/workflows/build.yaml/main/matrixRTC.pdf.zip"
+								href="https://nightly.link/SimonBrandner/RocnikovaPrace-MatrixRTC/workflows/build.yaml/stable/matrixRTC.pdf.zip"
 							>PDF
 							</a>.
 						</p>
