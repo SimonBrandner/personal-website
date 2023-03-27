@@ -185,6 +185,15 @@ export const CV: React.FC = () => {
 									MSC3786: Add a default push rule to ignore <code>m.room.server_acl</code> events
 								</a>
 							</li>
+							<li>
+								Wrote&nbsp;
+								<a
+									href="https://github.com/matrix-org/matrix-spec-proposals/pull/3985"
+									rel="noreferrer noopener"
+								>
+									MSC3985: Break-out rooms
+								</a>
+							</li>
 						</ul>
 					</CVPart>
 					<CVPart
