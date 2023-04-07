@@ -6,7 +6,7 @@ export const Home: React.FC = () => {
 	return (
 		<View className="Home">
 			<React.Fragment>
-				Hello! My name is Šimon Brander, <br />
+				Hello! My name is Šimon Brandner, <br />
 				I am a student and a hobbyist programmer.
 			</React.Fragment>
 		</View>
