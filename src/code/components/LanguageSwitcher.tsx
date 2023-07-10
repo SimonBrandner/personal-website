@@ -11,7 +11,7 @@ export const LanguageSwitcher: React.FC = () => {
 
 	return (
 		<div className="LanguageSwitcher" onClick={onChangeLanguageClick}>
-			{ i18n.language === "en" ? "CS" : "EN" }
+			{i18n.language === "en" ? "🇨🇿" : "🇬🇧"}
 		</div>
 	);
 };

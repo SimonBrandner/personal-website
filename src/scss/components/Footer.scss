@@ -2,20 +2,30 @@
 	height: 3rem;
 	display: flex;
 	justify-content: center;
-	flex-shrink: 0;
-	align-items: center;
 	font-size: 0.75rem;
+	width: 100%;
 
 	color: var(--secondary-foreground-color);
+	background-color: var(--secondary-background-color);
 
-	a {
-		color: var(--secondary-foreground-color);
-	}
+	box-shadow: 0 0 3rem 2rem var(--secondary-background-color);
 
-	.Footer_item:not(:first-child)::before {
-		content: "\00B7";
-		font-weight: 1000;
-		padding: 0 5px;
+	.Footer_content {
+		width: min(800px, 95%);
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		a {
+			color: var(--secondary-foreground-color);
+		}
+
+		.Footer_item:not(:first-child)::before {
+			content: "\00B7";
+			font-weight: 1000;
+			padding: 0 5px;
+		}
 	}
 }
 

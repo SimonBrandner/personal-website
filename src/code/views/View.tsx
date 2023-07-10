@@ -10,9 +10,5 @@ interface IProps {
 export const View: React.FC<IProps> = ({ children, className }) => {
 	const classes = classNames("View", className);
 
-	return (
-		<div className={classes}>
-			{ children }
-		</div>
-	);
+	return <div className={classes}>{children}</div>;
 };

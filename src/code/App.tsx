@@ -1,11 +1,6 @@
 import "../scss/App.scss";
 import React from "react";
-import {
-	BrowserRouter,
-	Switch,
-	Route,
-	Redirect,
-} from "react-router-dom";
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { Routes } from "./Routes";
@@ -19,19 +14,19 @@ export const App: React.FC = () => {
 		);
 	});
 	const defaultRoute = Routes.find((route) => route.default);
-	routes.push((
+	routes.push(
 		<Route key="/" exact path="/">
 			<Redirect to={defaultRoute?.paths[0] || "/"} />
-		</Route>
-	));
+		</Route>,
+	);
 
 	return (
 		<div className="App">
 			<BrowserRouter>
 				<Header />
-				<Switch>
-					{ routes }
-				</Switch>
+				<div className="App_content">
+					<Switch>{routes}</Switch>
+				</div>
 				<Footer />
 			</BrowserRouter>
 		</div>
