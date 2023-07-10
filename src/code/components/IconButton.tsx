@@ -12,9 +12,9 @@ export const IconButton: React.FC<IProps> = ({ onClick, className }) => {
 	const classes = classNames("IconButton", className);
 
 	const onKeyDown = (event: React.KeyboardEvent): void => {
-		if (event.key === Key.Enter) onClick();
+		if ([Key.Enter, Key.Space].includes(event.key as Key)) onClick();
 	};
-		
+
 	return (
 		<div className={classes} onClick={onClick} onKeyDown={onKeyDown} tabIndex={0} />
 	);
