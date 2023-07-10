@@ -15,7 +15,5 @@ export const IconButton: React.FC<IProps> = ({ onClick, className }) => {
 		if ([Key.Enter, Key.Space].includes(event.key as Key)) onClick();
 	};
 
-	return (
-		<div className={classes} onClick={onClick} onKeyDown={onKeyDown} tabIndex={0} />
-	);
+	return <div className={classes} onClick={onClick} onKeyDown={onKeyDown} tabIndex={0} />;
 };

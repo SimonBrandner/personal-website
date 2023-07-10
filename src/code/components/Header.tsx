@@ -18,7 +18,7 @@ export const Header = withRouter(({ location, history }) => {
 	}, [location]);
 
 	const onNameClick = (): void => {
-		const defaultRoute = Routes.find(route => route.default)?.paths;
+		const defaultRoute = Routes.find((route) => route.default)?.paths;
 		if (defaultRoute) history.push(defaultRoute[0]);
 	};
 
@@ -29,15 +29,13 @@ export const Header = withRouter(({ location, history }) => {
 					<div className="Header_name" onClick={onNameClick}>
 						Šimon Brander
 					</div>
-					<div className="Header_sub">
-						Homo sapiens sapiens
-					</div>
+					<div className="Header_sub">Homo sapiens sapiens</div>
 				</div>
 				<div className="Header_menu">
 					<div className="Header_menu_items">
-						{ Routes.map((route) => (
+						{Routes.map((route) => (
 							<HeaderItem key={route.paths[0]} paths={route.paths} label={t(route.label)} />
-						)) }
+						))}
 					</div>
 					<div className="Header_menu_buttons">
 						<ThemeSwitcher />

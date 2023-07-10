@@ -10,11 +10,9 @@ interface IProps {
 export const CVSection: React.FC<IProps> = ({ name, children, last }) => {
 	return (
 		<div className="CVSection">
-			<h1> { name } </h1>
-			<React.Fragment>
-				{ children }
-			</React.Fragment>
-			{ !last && <hr /> }
+			<h1> {name} </h1>
+			<React.Fragment>{children}</React.Fragment>
+			{!last && <hr />}
 		</div>
 	);
 };

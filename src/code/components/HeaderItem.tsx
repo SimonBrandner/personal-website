@@ -7,15 +7,15 @@ interface IProps {
 	paths: Array<string>;
 }
 
-export const HeaderItem: React.FC<IProps> = ({ label, paths }) =>{
+export const HeaderItem: React.FC<IProps> = ({ label, paths }) => {
 	return (
-		<NavLink 
-			className="HeaderItem" 
-			activeClassName="HeaderItem_active" 
-			isActive={(match, location) => Boolean(paths.find((p) => p === location?.pathname))} 
+		<NavLink
+			className="HeaderItem"
+			activeClassName="HeaderItem_active"
+			isActive={(match, location) => Boolean(paths.find((p) => p === location?.pathname))}
 			to={paths[0]}
 		>
-			{ label }
+			{label}
 		</NavLink>
 	);
 };

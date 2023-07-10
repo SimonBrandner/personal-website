@@ -24,15 +24,9 @@ export class ThemeStore extends EventTarget {
 		const lsTheme = localStorage.getItem(LS_THEME_KEY) as Theme;
 		let systemTheme;
 		if (window.matchMedia) {
-			systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
-				? Theme.DarkTheme
-				: Theme.LightTheme;
+			systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? Theme.DarkTheme : Theme.LightTheme;
 		}
-		this.activeTheme = (
-			lsTheme ||
-			systemTheme ||
-			this.activeTheme
-		);
+		this.activeTheme = lsTheme || systemTheme || this.activeTheme;
 
 		this.setActiveTheme(this.activeTheme);
 	}

@@ -6,7 +6,7 @@
 	width: 100vw;
 	align-items: center;
 
-	.App_content{
+	.App_content {
 		width: min(800px, 95%);
 
 		margin-top: 5rem;
@@ -16,7 +16,7 @@
 
 @media (max-width: 600px) {
 	.App {
-		.App_content{
+		.App_content {
 			margin-top: 14rem;
 		}
 	}

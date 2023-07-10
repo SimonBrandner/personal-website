@@ -9,8 +9,7 @@ export const Home: React.FC = () => {
 	return (
 		<View className="Home">
 			<Trans i18nKey="home.intro">
-				Hello! My name is Šimon Brandner, <br />
-				I am a student and a programmer.
+				Hello! My name is Šimon Brandner, <br />I am a student and a programmer.
 			</Trans>
 		</View>
 	);

@@ -17,18 +17,15 @@ export const ThemeSwitcher: React.FC = () => {
 	};
 
 	const onChangeThemeClick = (): void => {
-		ThemeStore.instance.setActiveTheme(ThemeStore.instance.getActiveTheme() === Theme.DarkTheme
-			? Theme.LightTheme
-			: Theme.DarkTheme,
+		ThemeStore.instance.setActiveTheme(
+			ThemeStore.instance.getActiveTheme() === Theme.DarkTheme ? Theme.LightTheme : Theme.DarkTheme,
 		);
 	};
 
 	const classes = classNames("ThemeSwitcher", {
-		"ThemeSwitcher_light": theme === Theme.LightTheme,
-		"ThemeSwitcher_dark": theme === Theme.DarkTheme,
+		ThemeSwitcher_light: theme === Theme.LightTheme,
+		ThemeSwitcher_dark: theme === Theme.DarkTheme,
 	});
 
-	return (
-		<IconButton className={classes} onClick={onChangeThemeClick} />
-	);
+	return <IconButton className={classes} onClick={onChangeThemeClick} />;
 };

@@ -10,13 +10,8 @@ interface IProps {
 
 export const ContactLink: React.FC<IProps> = ({ link, className, label, rel }) => {
 	return (
-		<a 
-			className={`ContactLink ContactLink_${className}`} 
-			href={link} 
-			target="_blank" 
-			rel={`noreferrer ${rel}`}
-		>
-			{ label }
+		<a className={`ContactLink ContactLink_${className}`} href={link} target="_blank" rel={`noreferrer ${rel}`}>
+			{label}
 		</a>
 	);
 };
