@@ -12,6 +12,8 @@
 	display: flex;
 	justify-content: center;
 
+	box-shadow: 0 0 3rem 2rem var(--secondary-background-color);
+
 	.Header_content {
 		display: flex;
 		justify-content: space-between;
