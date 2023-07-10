@@ -432,7 +432,7 @@ export const CV: React.FC = () => {
 						</p>
 					</CVPart>
 				</CVSection>
-				<CVSection name={t("cv.other", "Other")}>
+				<CVSection name={t("cv.other", "Other")} last>
 					<CVPart
 						name="dotfiles"
 					>

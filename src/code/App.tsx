@@ -29,9 +29,11 @@ export const App: React.FC = () => {
 		<div className="App">
 			<BrowserRouter>
 				<Header />
-				<Switch>
-					{ routes }
-				</Switch>
+				<div className="App_content">
+					<Switch>
+						{ routes }
+					</Switch>
+				</div>
 				<Footer />
 			</BrowserRouter>
 		</div>

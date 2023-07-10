@@ -7,15 +7,17 @@ export const Footer: React.FC = () => {
 
 	return (
 		<footer className="Footer">
-			<div className="Footer_item">
-				<Trans i18nKey="footer.sourceCode">
-					<a href="https://github.com/SimonBrandner/personal-website">Source code</a> on GitHub
-				</Trans>
-			</div>
-			<div className="Footer_item">
-				<Trans i18nKey="footer.icons">
-					Uses <a href="https://github.com/google/material-design-icons">Material design icons</a>
-				</Trans>
+			<div className="Footer_content">
+				<div className="Footer_item">
+					<Trans i18nKey="footer.sourceCode">
+						<a href="https://github.com/SimonBrandner/personal-website">Source code</a> on GitHub
+					</Trans>
+				</div>
+				<div className="Footer_item">
+					<Trans i18nKey="footer.icons">
+						Uses <a href="https://github.com/google/material-design-icons">Material design icons</a>
+					</Trans>
+				</div>
 			</div>
 		</footer>
 	);

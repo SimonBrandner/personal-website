@@ -5,7 +5,7 @@ import { ThemeSwitcher } from "./ThemeSwitcher";
 import { Routes } from "../Routes";
 import { withRouter } from "react-router-dom";
 import { LanguageSwitcher } from "./LanguageSwitcher";
-import { Trans, useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 export const Header = withRouter(({ location, history }) => {
 	const { t } = useTranslation();
@@ -23,26 +23,28 @@ export const Header = withRouter(({ location, history }) => {
 	};
 
 	return (
-		<div className="Header">
-			<div className="Header_title">
-				<div className="Header_name" onClick={onNameClick}>
-					Šimon Brander
+		<nav className="Header">
+			<div className="Header_content">
+				<div className="Header_title">
+					<div className="Header_name" onClick={onNameClick}>
+						Šimon Brander
+					</div>
+					<div className="Header_sub">
+						Homo sapiens sapiens
+					</div>
 				</div>
-				<div className="Header_sub">
-					Homo sapiens sapiens
+				<div className="Header_menu">
+					<div className="Header_menu_items">
+						{ Routes.map((route) => (
+							<HeaderItem key={route.paths[0]} paths={route.paths} label={t(route.label)} />
+						)) }
+					</div>
+					<div className="Header_menu_buttons">
+						<ThemeSwitcher />
+						<LanguageSwitcher />
+					</div>
 				</div>
 			</div>
-			<div className="Header_menu">
-				<div className="Header_menu_items">
-					{ Routes.map((route) => (
-						<HeaderItem key={route.paths[0]} paths={route.paths} label={t(route.label)} />
-					)) }
-				</div>
-				<div className="Header_menu_buttons">
-					<ThemeSwitcher />
-					<LanguageSwitcher />
-				</div>
-			</div>
-		</div>
+		</nav>
 	);
 });
