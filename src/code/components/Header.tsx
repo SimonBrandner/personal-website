@@ -29,9 +29,7 @@ export const Header = withRouter(({ location, history }) => {
 					Šimon Brander
 				</div>
 				<div className="Header_sub">
-					<Trans i18nKey="header.subtitle">
-						A student and a programmer
-					</Trans>
+					Homo sapiens sapiens
 				</div>
 			</div>
 			<div className="Header_menu">
