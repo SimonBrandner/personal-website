@@ -12,7 +12,7 @@
 	"cv.generalSkills": "General Skills",
 	"cv.github": "I have been contributing to open source projects on GitHub and putting my work there. See a list of all my&nbsp;<1>pull requests</1> and my&nbsp;<3>profile</3>.",
 	"cv.highSchoolThesis": "The Usage of the Matrix Protocol for Video Calls",
-	"cv.highSchoolThesisDescription": "I am writing my high-school graduation thesis about The Usage of the Matrix Protocol for Video Calls (Využití protokolu Matrix pro videohovory). The&nbsp;<1>source code</1> is hosted on GitHub and so is the&nbsp;<3>PDF</3>.",
+	"cv.highSchoolThesisDescription": "I am writing my high-school graduation thesis about The Usage of the Matrix Protocol for Video Calls (Využití protokolu Matrix pro videohovory). The <1>source code</1> is hosted on GitHub and so is the <3>PDF</3>.",
 	"cv.implementedMSC2285": "Implemented MSC2285: Private read receipts ",
 	"cv.implementedMSC3827": "Implemented MSC3827: Filtering of <1>/publicRooms</1> by room type",
 	"cv.intermediate": "intermediate",
