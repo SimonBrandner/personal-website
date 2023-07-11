@@ -2,24 +2,26 @@ import "../../scss/components/Header.scss";
 import React, { useEffect } from "react";
 import { HeaderItem } from "./HeaderItem";
 import { ThemeSwitcher } from "./ThemeSwitcher";
-import { Routes } from "../Routes";
-import { withRouter } from "react-router-dom";
+import { RouteList } from "../Routes";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { useTranslation } from "react-i18next";
+import { useLocation, useNavigate } from "react-router-dom";
 
-export const Header = withRouter(({ location, history }) => {
+export const Header = () => {
 	const { t } = useTranslation();
+	const navigate = useNavigate();
+	const location = useLocation();
 
 	useEffect(() => {
-		const title = Routes.find((r) => r.paths.find((p) => p === location.pathname))?.label;
+		const title = RouteList.find((r) => r.paths.find((p) => p === location.pathname))?.label;
 		if (!title) return;
 
 		document.title = `${t(title)} | Šimon Brandner`;
 	}, [location]);
 
 	const onNameClick = (): void => {
-		const defaultRoute = Routes.find((route) => route.default)?.paths;
-		if (defaultRoute) history.push(defaultRoute[0]);
+		const defaultRoute = RouteList.find((route) => route.default)?.paths;
+		if (defaultRoute) navigate(defaultRoute[0]);
 	};
 
 	return (
@@ -33,7 +35,7 @@ export const Header = withRouter(({ location, history }) => {
 				</div>
 				<div className="Header_menu">
 					<div className="Header_menu_items">
-						{Routes.map((route) => (
+						{RouteList.map((route) => (
 							<HeaderItem key={route.paths[0]} paths={route.paths} label={t(route.label)} />
 						))}
 					</div>
@@ -45,4 +47,4 @@ export const Header = withRouter(({ location, history }) => {
 			</div>
 		</nav>
 	);
-});
+};

@@ -11,7 +11,7 @@ export interface IRoute {
 	default?: boolean;
 }
 
-export const Routes: IRoute[] = [
+export const RouteList: IRoute[] = [
 	{
 		// t("header.home", "Home")
 		label: "header.home",

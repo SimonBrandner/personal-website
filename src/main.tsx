@@ -1,5 +1,6 @@
 import React, { Suspense } from "react";
 import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import "./index.scss";
 import { App } from "./code/App";
 import { ThemeStore } from "./code/stores/ThemeStore";
@@ -22,11 +23,12 @@ i18n
 		},
 	});
 
-ReactDOM.render(
+const domNode = document.getElementById("root")!;
+const root = createRoot(domNode);
+root.render(
 	<React.StrictMode>
 		<Suspense fallback="loading">
 			<App />
 		</Suspense>
 	</React.StrictMode>,
-	document.getElementById("root"),
 );
