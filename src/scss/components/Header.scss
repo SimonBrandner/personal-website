@@ -4,15 +4,15 @@
 	position: fixed;
 	width: 100%;
 
-	background-color: var(--secondary-background-color);
-
 	padding: 1rem 0;
 	height: min-content;
 
 	display: flex;
 	justify-content: center;
 
-	box-shadow: 0 0 3rem 2rem var(--secondary-background-color);
+	background-color: var(--secondary-background-color);
+
+	box-shadow: 0 0 1rem 1rem var(--secondary-background-color);
 
 	.Header_content {
 		display: flex;
