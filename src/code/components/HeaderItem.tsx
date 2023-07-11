@@ -1,6 +1,7 @@
+import classNames from "classnames";
 import "../../scss/components/HeaderItem.scss";
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 interface IProps {
 	label: string;
@@ -10,9 +11,9 @@ interface IProps {
 export const HeaderItem: React.FC<IProps> = ({ label, paths }) => {
 	return (
 		<NavLink
-			className="HeaderItem"
-			activeClassName="HeaderItem_active"
-			isActive={(match, location) => Boolean(paths.find((p) => p === location?.pathname))}
+			className={({ isActive }) => {
+				return classNames("HeaderItem", { HeaderItem_active: isActive });
+			}}
 			to={paths[0]}
 		>
 			{label}
