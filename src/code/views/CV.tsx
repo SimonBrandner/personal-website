@@ -149,7 +149,7 @@ export const CV: React.FC = () => {
 									href="https://github.com/SimonBrandner/RocnikovaPrace-MatrixRTC"
 								>
 									source code
-								</a>{" "}
+								</a> 
 								is hosted on GitHub and so is the
 								<a
 									rel="noreferrer noopener"
@@ -168,13 +168,13 @@ export const CV: React.FC = () => {
 						<p>
 							<Trans i18nKey="cv.github">
 								I have been contributing to open source projects on GitHub and putting my work there. See a list of all
-								my&nbsp;
+								my 
 								<a rel="noreferrer noopener" href="https://github.com/search?q=is%3Apr+author%3ASimonBrandner">
 									pull requests
-								</a>{" "}
-								and my&nbsp;
+								</a> 
+								and 
 								<a rel="noreferrer noopener" href="https://github.com/SimonBrandner/">
-									profile
+									my profile
 								</a>
 								.
 							</Trans>
@@ -184,7 +184,7 @@ export const CV: React.FC = () => {
 						<ul>
 							<li>
 								<Trans i18nKey="cv.msc3401">
-									Wrote parts of&nbsp;
+									Wrote parts of 
 									<a href="https://github.com/matrix-org/matrix-spec-proposals/pull/3401" rel="noreferrer noopener">
 										MSC3401: Native Group VoIP Signalling
 									</a>
@@ -192,7 +192,7 @@ export const CV: React.FC = () => {
 							</li>
 							<li>
 								<Trans i18nKey="cv.msc3898">
-									Wrote parts of&nbsp;
+									Wrote parts of 
 									<a href="https://github.com/matrix-org/matrix-spec-proposals/pull/3898" rel="noreferrer noopener">
 										MSC3898: Native Matrix VoIP signalling for cascaded foci (SFUs, MCUs...)
 									</a>
@@ -200,7 +200,7 @@ export const CV: React.FC = () => {
 							</li>
 							<li>
 								<Trans i18nKey="cv.mscOthers">
-									Wrote&nbsp;
+									Wrote 
 									<a
 										href={
 											"https://github.com/search?q=is%3Apr+author%3ASimonBrandner" +
@@ -214,7 +214,7 @@ export const CV: React.FC = () => {
 							</li>
 							<li>
 								<Trans i18nKey="cv.msc2285">
-									Rewrote&nbsp;
+									Rewrote 
 									<a href="https://github.com/matrix-org/matrix-spec-proposals/pull/2285" rel="noreferrer noopener">
 										MSC2285: Private read receipts
 									</a>
@@ -222,7 +222,7 @@ export const CV: React.FC = () => {
 							</li>
 							<li>
 								<Trans i18nKey="cv.msc3827">
-									Wrote&nbsp;
+									Wrote 
 									<a href="https://github.com/matrix-org/matrix-spec-proposals/pull/3827" rel="noreferrer noopener">
 										MSC3827: Filtering of <code>/publicRooms</code> by room type
 									</a>
@@ -230,7 +230,7 @@ export const CV: React.FC = () => {
 							</li>
 							<li>
 								<Trans i18nKey="cv.msc3786">
-									Wrote&nbsp;
+									Wrote 
 									<a href="https://github.com/matrix-org/matrix-spec-proposals/pull/3786" rel="noreferrer noopener">
 										MSC3786: Add a default push rule to ignore <code>m.room.server_acl</code> events
 									</a>
@@ -238,7 +238,7 @@ export const CV: React.FC = () => {
 							</li>
 							<li>
 								<Trans i18nKey="cv.msc3985">
-									Wrote&nbsp;
+									Wrote 
 									<a href="https://github.com/matrix-org/matrix-spec-proposals/pull/3985" rel="noreferrer noopener">
 										MSC3985: Break-out rooms
 									</a>
