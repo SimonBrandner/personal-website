@@ -150,7 +150,7 @@ export const CV: React.FC = () => {
 								>
 									source code
 								</a> 
-								is hosted on GitHub and so is the
+								is hosted on GitHub and so is the 
 								<a
 									rel="noreferrer noopener"
 									// eslint-disable-next-line max-len
