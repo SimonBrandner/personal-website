@@ -7,7 +7,7 @@ export const Contact: React.FC = () => {
 	return (
 		<View className="Contact">
 			<React.Fragment>
-				<ContactLink className="matrix" link="https://matrix.to/#/@simonb:element.io" label="Matrix" />
+				<ContactLink className="matrix" link="https://matrix.to/#/@simon.brandner:envs.net" label="Matrix" />
 				<ContactLink className="email" link="mailto:simon.bra.ag@gmail.com" label="Email" />
 				<ContactLink className="github" link="https://github.com/SimonBrandner" label="GitHub" />
 				<ContactLink className="mastodon" link="https://mastodon.online/@SimonBrandner" rel="me" label="Mastodon" />
