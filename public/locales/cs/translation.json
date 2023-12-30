@@ -59,6 +59,7 @@
 	"cv.technologies": "Technologie",
 	"cv.theses": "Práce",
 	"cv.trayIcon": "Ikona v systémové liště",
+	"cv.tuxedoMonochromeFix": "Spravení bugu, který způsoboval, že monochromatická LED zařízení nefungovala",
 	"cv.vectorGraphicsEditors": "Vektorové grafické editory: Inkscape, Figma ",
 	"cv.videoEditors": "Editory videa: DaVinci Resolve ",
 	"cv.voipFeatures": "Implementace nových VoIP funkcí",

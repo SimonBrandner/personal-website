@@ -180,7 +180,16 @@ export const CV: React.FC = () => {
 							</Trans>
 						</p>
 					</CVPart>
-					<CVPart name="Matrix" from={t("cv.november", "November") + " 2020"}>
+					<CVPart name="Tuxedo-rs" from={t("cv.december", "December") + " 2023"}>
+						<ul>
+							<li>
+								<Trans i18nKey="cv.tuxedoMonochromeFix">
+									Fixed a bug which would cause monochrome LED devices not to work
+								</Trans>
+							</li>
+						</ul>
+					</CVPart>
+					<CVPart name="Matrix" from={t("cv.november", "November") + " 2020"} to={t("cv.december", "December") + " 2023"}>
 						<ul>
 							<li>
 								<Trans i18nKey="cv.msc3401">
@@ -246,7 +255,7 @@ export const CV: React.FC = () => {
 							</li>
 						</ul>
 					</CVPart>
-					<CVPart name="Element Web/Desktop" from={t("cv.november", "November") + " 2020"}>
+					<CVPart name="Element Web/Desktop" from={t("cv.november", "November") + " 2020"} to={t("cv.december", "December") + " 2023"}>
 						<ul>
 							<li>
 								<Trans i18nKey="cv.rewroteVoipStack">
@@ -264,7 +273,7 @@ export const CV: React.FC = () => {
 							</li>
 						</ul>
 					</CVPart>
-					<CVPart name="Element Call" from={t("cv.august", "August") + " 2021"}>
+					<CVPart name="Element Call" from={t("cv.august", "August") + " 2021"} to={t("cv.december", "December") + " 2023"}>
 						<ul>
 							<li>
 								<Trans i18nKey="cv.1-1callLogic">Implemented some of the underlying matrix-js-sdk 1:1 call logic</Trans>
@@ -277,7 +286,7 @@ export const CV: React.FC = () => {
 							</li>
 						</ul>
 					</CVPart>
-					<CVPart name="Waterfall" from={t("cv.august", "August") + " 2022"}>
+					<CVPart name="Waterfall" from={t("cv.august", "August") + " 2022"} to={t("cv.december", "December") + " 2023"}>
 						<ul>
 							<li>
 								<Trans i18nKey="cv.waterfallConnectingToClients">
@@ -289,7 +298,7 @@ export const CV: React.FC = () => {
 							</li>
 						</ul>
 					</CVPart>
-					<CVPart name="Synapse" from={t("cv.july", "July") + " 2021"}>
+					<CVPart name="Synapse" from={t("cv.july", "July") + " 2021"} to={t("cv.december", "December") + " 2023"}>
 						<ul>
 							<li>
 								<Trans i18nKey="cv.implementedMSC2285">Implemented MSC2285: Private read receipts</Trans>
