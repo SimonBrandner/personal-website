@@ -59,6 +59,7 @@
 	"cv.technologies": "Technologies",
 	"cv.theses": "Theses",
 	"cv.trayIcon": "System tray icon",
+	"cv.tuxedoMonochromeFix": "Fixed a bug which would cause monochrome LED devices not to work",
 	"cv.vectorGraphicsEditors": "Vector graphics editors: Inkscape, Figma ",
 	"cv.videoEditors": "Video editors: DaVinci Resolve ",
 	"cv.voipFeatures": "Implemented new VoIP features",

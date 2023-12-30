@@ -180,6 +180,15 @@ export const CV: React.FC = () => {
 							</Trans>
 						</p>
 					</CVPart>
+					<CVPart name="Tuxedo-rs" from={t("cv.december", "December") + " 2023"}>
+						<ul>
+							<li>
+								<Trans i18nKey="cv.tuxedoMonochromeFix">
+									Fixed a bug which would cause monochrome LED devices not to work
+								</Trans>
+							</li>
+						</ul>
+					</CVPart>
 					<CVPart name="Matrix" from={t("cv.november", "November") + " 2020"} to={t("cv.december", "December") + " 2023"}>
 						<ul>
 							<li>
