@@ -108,7 +108,7 @@ export const CV: React.FC = () => {
 					</CVPart>
 				</CVSection>
 				<CVSection name={t("cv.workExperiences", "Work Experiences")}>
-					<CVPart name={t("cv.elementInternship", "Element Internship")} from={t("cv.may", "May") + " 2022"}>
+					<CVPart name={t("cv.elementInternship", "Element Internship")} from={t("cv.may", "May") + " 2022"} to={t("cv.december", "December") + " 2023"}>
 						<ul>
 							<li>
 								<Trans i18nKey="cv.workingOnElementWebDesktop">Working on Element Web/Desktop</Trans>
