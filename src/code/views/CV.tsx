@@ -138,6 +138,7 @@ export const CV: React.FC = () => {
 					<CVPart
 						name={t("cv.highSchoolThesis", "The Usage of the Matrix Protocol for Video Calls")}
 						from={t("cv.march", "March") + " 2023"}
+						to={t("cv.February", "February") + " 2024"}
 					>
 						<p>
 							<Trans i18nKey="cv.highSchoolThesisDescription">
