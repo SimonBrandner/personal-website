@@ -19,23 +19,16 @@
 	.Header_content {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		width: min(800px, 95%);
 
 		.Header_title {
-			.Header_name {
-				width: max-content;
+			width: max-content;
 
-				font-size: 1.7rem;
-				font-weight: bold;
+			font-size: 1.7rem;
+			font-weight: bold;
 
-				cursor: pointer;
-			}
-
-			.Header_sub {
-				width: max-content;
-
-				color: var(--secondary-foreground-color);
-			}
+			cursor: pointer;
 		}
 
 		.Header_menu {
