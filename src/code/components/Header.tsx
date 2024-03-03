@@ -29,9 +29,8 @@ export const Header = () => {
 			<div className="Header_content">
 				<div className="Header_title">
 					<div className="Header_name" onClick={onNameClick}>
-						Šimon Brander
+						Šimon Brandner
 					</div>
-					<div className="Header_sub">Homo sapiens sapiens</div>
 				</div>
 				<div className="Header_menu">
 					<div className="Header_menu_items">

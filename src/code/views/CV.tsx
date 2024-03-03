@@ -138,6 +138,7 @@ export const CV: React.FC = () => {
 					<CVPart
 						name={t("cv.highSchoolThesis", "The Usage of the Matrix Protocol for Video Calls")}
 						from={t("cv.march", "March") + " 2023"}
+						to={t("cv.February", "February") + " 2024"}
 					>
 						<p>
 							<Trans i18nKey="cv.highSchoolThesisDescription">
@@ -156,7 +157,15 @@ export const CV: React.FC = () => {
 									// eslint-disable-next-line max-len
 									href="https://nightly.link/SimonBrandner/RocnikovaPrace-MatrixRTC/workflows/build.yaml/stable/matrixRTC.pdf.zip"
 								>
-									PDF
+									thesis text
+								</a> 
+								and the 
+								<a
+									rel="noreferrer noopener"
+									// eslint-disable-next-line max-len
+									href="https://nightly.link/SimonBrandner/RocnikovaPrace-MatrixRTC/workflows/build.yaml/stable/matrixRTCPresentation.pdf.zip"
+								>
+									thesis presentation
 								</a>
 								.
 							</Trans>
@@ -180,7 +189,7 @@ export const CV: React.FC = () => {
 							</Trans>
 						</p>
 					</CVPart>
-					<CVPart name="Tuxedo-rs" from={t("cv.december", "December") + " 2023"}>
+					<CVPart name="Tuxedo-rs" from={t("cv.december", "December") + " 2023"} to={t("cv.January", "January") + " 2024"}>
 						<ul>
 							<li>
 								<Trans i18nKey="cv.tuxedoMonochromeFix">
