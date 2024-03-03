@@ -14,7 +14,7 @@
 	"cv.generalSkills": "Obecné",
 	"cv.github": "Už delší dobu přispívám do několika projektů na GitHubu a dávám na něj své projekty. Viz seznam všech mých <1>pull requestů</1> a <3>můj profil</3>.",
 	"cv.highSchoolThesis": "Využití protokolu Matrix pro videohovory",
-	"cv.highSchoolThesisDescription": "Svou maturitní práci píšu o Využití protokolu Matrix pro videohovory. <1>Zdrojový kód</1> je na GitHubu stejně jako <3>text práce</3> a <5>prezentace práce</5>.",
+	"cv.highSchoolThesisDescription": "Svou ročníkovou práci jsem psal o Využití protokolu Matrix pro videohovory. <1>Zdrojový kód</1> je na GitHubu stejně jako <3>text práce</3> a <5>prezentace práce</5>.",
 	"cv.implementedMSC2285": "Implementace MSC2285: Private read receipts",
 	"cv.implementedMSC3827": "Implementace MSC3827: Filtering of <1>/publicRooms</1> by room type",
 	"cv.intermediate": "pokročilý",
