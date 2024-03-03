@@ -136,13 +136,13 @@ export const CV: React.FC = () => {
 				</CVSection>
 				<CVSection name={t("cv.theses", "Theses")}>
 					<CVPart
-						name={t("cv.highSchoolThesis", "The Usage of the Matrix Protocol for Video Calls")}
+						name={t("cv.highSchoolThesis", "Using the Matrix Protocol for Video Calls")}
 						from={t("cv.march", "March") + " 2023"}
 						to={t("cv.February", "February") + " 2024"}
 					>
 						<p>
 							<Trans i18nKey="cv.highSchoolThesisDescription">
-								I am writing my high-school graduation thesis about The Usage of the Matrix Protocol for Video Calls
+								I am writing my high-school graduation thesis about Using the Matrix Protocol for Video Calls
 								(Využití protokolu Matrix pro videohovory). The 
 								<a
 									rel="noreferrer noopener"
