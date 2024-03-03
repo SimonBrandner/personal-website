@@ -189,7 +189,7 @@ export const CV: React.FC = () => {
 							</Trans>
 						</p>
 					</CVPart>
-					<CVPart name="Tuxedo-rs" from={t("cv.december", "December") + " 2023"}>
+					<CVPart name="Tuxedo-rs" from={t("cv.december", "December") + " 2023"} to={t("cv.January", "January") + " 2024"}>
 						<ul>
 							<li>
 								<Trans i18nKey="cv.tuxedoMonochromeFix">
