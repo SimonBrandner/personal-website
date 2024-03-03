@@ -142,7 +142,7 @@ export const CV: React.FC = () => {
 					>
 						<p>
 							<Trans i18nKey="cv.highSchoolThesisDescription">
-								I am writing my high-school graduation thesis about Using the Matrix Protocol for Video Calls
+								I wrote my high-school thesis about Using the Matrix Protocol for Video Calls
 								(Využití protokolu Matrix pro videohovory). The 
 								<a
 									rel="noreferrer noopener"
