@@ -156,7 +156,15 @@ export const CV: React.FC = () => {
 									// eslint-disable-next-line max-len
 									href="https://nightly.link/SimonBrandner/RocnikovaPrace-MatrixRTC/workflows/build.yaml/stable/matrixRTC.pdf.zip"
 								>
-									PDF
+									thesis text
+								</a> 
+								and the 
+								<a
+									rel="noreferrer noopener"
+									// eslint-disable-next-line max-len
+									href="https://nightly.link/SimonBrandner/RocnikovaPrace-MatrixRTC/workflows/build.yaml/stable/matrixRTCPresentation.pdf.zip"
+								>
+									thesis presentation
 								</a>
 								.
 							</Trans>
