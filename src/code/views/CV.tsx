@@ -15,7 +15,7 @@ export const CV: React.FC = () => {
 					<CVPart name={t("cv.languages", "Languages")}>
 						<ul>
 							<li>
-								<Trans i18nKey="cv.english">English — C1</Trans>
+								<Trans i18nKey="cv.english">English — C2</Trans>
 							</li>
 							<li>
 								<Trans i18nKey="cv.spanish">Spanish — A2</Trans>
@@ -108,7 +108,11 @@ export const CV: React.FC = () => {
 					</CVPart>
 				</CVSection>
 				<CVSection name={t("cv.workExperiences", "Work Experiences")}>
-					<CVPart name={t("cv.elementInternship", "Element Internship")} from={t("cv.may", "May") + " 2022"} to={t("cv.december", "December") + " 2023"}>
+					<CVPart
+						name={t("cv.elementInternship", "Element Internship")}
+						from={t("cv.may", "May") + " 2022"}
+						to={t("cv.december", "December") + " 2023"}
+					>
 						<ul>
 							<li>
 								<Trans i18nKey="cv.workingOnElementWebDesktop">Working on Element Web/Desktop</Trans>
@@ -142,24 +146,24 @@ export const CV: React.FC = () => {
 					>
 						<p>
 							<Trans i18nKey="cv.highSchoolThesisDescription">
-								I wrote my high-school thesis about Using the Matrix Protocol for Video Calls
-								(Využití protokolu Matrix pro videohovory). The 
+								I wrote my high-school thesis about Using the Matrix Protocol for Video Calls (Využití protokolu Matrix
+								pro videohovory). The
 								<a
 									rel="noreferrer noopener"
 									// eslint-disable-next-line max-len
 									href="https://github.com/SimonBrandner/RocnikovaPrace-MatrixRTC"
 								>
 									source code
-								</a> 
-								is hosted on GitHub and so is the 
+								</a>
+								is hosted on GitHub and so is the
 								<a
 									rel="noreferrer noopener"
 									// eslint-disable-next-line max-len
 									href="https://nightly.link/SimonBrandner/RocnikovaPrace-MatrixRTC/workflows/build.yaml/stable/matrixRTC.pdf.zip"
 								>
 									thesis text
-								</a> 
-								and the 
+								</a>
+								and the
 								<a
 									rel="noreferrer noopener"
 									// eslint-disable-next-line max-len
@@ -177,11 +181,11 @@ export const CV: React.FC = () => {
 						<p>
 							<Trans i18nKey="cv.github">
 								I have been contributing to open source projects on GitHub and putting my work there. See a list of all
-								my 
+								my
 								<a rel="noreferrer noopener" href="https://github.com/search?q=is%3Apr+author%3ASimonBrandner">
 									pull requests
-								</a> 
-								and 
+								</a>
+								and
 								<a rel="noreferrer noopener" href="https://github.com/SimonBrandner/">
 									my profile
 								</a>
@@ -189,7 +193,11 @@ export const CV: React.FC = () => {
 							</Trans>
 						</p>
 					</CVPart>
-					<CVPart name="Tuxedo-rs" from={t("cv.december", "December") + " 2023"} to={t("cv.January", "January") + " 2024"}>
+					<CVPart
+						name="Tuxedo-rs"
+						from={t("cv.december", "December") + " 2023"}
+						to={t("cv.January", "January") + " 2024"}
+					>
 						<ul>
 							<li>
 								<Trans i18nKey="cv.tuxedoMonochromeFix">
@@ -198,11 +206,15 @@ export const CV: React.FC = () => {
 							</li>
 						</ul>
 					</CVPart>
-					<CVPart name="Matrix" from={t("cv.november", "November") + " 2020"} to={t("cv.december", "December") + " 2023"}>
+					<CVPart
+						name="Matrix"
+						from={t("cv.november", "November") + " 2020"}
+						to={t("cv.december", "December") + " 2023"}
+					>
 						<ul>
 							<li>
 								<Trans i18nKey="cv.msc3401">
-									Wrote parts of 
+									Wrote parts of
 									<a href="https://github.com/matrix-org/matrix-spec-proposals/pull/3401" rel="noreferrer noopener">
 										MSC3401: Native Group VoIP Signalling
 									</a>
@@ -210,7 +222,7 @@ export const CV: React.FC = () => {
 							</li>
 							<li>
 								<Trans i18nKey="cv.msc3898">
-									Wrote parts of 
+									Wrote parts of
 									<a href="https://github.com/matrix-org/matrix-spec-proposals/pull/3898" rel="noreferrer noopener">
 										MSC3898: Native Matrix VoIP signalling for cascaded foci (SFUs, MCUs...)
 									</a>
@@ -218,7 +230,7 @@ export const CV: React.FC = () => {
 							</li>
 							<li>
 								<Trans i18nKey="cv.mscOthers">
-									Wrote 
+									Wrote
 									<a
 										href={
 											"https://github.com/search?q=is%3Apr+author%3ASimonBrandner" +
@@ -232,7 +244,7 @@ export const CV: React.FC = () => {
 							</li>
 							<li>
 								<Trans i18nKey="cv.msc2285">
-									Rewrote 
+									Rewrote
 									<a href="https://github.com/matrix-org/matrix-spec-proposals/pull/2285" rel="noreferrer noopener">
 										MSC2285: Private read receipts
 									</a>
@@ -240,7 +252,7 @@ export const CV: React.FC = () => {
 							</li>
 							<li>
 								<Trans i18nKey="cv.msc3827">
-									Wrote 
+									Wrote
 									<a href="https://github.com/matrix-org/matrix-spec-proposals/pull/3827" rel="noreferrer noopener">
 										MSC3827: Filtering of <code>/publicRooms</code> by room type
 									</a>
@@ -248,7 +260,7 @@ export const CV: React.FC = () => {
 							</li>
 							<li>
 								<Trans i18nKey="cv.msc3786">
-									Wrote 
+									Wrote
 									<a href="https://github.com/matrix-org/matrix-spec-proposals/pull/3786" rel="noreferrer noopener">
 										MSC3786: Add a default push rule to ignore <code>m.room.server_acl</code> events
 									</a>
@@ -256,7 +268,7 @@ export const CV: React.FC = () => {
 							</li>
 							<li>
 								<Trans i18nKey="cv.msc3985">
-									Wrote 
+									Wrote
 									<a href="https://github.com/matrix-org/matrix-spec-proposals/pull/3985" rel="noreferrer noopener">
 										MSC3985: Break-out rooms
 									</a>
@@ -264,7 +276,11 @@ export const CV: React.FC = () => {
 							</li>
 						</ul>
 					</CVPart>
-					<CVPart name="Element Web/Desktop" from={t("cv.november", "November") + " 2020"} to={t("cv.december", "December") + " 2023"}>
+					<CVPart
+						name="Element Web/Desktop"
+						from={t("cv.november", "November") + " 2020"}
+						to={t("cv.december", "December") + " 2023"}
+					>
 						<ul>
 							<li>
 								<Trans i18nKey="cv.rewroteVoipStack">
@@ -282,7 +298,11 @@ export const CV: React.FC = () => {
 							</li>
 						</ul>
 					</CVPart>
-					<CVPart name="Element Call" from={t("cv.august", "August") + " 2021"} to={t("cv.december", "December") + " 2023"}>
+					<CVPart
+						name="Element Call"
+						from={t("cv.august", "August") + " 2021"}
+						to={t("cv.december", "December") + " 2023"}
+					>
 						<ul>
 							<li>
 								<Trans i18nKey="cv.1-1callLogic">Implemented some of the underlying matrix-js-sdk 1:1 call logic</Trans>
@@ -295,7 +315,11 @@ export const CV: React.FC = () => {
 							</li>
 						</ul>
 					</CVPart>
-					<CVPart name="Waterfall" from={t("cv.august", "August") + " 2022"} to={t("cv.december", "December") + " 2023"}>
+					<CVPart
+						name="Waterfall"
+						from={t("cv.august", "August") + " 2022"}
+						to={t("cv.december", "December") + " 2023"}
+					>
 						<ul>
 							<li>
 								<Trans i18nKey="cv.waterfallConnectingToClients">
