@@ -15,7 +15,7 @@ export const CV: React.FC = () => {
 					<CVPart name={t("cv.languages", "Languages")}>
 						<ul>
 							<li>
-								<Trans i18nKey="cv.english">English — C2</Trans>
+								<Trans i18nKey="cv.english">English — C2 (Cambridge English)</Trans>
 							</li>
 							<li>
 								<Trans i18nKey="cv.spanish">Spanish — A2</Trans>
@@ -70,6 +70,9 @@ export const CV: React.FC = () => {
 								Go — <Trans i18nKey="cv.intermediate">intermediate</Trans>
 							</li>
 							<li>
+								Rust — <Trans i18nKey="cv.elementary">elementary</Trans>
+							</li>
+							<li>
 								C++ — <Trans i18nKey="cv.elementary">elementary</Trans>
 							</li>
 						</ul>
@@ -107,33 +110,20 @@ export const CV: React.FC = () => {
 						</ul>
 					</CVPart>
 				</CVSection>
-				<CVSection name={t("cv.workExperiences", "Work Experiences")}>
-					<CVPart
-						name={t("cv.elementInternship", "Element Internship")}
-						from={t("cv.may", "May") + " 2022"}
-						to={t("cv.december", "December") + " 2023"}
-					>
+				<CVSection name={t("cv.education", "Education")}>
+					<CVPart name={t("cv.gfk", "Gymnázium Františka Křižíka (graduation)")} from={t("cv.september", "September") + " 2016"} to={t("cv.june", "June") + " 2024"}>
 						<ul>
 							<li>
-								<Trans i18nKey="cv.workingOnElementWebDesktop">Working on Element Web/Desktop</Trans>
+								<Trans>English language — Cambridge English C2</Trans>
 							</li>
 							<li>
-								<Trans i18nKey="cv.workingOnElementCall">Working on Element Call</Trans>
+								<Trans>Czech language and literature — 1</Trans>
 							</li>
 							<li>
-								<Trans i18nKey="cv.workingOnWaterfall">Working on Waterfall</Trans>
+								<Trans>Mathematics — 1</Trans>
 							</li>
 							<li>
-								<Trans i18nKey="cv.workingOnSpec">Working on the Matrix specification</Trans>
-							</li>
-							<li>
-								<Trans i18nKey="cv.workingOnOtherRelatedProjects">Occasionally working on other related projects</Trans>
-							</li>
-							<li>
-								<Trans i18nKey="cv.workingOnTheVoipTeam">Working on the VoIP team</Trans>
-							</li>
-							<li>
-								<Trans i18nKey="cv.mentoring">Mentoring colleagues</Trans>
+								<Trans>Physics — 1</Trans>
 							</li>
 						</ul>
 					</CVPart>
@@ -146,8 +136,8 @@ export const CV: React.FC = () => {
 					>
 						<p>
 							<Trans i18nKey="cv.highSchoolThesisDescription">
-								I wrote my high-school thesis about Using the Matrix Protocol for Video Calls (Využití protokolu Matrix
-								pro videohovory). The
+								I wrote my high-school thesis about Using the Matrix Protocol for Video Calls
+								(Využití protokolu Matrix pro videohovory). The
 								<a
 									rel="noreferrer noopener"
 									// eslint-disable-next-line max-len
@@ -176,8 +166,35 @@ export const CV: React.FC = () => {
 						</p>
 					</CVPart>
 				</CVSection>
+				<CVSection name={t("cv.workExperiences", "Work Experiences")}>
+					<CVPart name={t("cv.elementInternship", "Element Internship")} from={t("cv.may", "May") + " 2022"} to={t("cv.december", "December") + " 2023"}>
+						<ul>
+							<li>
+								<Trans i18nKey="cv.workingOnElementWebDesktop">Working on Element Web/Desktop</Trans>
+							</li>
+							<li>
+								<Trans i18nKey="cv.workingOnElementCall">Working on Element Call</Trans>
+							</li>
+							<li>
+								<Trans i18nKey="cv.workingOnWaterfall">Working on Waterfall</Trans>
+							</li>
+							<li>
+								<Trans i18nKey="cv.workingOnSpec">Working on the Matrix specification</Trans>
+							</li>
+							<li>
+								<Trans i18nKey="cv.workingOnOtherRelatedProjects">Occasionally working on other related projects</Trans>
+							</li>
+							<li>
+								<Trans i18nKey="cv.workingOnTheVoipTeam">Working on the VoIP team</Trans>
+							</li>
+							<li>
+								<Trans i18nKey="cv.mentoring">Mentoring colleagues</Trans>
+							</li>
+						</ul>
+					</CVPart>
+				</CVSection>
 				<CVSection name={t("cv.projects", "Projects")}>
-					<CVPart name="GitHub" from={t("cv.January", "January") + " 2019"}>
+					<CVPart name="GitHub">
 						<p>
 							<Trans i18nKey="cv.github">
 								I have been contributing to open source projects on GitHub and putting my work there. See a list of all
@@ -190,6 +207,13 @@ export const CV: React.FC = () => {
 									my profile
 								</a>
 								.
+							</Trans>
+						</p>
+					</CVPart>
+					<CVPart name="dotfiles">
+						<p>
+							<Trans i18nKey="cv.dotfiles">
+								<a href="https://github.com/SimonBrandner/dotfiles" rel="noreferrer noopener">dotfiles</a> is a repo containing my configuration files as well as info about my setup. I am currently running NixOS with a custom desktop environment built on top of Hyprland and Aylur's Gtk Shell.
 							</Trans>
 						</p>
 					</CVPart>
@@ -402,15 +426,6 @@ export const CV: React.FC = () => {
 						<p>
 							<Trans i18nKey="cv.yeelight">
 								The Yeelight C++ API is a library for controlling Yeelight bulbs using C++.
-							</Trans>
-						</p>
-					</CVPart>
-				</CVSection>
-				<CVSection name={t("cv.other", "Other")} last>
-					<CVPart name="dotfiles">
-						<p>
-							<Trans i18nKey="cv.dotfiles">
-								dotfiles is a repo containing my configuration files as well as info about my setup.
 							</Trans>
 						</p>
 					</CVPart>
