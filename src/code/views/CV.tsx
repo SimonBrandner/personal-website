@@ -136,8 +136,11 @@ export const CV: React.FC = () => {
 					>
 						<p>
 							<Trans i18nKey="cv.highSchoolThesisDescription">
-								I wrote my high-school thesis about Using the Matrix Protocol for Video Calls
-								(Využití protokolu Matrix pro videohovory). The
+								I wrote my high-school thesis about Using the Matrix Protocol for Video
+								Calls (Využití protokolu Matrix pro videohovory). I have taken part in the
+								<a rel="noreferrer noopener" href="https://www.soc.cz/">SPA (Students'
+								Professional Activities)</a> with the thesis and have won the second place
+								in the region round of the competition. The
 								<a
 									rel="noreferrer noopener"
 									// eslint-disable-next-line max-len
@@ -216,6 +219,19 @@ export const CV: React.FC = () => {
 								<a href="https://github.com/SimonBrandner/dotfiles" rel="noreferrer noopener">dotfiles</a> is a repo containing my configuration files as well as info about my setup. I am currently running NixOS with a custom desktop environment built on top of Hyprland and Aylur's Gtk Shell.
 							</Trans>
 						</p>
+					</CVPart>
+					<CVPart
+						name="hy3"
+						from={t("cv.june", "June") + " 2024"}
+						to={t("cv.june", "June") + " 2024"}
+					>
+						<ul>
+							<li>
+								<Trans i18nKey="cv.hy3visualDefects">
+									Fixed a bug where the tab bar would have visual defects after switching workspaces
+								</Trans>
+							</li>
+						</ul>
 					</CVPart>
 					<CVPart
 						name="Tuxedo-rs"
