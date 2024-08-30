@@ -86,7 +86,7 @@
 	"header.contact": "Kontakt",
 	"header.cv/projects": "CV/Projekty",
 	"header.home": "Domů",
-	"home.intro": "Ahoj! Jmenuji se Šimon Brandner, <1></1>jsem student a programátor.",
+	"home.intro": "Ahoj! Jmenuji se Šimon Brandner.<1/>Jsem student Otevřené informatiky na FEL ČVUT<1/>se zájmem o NixOS, Rust a FOSS software.",
 	"Mathematics — 1": "Matematika — 1",
 	"Physics — 1": "Fyzika — 1"
 }

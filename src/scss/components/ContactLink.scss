@@ -78,4 +78,8 @@
 	&.ContactLink_spotify::before {
 		mask-image: url("/src/icons/social/spotify.svg");
 	}
+
+	&.ContactLink_discord::before {
+		mask-image: url("/src/icons/social/discord.svg");
+	}
 }

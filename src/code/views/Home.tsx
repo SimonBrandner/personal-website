@@ -9,7 +9,11 @@ export const Home: React.FC = () => {
 	return (
 		<View className="Home">
 			<Trans i18nKey="home.intro">
-				Hello! My name is Šimon Brandner, <br />I am a student and a programmer.
+				Hello! My name is Šimon Brandner.
+				<br />
+				I am a computer science student at CTU FEE
+				<br />
+				interested in NixOS, Rust and FOSS software.
 			</Trans>
 		</View>
 	);
