@@ -111,7 +111,14 @@ export const CV: React.FC = () => {
 					</CVPart>
 				</CVSection>
 				<CVSection name={t("cv.education", "Education")}>
-					<CVPart name={t("cv.gfk", "Gymnázium Františka Křižíka (graduation)")} from={t("cv.september", "September") + " 2016"} to={t("cv.june", "June") + " 2024"}>
+					<CVPart name={t("cv.ctu", "Open informatics at CTU FEE")} from={t("cv.september", "September") + " 2024"}>
+						<div />
+					</CVPart>
+					<CVPart
+						name={t("cv.gfk", "Gymnázium Františka Křižíka (graduation)")}
+						from={t("cv.september", "September") + " 2016"}
+						to={t("cv.june", "June") + " 2024"}
+					>
 						<ul>
 							<li>
 								<Trans>English language — Cambridge English C2</Trans>
@@ -232,6 +239,17 @@ export const CV: React.FC = () => {
 								</Trans>
 							</li>
 						</ul>
+					</CVPart>
+					<CVPart
+						name="Discord NLP Bot"
+						from={t("cv.december", "December") + " 2023"}
+						to={t("cv.march", "March") + " 2024"}
+					>
+						<p>
+							<Trans i18nKey="cv.discordNlpBot">
+								A Discord Bot to perform Natural Language Processing (NLP) and related tasks.
+							</Trans>
+						</p>
 					</CVPart>
 					<CVPart
 						name="Tuxedo-rs"
