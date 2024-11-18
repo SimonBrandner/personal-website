@@ -70,7 +70,7 @@ export const CV: React.FC = () => {
 								Go — <Trans i18nKey="cv.intermediate">intermediate</Trans>
 							</li>
 							<li>
-								Rust — <Trans i18nKey="cv.elementary">elementary</Trans>
+								Rust — <Trans i18nKey="cv.intermediate">intermediate</Trans>
 							</li>
 							<li>
 								C++ — <Trans i18nKey="cv.elementary">elementary</Trans>
