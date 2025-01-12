@@ -203,6 +203,23 @@ export const CV: React.FC = () => {
 						</ul>
 					</CVPart>
 				</CVSection>
+				<CVSection name={t("cv.talks", "Talks")}>
+					<CVPart name="Cascaded Foci (Selective Forwarding Units) - FOSDEM 2023">
+						<p>
+							<Trans i18nKey="cv.fosdem2023foci">
+								During my internship at Element, I was part of a team that worked on cascaded selective forwarding
+								units. I presented our work on FOSDEM 2023 in the
+								<a
+									rel="noreferrer noopener"
+									href="https://archive.fosdem.org/2023/schedule/event/cascaded_selective_forwarding_units/"
+								>
+									Cascaded Foci (Selective Forwarding Units) talk
+								</a>
+								.
+							</Trans>
+						</p>
+					</CVPart>
+				</CVSection>
 				<CVSection name={t("cv.projects", "Projects")}>
 					<CVPart name="GitHub">
 						<p>
