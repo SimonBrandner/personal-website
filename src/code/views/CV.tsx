@@ -186,7 +186,7 @@ export const CV: React.FC = () => {
 						</p>
 					</CVPart>
 				</CVSection>
-				<CVSection name={t("cv.projects", "Projects")}>
+				<CVSection name={t("cv.projects", "Projects")} last>
 					<CVPart name="GitHub">
 						<p>
 							<Trans i18nKey="cv.github">
