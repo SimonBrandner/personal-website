@@ -11,7 +11,7 @@ export const CV: React.FC = () => {
 	return (
 		<View className="CV">
 			<React.Fragment>
-				<CVSection name={t("cv.generalSkills", "General Skills")}>
+				<CVSection name={t("cv.general", "General")}>
 					<CVPart name={t("cv.languages", "Languages")}>
 						<ul>
 							<li>
@@ -26,74 +26,24 @@ export const CV: React.FC = () => {
 						</ul>
 					</CVPart>
 				</CVSection>
-				<CVSection name={t("cv.programmingAndItSkills", "Programming and IT Skills")}>
-					<CVPart name={t("cv.general", "General")}>
-						<ul>
-							<li>
-								<Trans i18nKey="cv.wordProcessors">
-									Word processors: Google Docs, Microsoft Word, LibreOffice Writer
-								</Trans>
-							</li>
-							<li>
-								<Trans i18nKey="cv.spreadsheetEditors">
-									Spreadsheet editors: Google Sheets, Microsoft Excel, LibreOffice Calc
-								</Trans>
-							</li>
-							<li>
-								<Trans i18nKey="cv.presentationPrograms">
-									Presentation programs: Google Slides, Microsoft PowerPoint, LibreOffice Impress
-								</Trans>
-							</li>
-							<li>
-								<Trans i18nKey="cv.rasterGraphicsEditors">Raster graphics editors: GIMP, Krita, Affinity Photo</Trans>
-							</li>
-							<li>
-								<Trans i18nKey="cv.vectorGraphicsEditors">Vector graphics editors: Inkscape, Figma</Trans>
-							</li>
-							<li>
-								<Trans i18nKey="cv.videoEditors">Video editors: DaVinci Resolve</Trans>
-							</li>
-							<li>
-								<Trans i18nKey="cv.operatingSystems">Operating systems: Linux, Microsoft Windows</Trans>
-							</li>
-						</ul>
-					</CVPart>
+				<CVSection name={t("cv.csAndSe", "Computer science and software engineering")}>
 					<CVPart name={t("cv.programmingLanguages", "Programming Languages")}>
 						<ul>
-							<li>
-								JavaScript/TypeScript — <Trans i18nKey="cv.intermediate">intermediate</Trans>
-							</li>
-							<li>
-								Python — <Trans i18nKey="cv.intermediate">intermediate</Trans>
-							</li>
-							<li>
-								Go — <Trans i18nKey="cv.intermediate">intermediate</Trans>
-							</li>
-							<li>
-								Rust — <Trans i18nKey="cv.intermediate">intermediate</Trans>
-							</li>
-							<li>
-								C++ — <Trans i18nKey="cv.elementary">elementary</Trans>
-							</li>
+							<li>JavaScript and TypeScript</li>
+							<li>Python</li>
+							<li>Go</li>
+							<li>Rust</li>
+							<li>C++</li>
 						</ul>
 					</CVPart>
 					<CVPart name={t("cv.markupAndStyleSheetLanguages", "Markup and Style Sheet Languages")}>
 						<ul>
-							<li>
-								LaTeX — <Trans i18nKey="cv.intermediate"> intermediate</Trans>
-							</li>
-							<li>
-								Markdown — <Trans i18nKey="cv.intermediate">intermediate</Trans>
-							</li>
-							<li>
-								HTML — <Trans i18nKey="cv.intermediate">intermediate</Trans>
-							</li>
-							<li>
-								CSS/SCSS — <Trans i18nKey="cv.intermediate">intermediate</Trans>
-							</li>
-							<li>
-								QML — <Trans i18nKey="cv.elementary">elementary</Trans>
-							</li>
+							<li>LaTeX</li>
+							<li>Typst</li>
+							<li>Markdown</li>
+							<li>HTML</li>
+							<li>CSS/SCSS</li>
+							<li>QML</li>
 						</ul>
 					</CVPart>
 					<CVPart name={t("cv.technologies", "Technologies")}>
@@ -106,6 +56,17 @@ export const CV: React.FC = () => {
 							</li>
 							<li>
 								<Trans i18nKey="cv.gameEngines">Game engines</Trans>: Unreal Engine (Blueprints)
+							</li>
+						</ul>
+					</CVPart>
+					<CVPart name={t("cv.other", "Other")}>
+						<ul>
+							<li>
+								<Trans i18nKey="cv.operatingSystems">Linux - daily usage of Debian and NixOS</Trans>
+							</li>
+							<li>
+								<Trans i18nKey="cv.basicKnowledge">Basic knowledge of</Trans>: GIMP, Krita, DaVinci Resolve, Inkscape,
+								Figma, Affinity Photo, Microsoft Windows
 							</li>
 						</ul>
 					</CVPart>
@@ -143,11 +104,12 @@ export const CV: React.FC = () => {
 					>
 						<p>
 							<Trans i18nKey="cv.highSchoolThesisDescription">
-								I wrote my high-school thesis about Using the Matrix Protocol for Video
-								Calls (Využití protokolu Matrix pro videohovory). I have taken part in the
-								<a rel="noreferrer noopener" href="https://www.soc.cz/">SPA (Students'
-								Professional Activities)</a> with the thesis and have won the second place
-								in the region round of the competition. The
+								I wrote my high-school thesis about Using the Matrix Protocol for Video Calls (Využití protokolu Matrix
+								pro videohovory). I have taken part in the
+								<a rel="noreferrer noopener" href="https://www.soc.cz/">
+									SPA (Students' Professional Activities)
+								</a>
+								with the thesis and have won the second place in the region round of the competition. The
 								<a
 									rel="noreferrer noopener"
 									// eslint-disable-next-line max-len
@@ -177,7 +139,11 @@ export const CV: React.FC = () => {
 					</CVPart>
 				</CVSection>
 				<CVSection name={t("cv.workExperiences", "Work Experiences")}>
-					<CVPart name={t("cv.elementInternship", "Element Internship")} from={t("cv.may", "May") + " 2022"} to={t("cv.december", "December") + " 2023"}>
+					<CVPart
+						name={t("cv.elementInternship", "Element Internship")}
+						from={t("cv.may", "May") + " 2022"}
+						to={t("cv.december", "December") + " 2023"}
+					>
 						<ul>
 							<li>
 								<Trans i18nKey="cv.workingOnElementWebDesktop">Working on Element Web/Desktop</Trans>
@@ -220,7 +186,7 @@ export const CV: React.FC = () => {
 						</p>
 					</CVPart>
 				</CVSection>
-				<CVSection name={t("cv.projects", "Projects")}>
+				<CVSection name={t("cv.projects", "Projects")} last>
 					<CVPart name="GitHub">
 						<p>
 							<Trans i18nKey="cv.github">
@@ -240,15 +206,15 @@ export const CV: React.FC = () => {
 					<CVPart name="dotfiles">
 						<p>
 							<Trans i18nKey="cv.dotfiles">
-								<a href="https://github.com/SimonBrandner/dotfiles" rel="noreferrer noopener">dotfiles</a> is a repo containing my configuration files as well as info about my setup. I am currently running NixOS with a custom desktop environment built on top of Hyprland and Aylur's Gtk Shell.
+								<a href="https://github.com/SimonBrandner/dotfiles" rel="noreferrer noopener">
+									dotfiles
+								</a>{" "}
+								is a repo containing my configuration files as well as info about my setup. I am currently running NixOS
+								with a custom desktop environment built on top of Hyprland and Aylur's Gtk Shell.
 							</Trans>
 						</p>
 					</CVPart>
-					<CVPart
-						name="hy3"
-						from={t("cv.june", "June") + " 2024"}
-						to={t("cv.june", "June") + " 2024"}
-					>
+					<CVPart name="hy3" from={t("cv.june", "June") + " 2024"} to={t("cv.june", "June") + " 2024"}>
 						<ul>
 							<li>
 								<Trans i18nKey="cv.hy3visualDefects">
