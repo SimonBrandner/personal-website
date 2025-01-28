@@ -228,6 +228,13 @@ export const CV: React.FC = () => {
 							</Trans>
 						</p>
 					</CVPart>
+					<CVPart name="Oblichey" from={t("cv.june", "June") + " 2024"} to={t("cv.present", "Present")}>
+						<p>
+							<Trans i18nKey="cv.oblichey">
+								A facial authentication software for Linux built in Rust inspired by Howdy.
+							</Trans>
+						</p>
+					</CVPart>
 					<CVPart name="hy3" from={t("cv.june", "June") + " 2024"} to={t("cv.june", "June") + " 2024"}>
 						<ul>
 							<li>
