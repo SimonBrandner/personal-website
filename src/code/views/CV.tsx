@@ -138,6 +138,20 @@ export const CV: React.FC = () => {
 						</p>
 					</CVPart>
 				</CVSection>
+				<CVSection name={t("cv.universityProjects", "University projects")}>
+					<CVPart name={t("cv.gemCppTitle", "Implementation of Gaussian Elimination in C++")}>
+						<p>
+							<Trans i18nKey="cv.gemCpp">A demonstration of how one could implement Gaussian elimination in C++.</Trans>
+						</p>
+					</CVPart>
+					<CVPart name="Spam Filter">
+						<p>
+							<Trans i18nKey="cv.spamFilter">
+								A spam filter implementation in Python using Naive Bayes with Laplace smoothing.
+							</Trans>
+						</p>
+					</CVPart>
+				</CVSection>
 				<CVSection name={t("cv.workExperiences", "Work Experiences")}>
 					<CVPart
 						name={t("cv.elementInternship", "Element Internship")}
