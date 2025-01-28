@@ -138,6 +138,20 @@ export const CV: React.FC = () => {
 						</p>
 					</CVPart>
 				</CVSection>
+				<CVSection name={t("cv.universityProjects", "University projects")}>
+					<CVPart name={t("cv.gemCppTitle", "Implementation of Gaussian Elimination in C++")}>
+						<p>
+							<Trans i18nKey="cv.gemCpp">A demonstration of how one could implement Gaussian elimination in C++.</Trans>
+						</p>
+					</CVPart>
+					<CVPart name="Spam Filter">
+						<p>
+							<Trans i18nKey="cv.spamFilter">
+								A spam filter implementation in Python using Naive Bayes with Laplace smoothing.
+							</Trans>
+						</p>
+					</CVPart>
+				</CVSection>
 				<CVSection name={t("cv.workExperiences", "Work Experiences")}>
 					<CVPart
 						name={t("cv.elementInternship", "Element Internship")}
@@ -211,6 +225,13 @@ export const CV: React.FC = () => {
 								</a>{" "}
 								is a repo containing my configuration files as well as info about my setup. I am currently running NixOS
 								with a custom desktop environment built on top of Hyprland and Aylur's Gtk Shell.
+							</Trans>
+						</p>
+					</CVPart>
+					<CVPart name="Oblichey" from={t("cv.june", "June") + " 2024"} to={t("cv.present", "Present")}>
+						<p>
+							<Trans i18nKey="cv.oblichey">
+								A facial authentication software for Linux built in Rust inspired by Howdy.
 							</Trans>
 						</p>
 					</CVPart>
