@@ -224,7 +224,7 @@ export const CV: React.FC = () => {
 									dotfiles
 								</a>{" "}
 								is a repo containing my configuration files as well as info about my setup. I am currently running NixOS
-								with a custom desktop environment built on top of Hyprland and Aylur's Gtk Shell.
+								with a custom desktop environment built on top of SwayFX (before Hyprland) and Aylur's Gtk Shell.
 							</Trans>
 						</p>
 					</CVPart>
