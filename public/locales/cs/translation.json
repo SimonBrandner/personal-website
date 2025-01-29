@@ -8,7 +8,7 @@
 	"cv.czech": "Čeština — rodilý mluvčí",
 	"cv.december": "Prosinec",
 	"cv.discordNlpBot": "Discord bot pro zpracování přirozeného jazyka (NLP) atp.",
-	"cv.dotfiles": "<0>dotfiles</0> je repositář se všemi mými konfiguračními soubory a informacemi o mém setupu. Aktuálně používám NixOS s desktopovým prostředím postaveným na Hyprlandu a Aylur's Gtk Shell.",
+	"cv.dotfiles": "<0>dotfiles</0> je repositář se všemi mými konfiguračními soubory a informacemi o mém setupu. Aktuálně používám NixOS s desktopovým prostředím postaveným na SwayFX (dříve na Hyprlandu) a Aylur's Gtk Shell.",
 	"cv.education": "Vzdělání",
 	"cv.elementInternship": "Stáž u společnosti Element",
 	"cv.english": "Angličtina — C2 (Cambridge English)",
