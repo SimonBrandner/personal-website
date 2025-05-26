@@ -33,7 +33,8 @@ export const CV: React.FC = () => {
 							<li>Python</li>
 							<li>Go</li>
 							<li>Rust</li>
-							<li>C++</li>
+							<li>C/C++</li>
+							<li>Java</li>
 						</ul>
 					</CVPart>
 					<CVPart name={t("cv.markupAndStyleSheetLanguages", "Markup and Style Sheet Languages")}>
@@ -44,6 +45,7 @@ export const CV: React.FC = () => {
 							<li>HTML</li>
 							<li>CSS/SCSS</li>
 							<li>QML</li>
+							<li>FXML</li>
 						</ul>
 					</CVPart>
 					<CVPart name={t("cv.technologies", "Technologies")}>
@@ -139,6 +141,27 @@ export const CV: React.FC = () => {
 					</CVPart>
 				</CVSection>
 				<CVSection name={t("cv.universityProjects", "University projects")}>
+					<CVPart name={t("cv.pjvImageEditorTitle", "Image Editor in Java")}>
+						<p>
+							<Trans i18nKey="cv.pjvImageEditor">
+								A demonstration of how one could implement an image editor in Java with features such as layers.
+							</Trans>
+						</p>
+					</CVPart>
+					<CVPart name={t("cv.apoCubeTitle", "Rendering a 3D cube on MZ_APO hardware")}>
+						<p>
+							<Trans i18nKey="cv.apoCube">
+								Rendering of a 3D cube on hardware provided by the Computer Architectures course at CTU FEE.
+							</Trans>
+						</p>
+					</CVPart>
+					<CVPart name={t("cv.psiaUdpSenderReceiverTitle", "A UDP file transmitter")}>
+						<p>
+							<Trans i18nKey="cv.psiaUdpSenderReceiver">
+								A demonstration of how one could implement a file transmitter application over UDP with Go-Back-N ARQ.
+							</Trans>
+						</p>
+					</CVPart>
 					<CVPart name={t("cv.gemCppTitle", "Implementation of Gaussian Elimination in C++")}>
 						<p>
 							<Trans i18nKey="cv.gemCpp">A demonstration of how one could implement Gaussian elimination in C++.</Trans>
