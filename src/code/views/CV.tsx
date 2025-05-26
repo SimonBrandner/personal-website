@@ -33,7 +33,7 @@ export const CV: React.FC = () => {
 							<li>Python</li>
 							<li>Go</li>
 							<li>Rust</li>
-							<li>C++</li>
+							<li>C/C++</li>
 							<li>Java</li>
 						</ul>
 					</CVPart>
