@@ -45,6 +45,7 @@ export const CV: React.FC = () => {
 							<li>HTML</li>
 							<li>CSS/SCSS</li>
 							<li>QML</li>
+							<li>FXML</li>
 						</ul>
 					</CVPart>
 					<CVPart name={t("cv.technologies", "Technologies")}>
