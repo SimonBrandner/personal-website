@@ -34,6 +34,7 @@ export const CV: React.FC = () => {
 							<li>Go</li>
 							<li>Rust</li>
 							<li>C++</li>
+							<li>Java</li>
 						</ul>
 					</CVPart>
 					<CVPart name={t("cv.markupAndStyleSheetLanguages", "Markup and Style Sheet Languages")}>
