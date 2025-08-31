@@ -20,7 +20,7 @@
 	"cv.gemCpp": "Demonstrace implementace Gaussovy eliminační metody v C++.",
 	"cv.gemCppTitle": "Implementace Gaussovy eliminační metody v C++",
 	"cv.general": "Obecné",
-	"cv.gfk": "Gymnázium Františka Křižíka (maturita)",
+	"cv.gfk": "Gymnázium Františka Křižíka",
 	"cv.github": "Už delší dobu přispívám do několika projektů na GitHubu a dávám na něj své projekty. Viz seznam všech mých <1>pull requestů</1> a <3>můj profil</3>.",
 	"cv.highSchoolThesis": "Využití protokolu Matrix pro videohovory",
 	"cv.highSchoolThesisDescription": "Svou ročníkovou práci jsem psal o Využití protokolu Matrix pro videohovory. S prací jsem se účastnil soutěže <1>SOČ (Středoškolská odborná činnost)</1> a získal druhé místo v krajském kole. <1>Zdrojový kód</1> je na GitHubu stejně jako <3>text práce</3> a <5>prezentace práce</5>.",
@@ -87,14 +87,10 @@
 	"cv.workingOnWaterfall": "Práce na serveru Waterfall",
 	"cv.yeelight": "Yeelight C++ API je knihovna pro ovládání Yeelight žárovek pomocí C++.",
 	"cvPart.present": "Současnost",
-	"Czech language and literature — 1": "Český jazyka a literatura — 1",
-	"English language — Cambridge English C2": "Anglický jazyk — Cambridge English C2",
 	"footer.icons": "Stránka používá <1>Material design icons</1>",
 	"footer.sourceCode": "<0>Zdrojový kód</0> je na GitHubu",
 	"header.contact": "Kontakt",
 	"header.cv/projects": "CV/Projekty",
 	"header.home": "Domů",
-	"home.intro": "Ahoj! Jmenuji se Šimon Brandner.<1/>Jsem student Otevřené informatiky na FEL ČVUT<1/>se zájmem o NixOS, Rust a FOSS software.",
-	"Mathematics — 1": "Matematika — 1",
-	"Physics — 1": "Fyzika — 1"
+	"home.intro": "Ahoj! Jmenuji se Šimon Brandner.<1/>Jsem student Otevřené informatiky na FEL ČVUT<1/>se zájmem o NixOS, Rust a FOSS software."
 }

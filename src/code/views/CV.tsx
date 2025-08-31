@@ -79,24 +79,11 @@ export const CV: React.FC = () => {
 						<div />
 					</CVPart>
 					<CVPart
-						name={t("cv.gfk", "Gymnázium Františka Křižíka (graduation)")}
+						name={t("cv.gfk", "Gymnázium Františka Křižíka")}
 						from={t("cv.september", "September") + " 2016"}
 						to={t("cv.june", "June") + " 2024"}
 					>
-						<ul>
-							<li>
-								<Trans>English language — Cambridge English C2</Trans>
-							</li>
-							<li>
-								<Trans>Czech language and literature — 1</Trans>
-							</li>
-							<li>
-								<Trans>Mathematics — 1</Trans>
-							</li>
-							<li>
-								<Trans>Physics — 1</Trans>
-							</li>
-						</ul>
+						<div />
 					</CVPart>
 				</CVSection>
 				<CVSection name={t("cv.theses", "Theses")}>
