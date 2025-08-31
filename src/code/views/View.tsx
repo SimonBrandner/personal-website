@@ -1,9 +1,9 @@
 import "../../scss/views/View.scss";
-import React from "react";
+import React, { ReactNode } from "react";
 import classNames from "classnames";
 
 interface IProps {
-	children: JSX.Element;
+	children: ReactNode;
 	className?: string;
 }
 

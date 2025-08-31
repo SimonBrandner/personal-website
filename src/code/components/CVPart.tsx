@@ -1,12 +1,12 @@
 import { useTranslation } from "react-i18next";
 import "../../scss/components/CVPart.scss";
-import React from "react";
+import React, { ReactNode } from "react";
 
 interface IProps {
 	name: string;
 	from?: string;
 	to?: string;
-	children: Array<JSX.Element> | JSX.Element;
+	children: Array<ReactNode> | ReactNode;
 }
 
 export const CVPart: React.FC<IProps> = ({ name, from, to, children }) => {
