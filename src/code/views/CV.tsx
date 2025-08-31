@@ -111,7 +111,7 @@ export const CV: React.FC = () => {
 								<a
 									rel="noreferrer noopener"
 									// eslint-disable-next-line max-len
-									href="https://nightly.link/SimonBrandner/RocnikovaPrace-MatrixRTC/workflows/build.yaml/stable/matrixRTC.pdf.zip"
+									href="https://github.com/SimonBrandner/MatrixRTC-thesis/blob/stable/output/matrixRTC.pdf"
 								>
 									thesis text
 								</a>
@@ -119,7 +119,7 @@ export const CV: React.FC = () => {
 								<a
 									rel="noreferrer noopener"
 									// eslint-disable-next-line max-len
-									href="https://nightly.link/SimonBrandner/RocnikovaPrace-MatrixRTC/workflows/build.yaml/stable/matrixRTCPresentation.pdf.zip"
+									href="https://github.com/SimonBrandner/MatrixRTC-thesis/blob/stable/output/matrixRTCPresentation.pdf"
 								>
 									thesis presentation
 								</a>
