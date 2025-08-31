@@ -215,8 +215,8 @@ export const CV: React.FC = () => {
 					<CVPart name="GitHub">
 						<p>
 							<Trans i18nKey="cv.github">
-								I have been contributing to open source projects on GitHub and putting my work there. See a list of all
-								my
+								I have been contributing to open source projects on GitHub and publishing my own work there for a while
+								now. See a list of all my
 								<a rel="noreferrer noopener" href="https://github.com/search?q=is%3Apr+author%3ASimonBrandner">
 									pull requests
 								</a>
