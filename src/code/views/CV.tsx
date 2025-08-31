@@ -121,9 +121,13 @@ export const CV: React.FC = () => {
 									// eslint-disable-next-line max-len
 									href="https://github.com/SimonBrandner/MatrixRTC-thesis/blob/stable/output/matrixRTCPresentation.pdf"
 								>
-									thesis presentation
+									slides for the thesis presentation
 								</a>
 								.
+								<a rel="noreferrer noopener" href="https://www.youtube.com/watch?v=Vo5Z8pajNwg">
+									The thesis presentation video
+								</a>
+								can found on YouTube.
 							</Trans>
 						</p>
 					</CVPart>
