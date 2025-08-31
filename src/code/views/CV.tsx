@@ -79,24 +79,11 @@ export const CV: React.FC = () => {
 						<div />
 					</CVPart>
 					<CVPart
-						name={t("cv.gfk", "Gymnázium Františka Křižíka (graduation)")}
+						name={t("cv.gfk", "Gymnázium Františka Křižíka")}
 						from={t("cv.september", "September") + " 2016"}
 						to={t("cv.june", "June") + " 2024"}
 					>
-						<ul>
-							<li>
-								<Trans>English language — Cambridge English C2</Trans>
-							</li>
-							<li>
-								<Trans>Czech language and literature — 1</Trans>
-							</li>
-							<li>
-								<Trans>Mathematics — 1</Trans>
-							</li>
-							<li>
-								<Trans>Physics — 1</Trans>
-							</li>
-						</ul>
+						<div />
 					</CVPart>
 				</CVSection>
 				<CVSection name={t("cv.theses", "Theses")}>
@@ -124,7 +111,7 @@ export const CV: React.FC = () => {
 								<a
 									rel="noreferrer noopener"
 									// eslint-disable-next-line max-len
-									href="https://nightly.link/SimonBrandner/RocnikovaPrace-MatrixRTC/workflows/build.yaml/stable/matrixRTC.pdf.zip"
+									href="https://github.com/SimonBrandner/MatrixRTC-thesis/blob/stable/output/matrixRTC.pdf"
 								>
 									thesis text
 								</a>
@@ -132,11 +119,15 @@ export const CV: React.FC = () => {
 								<a
 									rel="noreferrer noopener"
 									// eslint-disable-next-line max-len
-									href="https://nightly.link/SimonBrandner/RocnikovaPrace-MatrixRTC/workflows/build.yaml/stable/matrixRTCPresentation.pdf.zip"
+									href="https://github.com/SimonBrandner/MatrixRTC-thesis/blob/stable/output/matrixRTCPresentation.pdf"
 								>
-									thesis presentation
+									slides for the thesis presentation
 								</a>
 								.
+								<a rel="noreferrer noopener" href="https://www.youtube.com/watch?v=Vo5Z8pajNwg">
+									The thesis presentation video
+								</a>
+								can found on YouTube.
 							</Trans>
 						</p>
 					</CVPart>
@@ -228,8 +219,8 @@ export const CV: React.FC = () => {
 					<CVPart name="GitHub">
 						<p>
 							<Trans i18nKey="cv.github">
-								I have been contributing to open source projects on GitHub and putting my work there. See a list of all
-								my
+								I have been contributing to open source projects on GitHub and publishing my own work there for a while
+								now. See a list of all my
 								<a rel="noreferrer noopener" href="https://github.com/search?q=is%3Apr+author%3ASimonBrandner">
 									pull requests
 								</a>
