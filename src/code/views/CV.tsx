@@ -35,6 +35,7 @@ export const CV: React.FC = () => {
 							<li>Rust</li>
 							<li>C/C++</li>
 							<li>Java</li>
+							<li>Agda</li>
 						</ul>
 					</CVPart>
 					<CVPart name={t("cv.markupAndStyleSheetLanguages", "Markup and Style Sheet Languages")}>
