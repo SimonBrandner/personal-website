@@ -35,6 +35,7 @@ export const CV: React.FC = () => {
 							<li>Rust</li>
 							<li>C/C++</li>
 							<li>Java</li>
+							<li>Agda</li>
 						</ul>
 					</CVPart>
 					<CVPart name={t("cv.markupAndStyleSheetLanguages", "Markup and Style Sheet Languages")}>
@@ -251,7 +252,7 @@ export const CV: React.FC = () => {
 							</Trans>
 						</p>
 					</CVPart>
-					<CVPart name="Oblichey" from={t("cv.june", "June") + " 2024"} to={t("cv.present", "Present")}>
+					<CVPart name="Oblichey" from={t("cv.june", "June") + " 2024"} to={t("cv.january", "January") + " 2025"}>
 						<p>
 							<Trans i18nKey="cv.oblichey">
 								A facial authentication software for Linux built in Rust inspired by Howdy.
@@ -281,7 +282,7 @@ export const CV: React.FC = () => {
 					<CVPart
 						name="Tuxedo-rs"
 						from={t("cv.december", "December") + " 2023"}
-						to={t("cv.January", "January") + " 2024"}
+						to={t("cv.january", "January") + " 2024"}
 					>
 						<ul>
 							<li>
