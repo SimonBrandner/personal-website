@@ -243,6 +243,18 @@ export const CV: React.FC = () => {
 							</Trans>
 						</p>
 					</CVPart>
+					<CVPart name="agda-unimath" from={t("cv.august", "August") + " 2025"} to={t("cv.present", "Present")}>
+						<ul>
+							<li>
+								<Trans i18nKey="cv.linearCombinationsAndSpans">
+									Linear combinations and linear spans of left modules rings
+								</Trans>
+							</li>
+							<li>
+								<Trans i18nKey="cv.submodules">Submodules of left modules over rings</Trans>
+							</li>
+						</ul>
+					</CVPart>
 					<CVPart name="Oblichey" from={t("cv.june", "June") + " 2024"} to={t("cv.january", "January") + " 2025"}>
 						<p>
 							<Trans i18nKey="cv.oblichey">
