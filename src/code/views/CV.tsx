@@ -215,6 +215,16 @@ export const CV: React.FC = () => {
 						</p>
 					</CVPart>
 				</CVSection>
+				<CVSection name={t("cv.teaching", "Teaching")}>
+					<CVPart name={t("cv.bootcamp", "Summer Programming Boot Camp")} from="2025" to="2025">
+						<p>
+							<Trans i18nKey="cv.bootcamp.content">
+								4 day programming boot camp at CTU FEE focused on teaching Python to students before their first
+								semester.
+							</Trans>
+						</p>
+					</CVPart>
+				</CVSection>
 				<CVSection name={t("cv.projects", "Projects")} last>
 					<CVPart name="GitHub">
 						<p>
@@ -243,15 +253,19 @@ export const CV: React.FC = () => {
 							</Trans>
 						</p>
 					</CVPart>
-					<CVPart name="agda-unimath" from={t("cv.august", "August") + " 2025"} to={t("cv.present", "Present")}>
+					<CVPart
+						name="agda-unimath"
+						from={t("cv.august", "August") + " 2025"}
+						to={t("cv.september", "September") + " 2025"}
+					>
 						<ul>
 							<li>
 								<Trans i18nKey="cv.linearCombinationsAndSpans">
-									Linear combinations and linear spans of left modules rings
+									Linear combinations and linear spans of modules over rings
 								</Trans>
 							</li>
 							<li>
-								<Trans i18nKey="cv.submodules">Submodules of left modules over rings</Trans>
+								<Trans i18nKey="cv.submodules">Submodules of modules over rings</Trans>
 							</li>
 						</ul>
 					</CVPart>
