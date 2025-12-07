@@ -97,5 +97,10 @@
 	"header.contact": "Kontakt",
 	"header.cv/projects": "CV/Projekty",
 	"header.home": "Domů",
-	"home.intro": "Ahoj! Jmenuji se Šimon Brandner.<1/>Jsem student Otevřené informatiky na FEL ČVUT<1/>se zájmem o NixOS, Rust a FOSS software."
+	"home.about": "Jsem student Otevřené informatiky na Fakultě elektrotechnické Českého vysokého učení technického. Rád se učím o čemkoliv, co mě v daný moment zajímá.",
+	"home.about.heading": "O mně",
+	"home.interests.foss": "FOSS software: Linux, NixOS, Sway, Neovim, Matrix, Element",
+	"home.interests.heading": "Zájmy",
+	"home.interests.langs": "Silně typované a funkcionální programovací jazyky: Rust, Agda, Nix",
+	"home.interests.maths": "Logika, teorie typů, formalizace matematiky, algebra, teorie složitosti a vyčíslitelnosti"
 }

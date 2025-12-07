@@ -97,5 +97,10 @@
 	"header.contact": "Contact",
 	"header.cv/projects": "CV/Projects",
 	"header.home": "Home",
-	"home.intro": "Hello! My name is Šimon Brandner.<1/>I am a computer science student at CTU FEE<1/>interested in NixOS, Rust and FOSS software."
+	"home.about": "I am a computer science student at the Faculty of Electrical Engineering at the Czech Technical University. I love learning about whatever interests me at the moment.",
+	"home.about.heading": "About",
+	"home.interests.foss": "FOSS software: Linux, NixOS, Sway, Neovim, Matrix, Element",
+	"home.interests.heading": "Interests",
+	"home.interests.langs": "Strongly typed and/or functional programming languages: Rust, Agda, Nix",
+	"home.interests.maths": "Logic, type theory, formalisation of mathematics, algebra, complexity and computability theory"
 }

@@ -1,8 +1,34 @@
 .Home {
-	display: flex;
+	display: grid;
 	justify-content: center;
-	text-align: center;
 	padding-top: 10rem;
 	padding-bottom: 5rem;
 	font-size: 1.5rem;
+	gap: 0rem;
+	column-gap: 2rem;
+
+	grid-template-columns: 1fr 1fr;
+
+	.HomeHeading {
+		font-size: 20pt;
+		font-weight: 600;
+	}
+
+	.About {
+		font-size: 15pt;
+	}
+
+	.Interests {
+		font-size: 15pt;
+	}
+}
+
+@media (max-width: 600px) {
+	.Home {
+		grid-template-columns: 1fr;
+
+		.InterestHeading {
+			grid-row-start: 3;
+		}
+	}
 }
