@@ -8,13 +8,33 @@ export const Home: React.FC = () => {
 
 	return (
 		<View className="Home">
-			<Trans i18nKey="home.intro">
-				Hello! My name is Šimon Brandner.
-				<br />
-				I am a computer science student at CTU FEE
-				<br />
-				interested in NixOS, Rust and FOSS software.
-			</Trans>
+			<span className="HomeHeading">
+				<Trans i18nKey="home.about.heading">About</Trans>
+			</span>
+			<span className="HomeHeading InterestHeading">
+				<Trans i18nKey="home.interests.heading">Interests</Trans>
+			</span>
+			<p className="About">
+				<Trans i18nKey="home.about">
+					I am a computer science student at the Faculty of Electrical Engineering at the Czech Technical University. I
+					love learning about whatever interests me at the moment.
+				</Trans>
+			</p>
+			<ul className="Interests">
+				<li>
+					<Trans i18nKey="home.interests.foss">FOSS software: Linux, NixOS, Sway, Neovim, Matrix, Element</Trans>
+				</li>
+				<li>
+					<Trans i18nKey="home.interests.langs">
+						Strongly typed and/or functional programming languages: Rust, Agda, Nix
+					</Trans>
+				</li>
+				<li>
+					<Trans i18nKey="home.interests.maths">
+						Logic, type theory, formalisation of mathematics, algebra, complexity and computability theory
+					</Trans>
+				</li>
+			</ul>
 		</View>
 	);
 };

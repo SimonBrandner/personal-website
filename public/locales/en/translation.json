@@ -4,6 +4,8 @@
 	"cv.apoCubeTitle": "Rendering a 3D cube on MZ_APO hardware",
 	"cv.august": "August",
 	"cv.basicKnowledge": "Basic knowledge of",
+	"cv.bootcamp": "Summer Programming Boot Camp",
+	"cv.bootcamp.content": "4 day programming boot camp at CTU FEE focused on teaching Python to students before their first semester.",
 	"cv.communication": "Communication",
 	"cv.csAndSe": "Computer science and software engineering",
 	"cv.ctu": "Open informatics at CTU FEE",
@@ -55,7 +57,6 @@
 	"cv.other": "Other",
 	"cv.pjvImageEditor": "A demonstration of how one could implement an image editor in Java with features such as layers.",
 	"cv.pjvImageEditorTitle": "Image Editor in Java",
-	"cv.present": "Present",
 	"cv.programmingLanguages": "Programming Languages",
 	"cv.projectImporting": "Project importing",
 	"cv.projects": "Projects",
@@ -73,6 +74,7 @@
 	"cv.submodules": "Submodules of left modules over rings",
 	"cv.talks": "Talks",
 	"cv.taskizerDescription": "Taskizer aimed to be a free and open source task-management app with many features. From the perspective of today, the code is probably awful. Some if its features were:",
+	"cv.teaching": "Teaching",
 	"cv.technologies": "Technologies",
 	"cv.theses": "Theses",
 	"cv.trayIcon": "System tray icon",
@@ -95,5 +97,10 @@
 	"header.contact": "Contact",
 	"header.cv/projects": "CV/Projects",
 	"header.home": "Home",
-	"home.intro": "Hello! My name is Šimon Brandner.<1/>I am a computer science student at CTU FEE<1/>interested in NixOS, Rust and FOSS software."
+	"home.about": "I am a computer science student at the Faculty of Electrical Engineering at the Czech Technical University. I love learning about whatever interests me at the moment.",
+	"home.about.heading": "About",
+	"home.interests.foss": "FOSS software: Linux, NixOS, Sway, Neovim, Matrix, Element",
+	"home.interests.heading": "Interests",
+	"home.interests.langs": "Strongly typed and/or functional programming languages: Rust, Agda, Nix",
+	"home.interests.maths": "Logic, type theory, formalisation of mathematics, algebra, complexity and computability theory"
 }
