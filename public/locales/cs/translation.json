@@ -97,10 +97,10 @@
 	"header.contact": "Kontakt",
 	"header.cv/projects": "CV/Projekty",
 	"header.home": "Domů",
-	"home.about": "Jsem student Otevřené informatiky na Fakultě elektrotechnické Českého vysokého učení technického. Rád se učím o čemkoliv, co mě v daný moment zajímá.",
+	"home.about": "<0>Jsem student Otevřené informatiky na Fakultě elektrotechnické Českého vysokého učení technického.</0><1>Mám zájem o FOSS, teoretickou informatiku and matematiku.</1>",
 	"home.about.heading": "O mně",
 	"home.interests.foss": "FOSS software: Linux, NixOS, Sway, Neovim, Matrix, Element",
 	"home.interests.heading": "Zájmy",
-	"home.interests.langs": "Silně typované a funkcionální programovací jazyky: Rust, Agda, Nix",
-	"home.interests.maths": "Logika, teorie typů, formalizace matematiky, algebra, teorie složitosti a vyčíslitelnosti"
+	"home.interests.langs": "Silně typované a/nebo funkcionální jazyky: Rust, Haskell, Agda, Rocq, Nix",
+	"home.interests.maths": "Teorie kategorií, logika, teorie typů, formalisace matematiky, (lineaární) algebra"
 }

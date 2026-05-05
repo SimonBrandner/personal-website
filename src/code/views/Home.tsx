@@ -16,8 +16,10 @@ export const Home: React.FC = () => {
 			</span>
 			<p className="About">
 				<Trans i18nKey="home.about">
-					I am a computer science student at the Faculty of Electrical Engineering at the Czech Technical University. I
-					love learning about whatever interests me at the moment.
+					<p>
+						I am a computer science student at the Faculty of Electrical Engineering at the Czech Technical University.
+					</p>
+					<p>I am interested in FOSS, theoretical underpinnings of computer science and mathematics. </p>
 				</Trans>
 			</p>
 			<ul className="Interests">
@@ -26,12 +28,12 @@ export const Home: React.FC = () => {
 				</li>
 				<li>
 					<Trans i18nKey="home.interests.langs">
-						Strongly typed and/or functional programming languages: Rust, Agda, Nix
+						Strongly typed and/or functional programming languages: Rust, Haskell, Agda, Rocq, Nix
 					</Trans>
 				</li>
 				<li>
 					<Trans i18nKey="home.interests.maths">
-						Logic, type theory, formalisation of mathematics, algebra, complexity and computability theory
+						Category theory, logic, type theory, formalisation of mathematics, (linear) algebra
 					</Trans>
 				</li>
 			</ul>

@@ -97,10 +97,10 @@
 	"header.contact": "Contact",
 	"header.cv/projects": "CV/Projects",
 	"header.home": "Home",
-	"home.about": "I am a computer science student at the Faculty of Electrical Engineering at the Czech Technical University. I love learning about whatever interests me at the moment.",
+	"home.about": "<0>I am a computer science student at the Faculty of Electrical Engineering at the Czech Technical University.</0><1>I am interested in FOSS, theoretical underpinnings of computer science and mathematics. </1>",
 	"home.about.heading": "About",
 	"home.interests.foss": "FOSS software: Linux, NixOS, Sway, Neovim, Matrix, Element",
 	"home.interests.heading": "Interests",
-	"home.interests.langs": "Strongly typed and/or functional programming languages: Rust, Agda, Nix",
-	"home.interests.maths": "Logic, type theory, formalisation of mathematics, algebra, complexity and computability theory"
+	"home.interests.langs": "Strongly typed and/or functional programming languages: Rust, Haskell, Agda, Rocq, Nix",
+	"home.interests.maths": "Category theory, logic, type theory, formalisation of mathematics, (linear) algebra"
 }
