@@ -54,6 +54,8 @@
 	"cv.oblichey": "A facial authentication software for Linux built in Rust inspired by Howdy.",
 	"cv.october": "October",
 	"cv.operatingSystems": "Linux - daily usage of Debian and NixOS",
+	"cv.optimizationExercises": "Solved exercises from the Optimization course at CTU FEE.",
+	"cv.optimizationExercisesTitle": "Optimization Exercises",
 	"cv.other": "Other",
 	"cv.pjvImageEditor": "A demonstration of how one could implement an image editor in Java with features such as layers.",
 	"cv.pjvImageEditorTitle": "Image Editor in Java",
