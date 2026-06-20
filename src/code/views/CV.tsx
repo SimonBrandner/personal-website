@@ -135,6 +135,13 @@ export const CV: React.FC = () => {
 					</CVPart>
 				</CVSection>
 				<CVSection name={t("cv.universityProjects", "University projects")}>
+					<CVPart name={t("cv.optimizationExercisesTitle", "Optimization Exercises")}>
+						<p>
+							<Trans i18nKey="cv.optimizationExercises">
+								Solved exercises from the Optimization course at CTU FEE.
+							</Trans>
+						</p>
+					</CVPart>
 					<CVPart name={t("cv.pjvImageEditorTitle", "Image Editor in Java")}>
 						<p>
 							<Trans i18nKey="cv.pjvImageEditor">
