@@ -18,6 +18,8 @@
 	"cv.english": "English — C2 (Cambridge English)",
 	"cv.February": "February",
 	"cv.fosdem2023foci": "During my internship at Element, I was part of a team that worked on cascaded selective forwarding units. I presented our work on FOSDEM 2023 in the <1>Cascaded Foci (Selective Forwarding Units) talk</1>.",
+	"cv.fuzzyLogicExercises": "Solved exercises from the Fuzzy Logic course at CTU FEE.",
+	"cv.fuzzyLogicExercisesTitle": "Fuzzy Logic Exercises",
 	"cv.gameEngines": "Game engines",
 	"cv.gemCpp": "A demonstration of how one could implement Gaussian elimination in C++.",
 	"cv.gemCppTitle": "Implementation of Gaussian Elimination in C++",
