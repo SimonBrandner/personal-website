@@ -142,6 +142,11 @@ export const CV: React.FC = () => {
 							</Trans>
 						</p>
 					</CVPart>
+					<CVPart name={t("cv.fuzzyLogicExercisesTitle", "Fuzzy Logic Exercises")}>
+						<p>
+							<Trans i18nKey="cv.fuzzyLogicExercises">Solved exercises from the Fuzzy Logic course at CTU FEE.</Trans>
+						</p>
+					</CVPart>
 					<CVPart name={t("cv.pjvImageEditorTitle", "Image Editor in Java")}>
 						<p>
 							<Trans i18nKey="cv.pjvImageEditor">
