@@ -135,45 +135,63 @@ export const CV: React.FC = () => {
 					</CVPart>
 				</CVSection>
 				<CVSection name={t("cv.universityProjects", "University projects")}>
-					<CVPart name={t("cv.optimizationExercisesTitle", "Optimization Exercises")}>
+					<CVPart
+						name={t("cv.optimizationExercisesTitle", "Optimization Exercises")}
+						link="https://github.com/SimonBrandner/optimization-exercises"
+					>
 						<p>
 							<Trans i18nKey="cv.optimizationExercises">
 								Solved exercises from the Optimization course at CTU FEE.
 							</Trans>
 						</p>
 					</CVPart>
-					<CVPart name={t("cv.fuzzyLogicExercisesTitle", "Fuzzy Logic Exercises")}>
+					<CVPart
+						name={t("cv.fuzzyLogicExercisesTitle", "Fuzzy Logic Exercises")}
+						link="https://github.com/SimonBrandner/fuzzy-logic-exercises"
+					>
 						<p>
 							<Trans i18nKey="cv.fuzzyLogicExercises">Solved exercises from the Fuzzy Logic course at CTU FEE.</Trans>
 						</p>
 					</CVPart>
-					<CVPart name={t("cv.pjvImageEditorTitle", "Image Editor in Java")}>
+					<CVPart
+						name={t("cv.pjvImageEditorTitle", "Image Editor in Java")}
+						link="https://github.com/SimonBrandner/pjv-image-editor"
+					>
 						<p>
 							<Trans i18nKey="cv.pjvImageEditor">
 								A demonstration of how one could implement an image editor in Java with features such as layers.
 							</Trans>
 						</p>
 					</CVPart>
-					<CVPart name={t("cv.apoCubeTitle", "Rendering a 3D cube on MZ_APO hardware")}>
+					<CVPart
+						name={t("cv.apoCubeTitle", "Rendering a 3D cube on MZ_APO hardware")}
+						link="https://github.com/SimonBrandner/apo-cube"
+					>
 						<p>
 							<Trans i18nKey="cv.apoCube">
 								Rendering of a 3D cube on hardware provided by the Computer Architectures course at CTU FEE.
 							</Trans>
 						</p>
 					</CVPart>
-					<CVPart name={t("cv.psiaUdpSenderReceiverTitle", "A UDP file transmitter")}>
+					<CVPart
+						name={t("cv.psiaUdpSenderReceiverTitle", "A UDP file transmitter")}
+						link="https://github.com/SimonBrandner/psia-udp-sender-receiver"
+					>
 						<p>
 							<Trans i18nKey="cv.psiaUdpSenderReceiver">
 								A demonstration of how one could implement a file transmitter application over UDP with Go-Back-N ARQ.
 							</Trans>
 						</p>
 					</CVPart>
-					<CVPart name={t("cv.gemCppTitle", "Implementation of Gaussian Elimination in C++")}>
+					<CVPart
+						name={t("cv.gemCppTitle", "Implementation of Gaussian Elimination in C++")}
+						link="https://github.com/SimonBrandner/gem-cpp"
+					>
 						<p>
 							<Trans i18nKey="cv.gemCpp">A demonstration of how one could implement Gaussian elimination in C++.</Trans>
 						</p>
 					</CVPart>
-					<CVPart name="Spam Filter">
+					<CVPart name="Spam Filter" link="https://github.com/SimonBrandner/rph-spam-filter">
 						<p>
 							<Trans i18nKey="cv.spamFilter">
 								A spam filter implementation in Python using Naive Bayes with Laplace smoothing.
@@ -213,24 +231,25 @@ export const CV: React.FC = () => {
 					</CVPart>
 				</CVSection>
 				<CVSection name={t("cv.talks", "Talks")}>
-					<CVPart name="Cascaded Foci (Selective Forwarding Units) - FOSDEM 2023">
+					<CVPart
+						name="Cascaded Foci (Selective Forwarding Units) - FOSDEM 2023"
+						link="https://archive.fosdem.org/2023/schedule/event/cascaded_selective_forwarding_units/"
+					>
 						<p>
 							<Trans i18nKey="cv.fosdem2023foci">
 								During my internship at Element, I was part of a team that worked on cascaded selective forwarding
-								units. I presented our work on FOSDEM 2023 in the
-								<a
-									rel="noreferrer noopener"
-									href="https://archive.fosdem.org/2023/schedule/event/cascaded_selective_forwarding_units/"
-								>
-									Cascaded Foci (Selective Forwarding Units) talk
-								</a>
-								.
+								units. I presented our work at FOSDEM 2023.
 							</Trans>
 						</p>
 					</CVPart>
 				</CVSection>
 				<CVSection name={t("cv.teaching", "Teaching")}>
-					<CVPart name={t("cv.bootcamp", "Summer Programming Boot Camp")} from="2025" to="2025">
+					<CVPart
+						name={t("cv.bootcamp", "Summer Programming Boot Camp")}
+						from="2025"
+						to="2025"
+						link="https://cw.fel.cvut.cz/wiki/courses/pri-bootcamp/start"
+					>
 						<p>
 							<Trans i18nKey="cv.bootcamp.content">
 								4 day programming boot camp at CTU FEE focused on teaching Python to students before their first
