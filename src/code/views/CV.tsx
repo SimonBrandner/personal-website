@@ -256,15 +256,12 @@ export const CV: React.FC = () => {
 							</Trans>
 						</p>
 					</CVPart>
-					<CVPart name="dotfiles">
+					<CVPart name="dotfiles" link="https://github.com/SimonBrandner/dotfiles">
 						<p>
 							<Trans i18nKey="cv.dotfiles">
-								<a href="https://github.com/SimonBrandner/dotfiles" rel="noreferrer noopener">
-									dotfiles
-								</a>{" "}
-								is a repo containing my configuration files as well as info about my setup. I am currently running NixOS
-								with a custom desktop environment built on top of Niri (before SwayFX and Hyprland) and Aylur's Gtk
-								Shell.
+								dotfiles is a repo containing my configuration files as well as info about my setup. I am currently
+								running NixOS with a custom desktop environment built on top of Niri (before SwayFX and Hyprland) and
+								Aylur's Gtk Shell.
 							</Trans>
 						</p>
 					</CVPart>
@@ -272,6 +269,7 @@ export const CV: React.FC = () => {
 						name="agda-unimath"
 						from={t("cv.august", "August") + " 2025"}
 						to={t("cv.september", "September") + " 2025"}
+						link="https://github.com/UniMath/agda-unimath"
 					>
 						<ul>
 							<li>
@@ -284,14 +282,24 @@ export const CV: React.FC = () => {
 							</li>
 						</ul>
 					</CVPart>
-					<CVPart name="Oblichey" from={t("cv.june", "June") + " 2024"} to={t("cv.january", "January") + " 2025"}>
+					<CVPart
+						name="Oblichey"
+						from={t("cv.june", "June") + " 2024"}
+						to={t("cv.january", "January") + " 2025"}
+						link="https://github.com/SimonBrandner/oblichey"
+					>
 						<p>
 							<Trans i18nKey="cv.oblichey">
 								A facial authentication software for Linux built in Rust inspired by Howdy.
 							</Trans>
 						</p>
 					</CVPart>
-					<CVPart name="hy3" from={t("cv.june", "June") + " 2024"} to={t("cv.june", "June") + " 2024"}>
+					<CVPart
+						name="hy3"
+						from={t("cv.june", "June") + " 2024"}
+						to={t("cv.june", "June") + " 2024"}
+						link="https://github.com/outfoxxed/hy3"
+					>
 						<ul>
 							<li>
 								<Trans i18nKey="cv.hy3visualDefects">
@@ -304,6 +312,7 @@ export const CV: React.FC = () => {
 						name="Discord NLP Bot"
 						from={t("cv.december", "December") + " 2023"}
 						to={t("cv.march", "March") + " 2024"}
+						link="https://github.com/SimonBrandner/discord-nlp-bot"
 					>
 						<p>
 							<Trans i18nKey="cv.discordNlpBot">
@@ -315,6 +324,7 @@ export const CV: React.FC = () => {
 						name="Tuxedo-rs"
 						from={t("cv.december", "December") + " 2023"}
 						to={t("cv.january", "January") + " 2024"}
+						link="https://github.com/AaronErhardt/tuxedo-rs"
 					>
 						<ul>
 							<li>
@@ -328,6 +338,7 @@ export const CV: React.FC = () => {
 						name="Matrix"
 						from={t("cv.november", "November") + " 2020"}
 						to={t("cv.december", "December") + " 2023"}
+						link="https://matrix.org/"
 					>
 						<ul>
 							<li>
@@ -398,6 +409,7 @@ export const CV: React.FC = () => {
 						name="Element Web/Desktop"
 						from={t("cv.november", "November") + " 2020"}
 						to={t("cv.december", "December") + " 2023"}
+						link="https://github.com/element-hq/element-web"
 					>
 						<ul>
 							<li>
@@ -420,6 +432,7 @@ export const CV: React.FC = () => {
 						name="Element Call"
 						from={t("cv.august", "August") + " 2021"}
 						to={t("cv.december", "December") + " 2023"}
+						link="https://github.com/element-hq/element-call/"
 					>
 						<ul>
 							<li>
@@ -437,6 +450,7 @@ export const CV: React.FC = () => {
 						name="Waterfall"
 						from={t("cv.august", "August") + " 2022"}
 						to={t("cv.december", "December") + " 2023"}
+						link="https://github.com/matrix-org/waterfall"
 					>
 						<ul>
 							<li>
@@ -449,7 +463,12 @@ export const CV: React.FC = () => {
 							</li>
 						</ul>
 					</CVPart>
-					<CVPart name="Synapse" from={t("cv.july", "July") + " 2021"} to={t("cv.december", "December") + " 2023"}>
+					<CVPart
+						name="Synapse"
+						from={t("cv.july", "July") + " 2021"}
+						to={t("cv.december", "December") + " 2023"}
+						link="https://github.com/element-hq/synapse"
+					>
 						<ul>
 							<li>
 								<Trans i18nKey="cv.implementedMSC2285">Implemented MSC2285: Private read receipts</Trans>
@@ -465,6 +484,7 @@ export const CV: React.FC = () => {
 						name="i3-pager"
 						from={t("cv.october", "October") + " 2020"}
 						to={t("cv.november", "November") + " 2020"}
+						link="https://github.com/duvholt/i3-pager"
 					>
 						<ul>
 							<li>
@@ -479,6 +499,7 @@ export const CV: React.FC = () => {
 						name="TaskizerDesktop"
 						from={t("cv.march", "March") + " 2020"}
 						to={t("cv.august", "August") + " 2020"}
+						link="https://github.com/SimonBrandner/TaskizerDesktop"
 					>
 						<p>
 							<Trans i18nKey="cv.taskizerDescription">
@@ -516,7 +537,12 @@ export const CV: React.FC = () => {
 							</li>
 						</ul>
 					</CVPart>
-					<CVPart name="YeelightCPPAPI" from={t("cv.june", "June") + " 2019"} to={t("cv.june", "June") + " 2020"}>
+					<CVPart
+						name="YeelightCPPAPI"
+						from={t("cv.june", "June") + " 2019"}
+						to={t("cv.june", "June") + " 2020"}
+						link="https://github.com/SimonBrandner/YeelightCPPAPI"
+					>
 						<p>
 							<Trans i18nKey="cv.yeelight">
 								The Yeelight C++ API is a library for controlling Yeelight bulbs using C++.
