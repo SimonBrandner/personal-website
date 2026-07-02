@@ -12,7 +12,7 @@
 	"cv.czech": "Czech — native speaker",
 	"cv.december": "December",
 	"cv.discordNlpBot": "A Discord Bot to perform Natural Language Processing (NLP) and related tasks.",
-	"cv.dotfiles": "<0>dotfiles</0> is a repo containing my configuration files as well as info about my setup. I am currently running NixOS with a custom desktop environment built on top of Sway (before Hyprland) and Aylur's Gtk Shell.",
+	"cv.dotfiles": "<0>dotfiles</0> is a repo containing my configuration files as well as info about my setup. I am currently running NixOS with a custom desktop environment built on top of Niri (before SwayFX and Hyprland) and Aylur's Gtk Shell.",
 	"cv.education": "Education",
 	"cv.elementInternship": "Element Internship",
 	"cv.english": "English — C2 (Cambridge English)",
