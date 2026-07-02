@@ -2,13 +2,24 @@
 	.CVPart_title {
 		display: flex;
 		flex-direction: row;
+		justify-content: space-between;
 
 		.CVPart_title_name {
-			flex: 1;
 			font-size: 1.5rem;
+			color: var(--primary-foreground-color);
+
+			&.CVPart_title_name_link {
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+					cursor: pointer;
+				}
+			}
 		}
 
 		.CVPart_title_time {
+			align-self: flex-end;
 			color: var(--secondary-foreground-color);
 		}
 	}

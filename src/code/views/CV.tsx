@@ -135,45 +135,63 @@ export const CV: React.FC = () => {
 					</CVPart>
 				</CVSection>
 				<CVSection name={t("cv.universityProjects", "University projects")}>
-					<CVPart name={t("cv.optimizationExercisesTitle", "Optimization Exercises")}>
+					<CVPart
+						name={t("cv.optimizationExercisesTitle", "Optimization Exercises")}
+						link="https://github.com/SimonBrandner/optimization-exercises"
+					>
 						<p>
 							<Trans i18nKey="cv.optimizationExercises">
 								Solved exercises from the Optimization course at CTU FEE.
 							</Trans>
 						</p>
 					</CVPart>
-					<CVPart name={t("cv.fuzzyLogicExercisesTitle", "Fuzzy Logic Exercises")}>
+					<CVPart
+						name={t("cv.fuzzyLogicExercisesTitle", "Fuzzy Logic Exercises")}
+						link="https://github.com/SimonBrandner/fuzzy-logic-exercises"
+					>
 						<p>
 							<Trans i18nKey="cv.fuzzyLogicExercises">Solved exercises from the Fuzzy Logic course at CTU FEE.</Trans>
 						</p>
 					</CVPart>
-					<CVPart name={t("cv.pjvImageEditorTitle", "Image Editor in Java")}>
+					<CVPart
+						name={t("cv.pjvImageEditorTitle", "Image Editor in Java")}
+						link="https://github.com/SimonBrandner/pjv-image-editor"
+					>
 						<p>
 							<Trans i18nKey="cv.pjvImageEditor">
 								A demonstration of how one could implement an image editor in Java with features such as layers.
 							</Trans>
 						</p>
 					</CVPart>
-					<CVPart name={t("cv.apoCubeTitle", "Rendering a 3D cube on MZ_APO hardware")}>
+					<CVPart
+						name={t("cv.apoCubeTitle", "Rendering a 3D cube on MZ_APO hardware")}
+						link="https://github.com/SimonBrandner/apo-cube"
+					>
 						<p>
 							<Trans i18nKey="cv.apoCube">
 								Rendering of a 3D cube on hardware provided by the Computer Architectures course at CTU FEE.
 							</Trans>
 						</p>
 					</CVPart>
-					<CVPart name={t("cv.psiaUdpSenderReceiverTitle", "A UDP file transmitter")}>
+					<CVPart
+						name={t("cv.psiaUdpSenderReceiverTitle", "A UDP file transmitter")}
+						link="https://github.com/SimonBrandner/psia-udp-sender-receiver"
+					>
 						<p>
 							<Trans i18nKey="cv.psiaUdpSenderReceiver">
 								A demonstration of how one could implement a file transmitter application over UDP with Go-Back-N ARQ.
 							</Trans>
 						</p>
 					</CVPart>
-					<CVPart name={t("cv.gemCppTitle", "Implementation of Gaussian Elimination in C++")}>
+					<CVPart
+						name={t("cv.gemCppTitle", "Implementation of Gaussian Elimination in C++")}
+						link="https://github.com/SimonBrandner/gem-cpp"
+					>
 						<p>
 							<Trans i18nKey="cv.gemCpp">A demonstration of how one could implement Gaussian elimination in C++.</Trans>
 						</p>
 					</CVPart>
-					<CVPart name="Spam Filter">
+					<CVPart name="Spam Filter" link="https://github.com/SimonBrandner/rph-spam-filter">
 						<p>
 							<Trans i18nKey="cv.spamFilter">
 								A spam filter implementation in Python using Naive Bayes with Laplace smoothing.
@@ -213,24 +231,25 @@ export const CV: React.FC = () => {
 					</CVPart>
 				</CVSection>
 				<CVSection name={t("cv.talks", "Talks")}>
-					<CVPart name="Cascaded Foci (Selective Forwarding Units) - FOSDEM 2023">
+					<CVPart
+						name="Cascaded Foci (Selective Forwarding Units) - FOSDEM 2023"
+						link="https://archive.fosdem.org/2023/schedule/event/cascaded_selective_forwarding_units/"
+					>
 						<p>
 							<Trans i18nKey="cv.fosdem2023foci">
 								During my internship at Element, I was part of a team that worked on cascaded selective forwarding
-								units. I presented our work on FOSDEM 2023 in the
-								<a
-									rel="noreferrer noopener"
-									href="https://archive.fosdem.org/2023/schedule/event/cascaded_selective_forwarding_units/"
-								>
-									Cascaded Foci (Selective Forwarding Units) talk
-								</a>
-								.
+								units. I presented our work at FOSDEM 2023.
 							</Trans>
 						</p>
 					</CVPart>
 				</CVSection>
 				<CVSection name={t("cv.teaching", "Teaching")}>
-					<CVPart name={t("cv.bootcamp", "Summer Programming Boot Camp")} from="2025" to="2025">
+					<CVPart
+						name={t("cv.bootcamp", "Summer Programming Boot Camp")}
+						from="2025"
+						to="2025"
+						link="https://cw.fel.cvut.cz/wiki/courses/pri-bootcamp/start"
+					>
 						<p>
 							<Trans i18nKey="cv.bootcamp.content">
 								4 day programming boot camp at CTU FEE focused on teaching Python to students before their first
@@ -256,14 +275,12 @@ export const CV: React.FC = () => {
 							</Trans>
 						</p>
 					</CVPart>
-					<CVPart name="dotfiles">
+					<CVPart name="dotfiles" link="https://github.com/SimonBrandner/dotfiles">
 						<p>
 							<Trans i18nKey="cv.dotfiles">
-								<a href="https://github.com/SimonBrandner/dotfiles" rel="noreferrer noopener">
-									dotfiles
-								</a>{" "}
-								is a repo containing my configuration files as well as info about my setup. I am currently running NixOS
-								with a custom desktop environment built on top of SwayFX (before Hyprland) and Aylur's Gtk Shell.
+								dotfiles is a repo containing my configuration files as well as info about my setup. I am currently
+								running NixOS with a custom desktop environment built on top of Niri (before SwayFX and Hyprland) and
+								Aylur's Gtk Shell.
 							</Trans>
 						</p>
 					</CVPart>
@@ -271,6 +288,7 @@ export const CV: React.FC = () => {
 						name="agda-unimath"
 						from={t("cv.august", "August") + " 2025"}
 						to={t("cv.september", "September") + " 2025"}
+						link="https://github.com/UniMath/agda-unimath"
 					>
 						<ul>
 							<li>
@@ -283,14 +301,24 @@ export const CV: React.FC = () => {
 							</li>
 						</ul>
 					</CVPart>
-					<CVPart name="Oblichey" from={t("cv.june", "June") + " 2024"} to={t("cv.january", "January") + " 2025"}>
+					<CVPart
+						name="Oblichey"
+						from={t("cv.june", "June") + " 2024"}
+						to={t("cv.january", "January") + " 2025"}
+						link="https://github.com/SimonBrandner/oblichey"
+					>
 						<p>
 							<Trans i18nKey="cv.oblichey">
 								A facial authentication software for Linux built in Rust inspired by Howdy.
 							</Trans>
 						</p>
 					</CVPart>
-					<CVPart name="hy3" from={t("cv.june", "June") + " 2024"} to={t("cv.june", "June") + " 2024"}>
+					<CVPart
+						name="hy3"
+						from={t("cv.june", "June") + " 2024"}
+						to={t("cv.june", "June") + " 2024"}
+						link="https://github.com/outfoxxed/hy3"
+					>
 						<ul>
 							<li>
 								<Trans i18nKey="cv.hy3visualDefects">
@@ -303,6 +331,7 @@ export const CV: React.FC = () => {
 						name="Discord NLP Bot"
 						from={t("cv.december", "December") + " 2023"}
 						to={t("cv.march", "March") + " 2024"}
+						link="https://github.com/SimonBrandner/discord-nlp-bot"
 					>
 						<p>
 							<Trans i18nKey="cv.discordNlpBot">
@@ -314,6 +343,7 @@ export const CV: React.FC = () => {
 						name="Tuxedo-rs"
 						from={t("cv.december", "December") + " 2023"}
 						to={t("cv.january", "January") + " 2024"}
+						link="https://github.com/AaronErhardt/tuxedo-rs"
 					>
 						<ul>
 							<li>
@@ -327,6 +357,7 @@ export const CV: React.FC = () => {
 						name="Matrix"
 						from={t("cv.november", "November") + " 2020"}
 						to={t("cv.december", "December") + " 2023"}
+						link="https://matrix.org/"
 					>
 						<ul>
 							<li>
@@ -397,6 +428,7 @@ export const CV: React.FC = () => {
 						name="Element Web/Desktop"
 						from={t("cv.november", "November") + " 2020"}
 						to={t("cv.december", "December") + " 2023"}
+						link="https://github.com/element-hq/element-web"
 					>
 						<ul>
 							<li>
@@ -419,6 +451,7 @@ export const CV: React.FC = () => {
 						name="Element Call"
 						from={t("cv.august", "August") + " 2021"}
 						to={t("cv.december", "December") + " 2023"}
+						link="https://github.com/element-hq/element-call/"
 					>
 						<ul>
 							<li>
@@ -436,6 +469,7 @@ export const CV: React.FC = () => {
 						name="Waterfall"
 						from={t("cv.august", "August") + " 2022"}
 						to={t("cv.december", "December") + " 2023"}
+						link="https://github.com/matrix-org/waterfall"
 					>
 						<ul>
 							<li>
@@ -448,7 +482,12 @@ export const CV: React.FC = () => {
 							</li>
 						</ul>
 					</CVPart>
-					<CVPart name="Synapse" from={t("cv.july", "July") + " 2021"} to={t("cv.december", "December") + " 2023"}>
+					<CVPart
+						name="Synapse"
+						from={t("cv.july", "July") + " 2021"}
+						to={t("cv.december", "December") + " 2023"}
+						link="https://github.com/element-hq/synapse"
+					>
 						<ul>
 							<li>
 								<Trans i18nKey="cv.implementedMSC2285">Implemented MSC2285: Private read receipts</Trans>
@@ -464,6 +503,7 @@ export const CV: React.FC = () => {
 						name="i3-pager"
 						from={t("cv.october", "October") + " 2020"}
 						to={t("cv.november", "November") + " 2020"}
+						link="https://github.com/duvholt/i3-pager"
 					>
 						<ul>
 							<li>
@@ -478,6 +518,7 @@ export const CV: React.FC = () => {
 						name="TaskizerDesktop"
 						from={t("cv.march", "March") + " 2020"}
 						to={t("cv.august", "August") + " 2020"}
+						link="https://github.com/SimonBrandner/TaskizerDesktop"
 					>
 						<p>
 							<Trans i18nKey="cv.taskizerDescription">
@@ -515,7 +556,12 @@ export const CV: React.FC = () => {
 							</li>
 						</ul>
 					</CVPart>
-					<CVPart name="YeelightCPPAPI" from={t("cv.june", "June") + " 2019"} to={t("cv.june", "June") + " 2020"}>
+					<CVPart
+						name="YeelightCPPAPI"
+						from={t("cv.june", "June") + " 2019"}
+						to={t("cv.june", "June") + " 2020"}
+						link="https://github.com/SimonBrandner/YeelightCPPAPI"
+					>
 						<p>
 							<Trans i18nKey="cv.yeelight">
 								The Yeelight C++ API is a library for controlling Yeelight bulbs using C++.
