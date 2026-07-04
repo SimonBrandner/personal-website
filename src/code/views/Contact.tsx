@@ -12,7 +12,6 @@ export const Contact: React.FC = () => {
 				<ContactLink className="email" link="mailto:simon.bra.ag@gmail.com" label="Email" />
 				<ContactLink className="github" link="https://github.com/SimonBrandner" label="GitHub" />
 				<ContactLink className="mastodon" link="https://mastodon.online/@SimonBrandner" rel="me" label="Mastodon" />
-				<ContactLink className="twitter" link="https://twitter.com/BrandnerSimon" label="Twitter" />
 				<ContactLink
 					className="youtube"
 					link="https://www.youtube.com/channel/UCe_DknI701POwF5oviZib8g/"
@@ -29,7 +28,6 @@ export const Contact: React.FC = () => {
 					link="https://stackoverflow.com/users/10822785/%c5%a0imon-brandner"
 					label="Stack Overflow"
 				/>
-				<ContactLink className="pinterest" link="https://cz.pinterest.com/SimonBrandnerDev" label="Pinterest" />
 				<ContactLink
 					className="goodreads"
 					link="https://www.goodreads.com/user/show/112089576-imon-brandner"
