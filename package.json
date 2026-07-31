@@ -8,32 +8,33 @@
 	},
 	"dependencies": {
 		"ansi-regex": "6.2.2",
-		"autoprefixer": "^10.4.27",
+		"autoprefixer": "^10.5.4",
 		"classnames": "^2.5.1",
-		"i18next": "^26.0.4",
+		"i18next": "^26.3.6",
 		"i18next-browser-languagedetector": "^8.2.1",
-		"i18next-http-backend": "^3.0.5",
-		"postcss": "^8.5.18",
-		"prettier": "^3.8.1",
-		"react": "^19.2.5",
-		"react-dom": "^19.2.5",
-		"react-i18next": "^17.0.2",
+		"i18next-http-backend": "^4.0.1",
+		"postcss": "^8.5.25",
+		"prettier": "^3.9.6",
+		"react": "^19.2.8",
+		"react-dom": "^19.2.8",
+		"react-i18next": "^17.0.11",
 		"react-router": "^8.3.0",
-		"react-router-dom": "^7.14.0",
-		"sass": "^1.99.0"
+		"react-router-dom": "^7.18.2",
+		"sass": "^1.102.0"
 	},
 	"devDependencies": {
-		"@types/react": "^19.2.14",
-		"@types/react-dom": "^19.2.3",
-		"@vitejs/plugin-react": "^6.0.1",
-		"i18next-parser": "^9.4.0",
-		"typescript": "^6.0.2",
-		"vite": "8.0.16"
+		"@types/react": "^19.2.18",
+		"@types/react-dom": "^19.2.4",
+		"@vitejs/plugin-react": "^6.0.5",
+		"i18next-cli": "^1.67.3",
+		"typescript": "^7.0.2",
+		"vite": "8.2.0"
 	},
 	"postcss": {
 		"map": false,
 		"plugins": {
 			"autoprefixer": {}
 		}
-	}
+	},
+	"type": "module"
 }
